@@ -1,6 +1,6 @@
 .page {
     margin: 1em auto;
-    max-width: 30em;
+    max-width: 40em;
 }
 
 .taskTitle {
@@ -11,3 +11,7 @@
     margin: 1em 0;
 }
 
+.completed-true {
+    text-decoration: line-through;
+    background: #efd;
+}

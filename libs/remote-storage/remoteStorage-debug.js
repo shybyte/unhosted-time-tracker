@@ -503,7 +503,7 @@ define('lib/util',[], function() {
 
             args.unshift("[" + name.toUpperCase() + "] -- " + level + " ");
             
-            (console[type] || console.log).apply(console, args);
+            //(console[type] || console.log).apply(console, args);
           }
         }
       }

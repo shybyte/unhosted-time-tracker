@@ -14,48 +14,76 @@
 
     <div ng-controller="TaskController">
 
-        <form ng-submit="addTask()">
+        <form class="form-inline" ng-submit="addTask()">
             <input type="text" ng-model="taskText" size="30"
-                   placeholder="add new task here">
-            <input class="btn btn-primary" type="submit" value="add">
+                   placeholder="Add new task title here ...">
+            <input class="btn btn-primary" type="submit" value="Add Task">
         </form>
 
-        <table class="table table-striped table-bordered tasks">
-            <thead>
-            <th>Done?</th>
-            <th>Task Title</th>
-            <th>Tracked Time</th>
-            <th></th>
-            </thead>
-            <tbody>
-            <tr ng-repeat="task in tasks">
-                <td>
-                    <input type="checkbox" ng-model="task.completed" ng-click="onToggledCompleted(task)">
-                </td>
-                <td>
-                    <span class="taskTitle completed-{{task.completed}}">{{task.title}}</span>
-                </td>
-                <td>
-                    <span>{{spentTimeLabel(task)}}</span>
+        <div ng-switch on="tasks.length">
 
-                </td>
-                <td>
-                    <button ng-click="onTrackButton(task)">{{trackButtonLabel(task)}}</button>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+            <div ng-switch-when="0" class="alert alert-info" style="display: none;" ng-show="tasks.length==0">
+                You have no tasks. Please add some tasks<span ng-show="!isConnected"> or connect
+                to remote storage by using the funny button in the right top corner</span>!
+            </div>
 
-        <span>{{remaining()}} of {{tasks.length}} remaining</span>
-        <button ng-click="removeFinishedTasks()">Remove Done Tasks</button>
+            <div ng-switch-default>
+
+                <table class="table table-bordered tasks">
+                    <thead>
+                    <th>Done?</th>
+                    <th>Task Title</th>
+                    <th>Tracked Time</th>
+                    <th></th>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="task in tasks" class="completed-{{task.completed}}">
+                        <td>
+                            <input type="checkbox" ng-model="task.completed" ng-click="onToggledCompleted(task)">
+                        </td>
+                        <td>
+                            <span class="taskTitle">{{task.title}}</span>
+                        </td>
+                        <td>
+                            <span>{{spentTimeLabel(task)}}</span>
+
+                        </td>
+                        <td>
+
+                            <div class="btn-group">
+                                <button class="btn" ng-class="{active:isTracking(task),'btn-warning':isTracking(task)}"
+                                        ng-click="onTrackButton(task)">{{trackButtonLabel(task)}}
+                                </button>
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Add time manually</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <span>{{remaining()}} of {{tasks.length}} remaining</span>
+                <button class="btn btn-mini" ng-click="removeFinishedTasks()">Remove Done Tasks</button>
+
+
+            </div>
+        </div>
+
 
     </div>
     ​
 </div>
 
-<script src="libs/angular/angular.js"></script>
+<script src="libs/angular/angular.min.js"></script>
 <script src="libs/sugar.min.js"></script>
-<script src="libs/remote-storage/remoteStorage-debug.js"></script>
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="libs/remote-storage/remoteStorage-debug.js"></script>-->
+<script src="https://raw.github.com/RemoteStorage/remoteStorage.js/gh-pages/build/0.7.0-head/remoteStorage-debug.js"></script>
 <script src="libs/remote-storage/tasks-js.js"></script>
 <script src="app.js"></script>
 </body>

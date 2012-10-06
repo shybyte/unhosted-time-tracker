@@ -5,10 +5,11 @@ function log(message) {
 var rs = {
     taskDao:null,
 
-    init:function () {
+    init:function (onStateCallback) {
         remoteStorage.util.silenceAllLoggers();
         remoteStorage.claimAccess('tasks', 'rw');
         remoteStorage.displayWidget('remotestorage-connect');
+        remoteStorage.onWidget('state',onStateCallback);
         this.taskDao = remoteStorage.tasks.getPrivateList('todos');
     },
 
@@ -33,8 +34,14 @@ var rs = {
 
     add:function (title) {
         return this.taskDao.get(this.taskDao.add(title));
+    },
+
+    getState:function () {
+        return remoteStorage.getWidgetState();
     }
+
 }
+
 
 function formatTimeSpan(ms) {
     if (!ms) {
@@ -53,6 +60,7 @@ function formatTimeSpan(ms) {
     }
     return timeString;
 }
+
 
 function isTracking(task) {
     return task.timeTracking && task.timeTracking.startTime;
@@ -73,8 +81,23 @@ function finishTracking(task) {
     rs.taskDao.setTimeTracking(task.id, task.timeTracking);
 }
 
+function isConnected(state) {
+    return  (state =='connected') || (state == 'busy');
+}
+
 function TaskController($scope) {
-    rs.init();
+    function refresh() {
+        if (!$scope.$$phase) {
+            $scope.$apply();
+        }
+    }
+
+    $scope.isConnected = isConnected(rs.getState());
+
+    rs.init(function (state) {
+        $scope.isConnected = isConnected(state);
+        refresh();
+    });
 
     $scope.tasks = rs.loadAll();
 
@@ -85,7 +108,7 @@ function TaskController($scope) {
         } else {
             $scope.tasks.push(task);
         }
-        $scope.$apply();
+        refresh();
     });
 
     $scope.addTask = function () {
@@ -113,6 +136,8 @@ function TaskController($scope) {
             }
         });
     };
+
+    $scope.isTracking = isTracking;
 
     $scope.trackButtonLabel = function (task) {
         return isTracking(task) ? 'Tracking...' : 'Track'
@@ -143,7 +168,7 @@ function TaskController($scope) {
     };
 
     setInterval(function () {
-        $scope.$apply();
+        refresh();
     },1000);
 
 }
