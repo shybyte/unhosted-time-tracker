@@ -9,7 +9,7 @@ var rs = {
         remoteStorage.util.silenceAllLoggers();
         remoteStorage.claimAccess('tasks', 'rw');
         remoteStorage.displayWidget('remotestorage-connect');
-        remoteStorage.onWidget('state',onStateCallback);
+        remoteStorage.onWidget('state', onStateCallback);
         this.taskDao = remoteStorage.tasks.getPrivateList('todos');
     },
 
@@ -71,18 +71,38 @@ function startTracking(task) {
         task.timeTracking = {spentTime:0}
     }
     task.timeTracking.startTime = Date.now();
-    rs.taskDao.setTimeTracking(task.id, task.timeTracking);
+    saveTimeTracking(task);
 }
 
 function finishTracking(task) {
     var timeTracking = task.timeTracking;
     timeTracking.spentTime += Date.now() - timeTracking.startTime;
     timeTracking.startTime = null;
+    saveTimeTracking(task);
+}
+
+function addTime(task, timeToAdd) {
+    if (!timeToAdd) {
+        return;
+    }
+    if (!task.timeTracking) {
+        task.timeTracking = {spentTime:timeToAdd};
+    } else {
+        task.timeTracking.spentTime += timeToAdd;
+    }
+    saveTimeTracking(task);
+}
+
+function saveTimeTracking(task) {
     rs.taskDao.setTimeTracking(task.id, task.timeTracking);
 }
 
 function isConnected(state) {
-    return  (state =='connected') || (state == 'busy');
+    return  (state == 'connected') || (state == 'busy');
+}
+
+function isBlank(s) {
+    return !s || s.isBlank();
 }
 
 function TaskController($scope) {
@@ -111,11 +131,22 @@ function TaskController($scope) {
         refresh();
     });
 
+
+    $scope.noTaskTitleWarning = false;
     $scope.addTask = function () {
+        if (isBlank($scope.taskText)) {
+            $scope.noTaskTitleWarning = true;
+            return;
+        }
         var task = rs.add($scope.taskText);
-        $scope.tasks.push(task);
+        $scope.tasks.insert(task,0);
         $scope.taskText = '';
     };
+    $scope.$watch('taskText', function (value) {
+        if (!isBlank($scope.taskText)) {
+            $scope.noTaskTitleWarning = false;
+        }
+    });
 
     $scope.remaining = function () {
         var count = 0;
@@ -126,15 +157,16 @@ function TaskController($scope) {
     };
 
     $scope.removeFinishedTasks = function () {
-        var oldTasks = $scope.tasks;
-        $scope.tasks = [];
-        angular.forEach(oldTasks, function (task) {
-            if (task.completed) {
-                rs.taskDao.remove(task.id);
-            } else {
-                $scope.tasks.push(task);
-            }
+        var finishedTasks = $scope.tasks.filter({completed:true});
+        $scope.tasks = $scope.tasks.subtract(finishedTasks);
+        finishedTasks.forEach(function (task) {
+            rs.taskDao.remove(task.id);
         });
+    };
+
+    $scope.removeTask = function (task) {
+        $scope.tasks.remove(task);
+        rs.taskDao.remove(task.id);
     };
 
     $scope.isTracking = isTracking;
@@ -155,12 +187,33 @@ function TaskController($scope) {
         return formatTimeSpan(spentTime);
     };
 
+    function finishCurrentTracking() {
+        $scope.tasks.filter(isTracking).forEach(finishTracking);
+    }
+    
     $scope.onTrackButton = function (task) {
         if (isTracking(task)) {
             finishTracking(task);
         } else {
+            finishCurrentTracking();
             startTracking(task);
         }
+    };
+
+    $scope.addedHours = 1;
+    $scope.addedMinutes = 0;
+    $scope.showAddTimeDialog = function (task) {
+        $scope.currentTask = task;
+        $('#addTimeDialog').modal();
+        setTimeout(function () {
+            $('#addedHours').focus();
+        }, 1000);
+    };
+
+    $scope.addTime = function () {
+        var timeToAdd = ($scope.addedHours.toNumber() * 60 + $scope.addedMinutes.toNumber()) * 60000;
+        addTime($scope.currentTask, timeToAdd);
+        $('#addTimeDialog').modal('hide');
     };
 
     $scope.onToggledCompleted = function (task) {
@@ -169,6 +222,6 @@ function TaskController($scope) {
 
     setInterval(function () {
         refresh();
-    },1000);
+    }, 1000);
 
 }

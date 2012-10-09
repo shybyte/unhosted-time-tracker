@@ -15,12 +15,16 @@
     <div ng-controller="TaskController">
 
         <form class="form-inline" ng-submit="addTask()">
-            <input type="text" ng-model="taskText" size="30"
+            <input id="addTaskText" type="text" ng-model="taskText" size="40" autofocus="true"
                    placeholder="Add new task title here ...">
             <input class="btn btn-primary" type="submit" value="Add Task">
         </form>
 
         <div ng-switch on="tasks.length">
+
+            <div class="alert alert-info" id="noTaskTitleWarning" style="display: none;" ng-show="noTaskTitleWarning">
+                Sorry, but You can't add a Task without a title!
+            </div>
 
             <div ng-switch-when="0" class="alert alert-info" style="display: none;" ng-show="tasks.length==0">
                 You have no tasks. Please add some tasks<span ng-show="!isConnected"> or connect
@@ -58,7 +62,9 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="#">Add time manually</a></li>
+                                    <li><a tabindex="-1" href="#" ng-click="showAddTimeDialog(task);">Add time
+                                        manually</a></li>
+                                    <li><a tabindex="-2" href="#" ng-click="removeTask(task);">Remove</a></li>
                                 </ul>
                             </div>
                         </td>
@@ -74,9 +80,29 @@
         </div>
 
 
+        <div id="addTimeDialog" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Add Time to Task "{{currentTask.title}}"</h3>
+            </div>
+            <form class="addTimeForm" ng-submit="addTime()">
+            <div class="modal-body">
+                <p>
+                    Add <input id="addedHours" type="number" maxlength="2" min="-99" max="99" ng-model="addedHours" size="3"> hours and
+                    <input id="addedMinutes" type="number" maxlength="2" min="-99" max="99" ng-model="addedMinutes" size="3"> minutes.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+                <input class="btn btn-primary" type="submit" value="Add Time">
+            </div>
+            </form>
+        </div>
+
     </div>
     ​
 </div>
+
 
 <script src="libs/angular/angular.min.js"></script>
 <script src="libs/sugar.min.js"></script>

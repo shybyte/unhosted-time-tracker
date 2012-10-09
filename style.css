@@ -12,6 +12,15 @@
 }
 
 .completed-true {
-    text-decoration: line-through;
     background: #efd;
+}
+
+#addTaskText {
+    width: 32em;;
+}
+
+#addedHours,
+#addedMinutes{
+    width: 3em;
+    text-align: center;
 }
