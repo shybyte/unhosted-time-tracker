@@ -33,7 +33,10 @@ var rs = {
     },
 
     add:function (title) {
-        return this.taskDao.get(this.taskDao.add(title));
+        var newTaskID = this.taskDao.add(title);
+        var task = this.taskDao.get(newTaskID);
+        task.id = newTaskID;
+        return task;
     },
 
     getState:function () {
