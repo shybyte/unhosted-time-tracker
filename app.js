@@ -63,7 +63,7 @@ function formatTimeSpan(ms) {
 
 
 function isTracking(task) {
-    return task.timeTracking && task.timeTracking.startTime;
+    return !!(task.timeTracking && task.timeTracking.startTime);
 }
 
 function startTracking(task) {

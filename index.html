@@ -41,7 +41,7 @@
                     <th></th>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="task in tasks" class="completed-{{task.completed}}">
+                    <tr ng-repeat="task in tasks" class="completed-{{task.completed}} tracking-{{isTracking(task)}}">
                         <td>
                             <input type="checkbox" ng-model="task.completed" ng-click="onToggledCompleted(task)">
                         </td>
@@ -49,7 +49,7 @@
                             <span class="taskTitle">{{task.title}}</span>
                         </td>
                         <td>
-                            <span>{{spentTimeLabel(task)}}</span>
+                            <span class="spentTimeLabel">{{spentTimeLabel(task)}}</span>
 
                         </td>
                         <td>
@@ -64,7 +64,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a  href="#" ng-click="showAddTimeDialog(task);">Add time
                                         manually</a></li>
-                                    <li><a  href="#" ng-click="removeTask(task);">Remove</a></li>
+                                    <li><a  href="#" ng-click="removeTask(task);">Remove Task</a></li>
                                 </ul>
                             </div>
                         </td>
