@@ -220,6 +220,9 @@ function TaskController($scope) {
     };
 
     $scope.onToggledCompleted = function (task) {
+        if (task.completed && isTracking(task)) {
+            finishTracking(task);
+        }
         rs.taskDao.markCompleted(task.id, task.completed);
     };
 
