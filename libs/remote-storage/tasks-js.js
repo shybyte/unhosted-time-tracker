@@ -143,6 +143,8 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
                         }
                     }
                 });
+            } else {
+                myPrivateBaseClient.on(eventType,cb);
             }
         }
         // Class: TaskList
