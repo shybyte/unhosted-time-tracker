@@ -119,6 +119,9 @@ function TaskController($scope) {
 
     rs.init(function (state) {
         $scope.isConnected = isConnected(state);
+        if(state === 'disconnected') {
+            $scope.tasks = [];
+        }
         refresh();
     });
 
