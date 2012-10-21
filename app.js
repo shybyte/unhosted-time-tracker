@@ -2,6 +2,11 @@ function log(message) {
     console.log(message);
 }
 
+function isNotNull(o) {
+    return !!o;
+}
+
+
 var rs = {
     taskDao:null,
 
@@ -17,18 +22,24 @@ var rs = {
         var taskDao = this.taskDao;
         return taskDao.getIds().map(function (id) {
             var task = taskDao.get(id);
-            task.id = id;
+            if (task) {
+                task.id = id;
+            }
             return task;
-        });
+        }).filter(isNotNull);
     },
 
     onChange:function (callback) {
         this.taskDao.on('change', function (event) {
             log("Event:");
             log(event);
-            var task = event.newValue;
-            task.id = event.id;
-            callback(task);
+            if (event.newValue) {
+                event.newValue.id = event.id;
+            }
+            if (event.oldValue) {
+                event.oldValue.id = event.id;
+            }
+            callback(event.oldValue,event.newValue);
         });
     },
 
@@ -127,12 +138,17 @@ function TaskController($scope) {
 
     $scope.tasks = rs.loadAll();
 
-    rs.onChange(function (task) {
-        var existingTask = $scope.tasks.find({id:task.id});
+    rs.onChange(function (oldTask,newTask) {
+        if (!newTask) {
+            //delete
+            $scope.tasks.remove({id:oldTask.id});
+            return;
+        }
+        var existingTask = $scope.tasks.find({id:newTask.id});
         if (existingTask) {
-            Object.merge(existingTask, task);
+            Object.merge(existingTask, newTask);
         } else {
-            $scope.tasks.push(task);
+            $scope.tasks.insert(newTask,0);
         }
         refresh();
     });
@@ -144,8 +160,7 @@ function TaskController($scope) {
             $scope.noTaskTitleWarning = true;
             return;
         }
-        var task = rs.add($scope.taskText);
-        $scope.tasks.insert(task,0);
+        rs.add($scope.taskText);
         $scope.taskText = '';
     };
     $scope.$watch('taskText', function (value) {

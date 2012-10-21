@@ -1070,6 +1070,8 @@ define('lib/webfinger',
             'https://'+parts[1]+'/.well-known/host-meta.json'+query,
             'https://'+parts[1]+'/.well-known/host-meta'+query,
             'http://'+parts[1]+'/.well-known/host-meta.json'+query,
+            'http://'+parts[1]+':8887/.well-known/host-meta.json'+query,
+            'http://'+parts[1]+':8888/.well-known/host-meta.json'+query,
             'http://'+parts[1]+'/.well-known/host-meta'+query
             ]);
         }
