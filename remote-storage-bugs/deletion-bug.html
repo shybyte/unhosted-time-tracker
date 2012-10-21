@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RemoteStorage Deletion Bug</title>
+</head>
+<body>
+<div id="remotestorage-connect"></div>
+<h1>RemoteStorage Deletion Bug</h1>
+
+<button id="addButton">Add</button>
+<button id="printButton">Print</button>
+<button id="removeButton">Remove</button>
+
+<script src="https://raw.github.com/RemoteStorage/remoteStorage.js/gh-pages/build/0.7.0-head/remoteStorage-modules-debug.js"></script>
+<script src="../libs/jquery/jquery.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        remoteStorage.claimAccess('tasks', 'rw');
+
+        remoteStorage.displayWidget('remotestorage-connect');
+
+        // open a task list (you can have multiple task lists, see dataHints for naming suggestions)
+        var todos = remoteStorage.tasks.getPrivateList('dummy-todos');
+
+        function printTasks() {
+            todos.getIds().forEach(function (id) {
+                var task = todos.get(id);
+                console.log(task.completed ? '[x]' : '[ ]', task.title);
+            });
+        }
+
+        $('#addButton').click(function () {
+            todos.add("Delete Me");
+        });
+
+        $('#printButton').click(function () {
+            todos.getIds().forEach(function (id) {
+                var task = todos.get(id);
+                if (!task) {
+                    console.log("BUG: Got "+task+" for id "+id);
+                    return;
+                }
+                console.log(task.completed ? '[x]' : '[ ]', task.title);
+            });
+        });
+
+        $('#removeButton').click(function () {
+            todos.getIds().forEach(function (id) {
+                var task = todos.get(id);
+                if (!task) {
+                    console.log("BUG: Got "+task+" for id "+id);
+                    return;
+                }
+                if (task.title == 'Delete Me') {
+                    todos.remove(id);
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
