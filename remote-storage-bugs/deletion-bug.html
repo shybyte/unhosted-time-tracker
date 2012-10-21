@@ -7,6 +7,7 @@
 <div id="remotestorage-connect"></div>
 <h1>RemoteStorage Deletion Bug</h1>
 
+<button id="clearLocalStorageButton">Clear LocalStorage</button>
 <button id="addButton">Add</button>
 <button id="printButton">Print</button>
 <button id="removeButton">Remove</button>
@@ -29,6 +30,11 @@
                 console.log(task.completed ? '[x]' : '[ ]', task.title);
             });
         }
+
+
+        $('#clearLocalStorageButton').click(function () {
+            localStorage.clear();
+        });
 
         $('#addButton').click(function () {
             todos.add("Delete Me");
