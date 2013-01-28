@@ -147,6 +147,21 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
                 myPrivateBaseClient.on(eventType,cb);
             }
         }
+
+        function getAll() {
+          return myPrivateBaseClient.getAll(listName + '/').
+            then(function(map) {
+              var listing = [];
+              for(var id in map) {
+                var task = map[id];
+                task.id = id;
+                listing.push(task);
+              }
+              return listing;
+            });
+        }
+
+
         // Class: TaskList
         return {
             // Method: getIds
@@ -223,7 +238,9 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
             // Method: on
             //
             // Delegated to <BaseClient.on>
-            on            : on
+          on            : on,
+
+          getAll: getAll
         };
     }
     return {
