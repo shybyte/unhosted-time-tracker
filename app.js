@@ -10,23 +10,26 @@ function isNotNull(o) {
 var rs = {
     taskDao:null,
 
-    init:function (onStateCallback) {
+    init:function (connectedCallback) {
         remoteStorage.util.silenceAllLoggers();
-        remoteStorage.claimAccess('tasks', 'rw');
-        remoteStorage.displayWidget('remotestorage-connect');
-        remoteStorage.onWidget('state', onStateCallback);
+        remoteStorage.claimAccess('tasks', 'rw').
+            then(function() {
+                remoteStorage.displayWidget('remotestorage-connect')
+                remoteStorage.onWidget('ready', function() {
+                    connectedCallback(true);
+                });
+                remoteStorage.onWidget('disconnect', function() {
+                    connectedCallback(false);
+                });
+                // 'ready' won't be fired until the next tick, so it's safe to
+                // default to 'false' at this point.
+                connectedCallback(false);
+            }.bind(this));
         this.taskDao = remoteStorage.tasks.getPrivateList('todos');
     },
 
     loadAll:function () {
-        var taskDao = this.taskDao;
-        return taskDao.getIds().map(function (id) {
-            var task = taskDao.get(id);
-            if (task) {
-                task.id = id;
-            }
-            return task;
-        }).filter(isNotNull);
+      return this.taskDao.getAll();
     },
 
     onChange:function (callback) {
@@ -48,10 +51,6 @@ var rs = {
         var task = this.taskDao.get(newTaskID);
         task.id = newTaskID;
         return task;
-    },
-
-    getState:function () {
-        return remoteStorage.getWidgetState();
     }
 
 }
@@ -126,17 +125,19 @@ function TaskController($scope) {
         }
     }
 
-    $scope.isConnected = isConnected(rs.getState());
+    $scope.isConnected = false;
 
-    rs.init(function (state) {
-        $scope.isConnected = isConnected(state);
-        if(state === 'disconnected') {
+    rs.init(function (connected) {
+        $scope.isConnected = connected;
+        if(! connected) {
             $scope.tasks = [];
         }
         refresh();
     });
 
-    $scope.tasks = rs.loadAll();
+    rs.loadAll().then(function(tasks) {
+        $scope.tasks = tasks;
+    });
 
     rs.onChange(function (oldTask,newTask) {
         if (!newTask) {
@@ -152,7 +153,6 @@ function TaskController($scope) {
         }
         refresh();
     });
-
 
     $scope.noTaskTitleWarning = false;
     $scope.addTask = function () {

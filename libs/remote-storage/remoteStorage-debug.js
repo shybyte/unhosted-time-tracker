@@ -1,4 +1,4 @@
-/* remoteStorage.js 0.7.0-head remoteStoragejs.com, MIT-licensed */
+/* remoteStorage.js 0.7.0 remotestorage.io, MIT-licensed */
 (function() {
 
 /**
@@ -342,71 +342,13 @@ var requirejs, require, define;
 
 define("../build/lib/almond", function(){});
 
-define('lib/assets',[], function () {
-  return {
-    remoteStorageIcon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACACAYAAABtCHdKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACAASURBVHic7Z132OZE1f8/w25YdnFh6U0QEBWXKshPYFdB0KWEpbyuCC+CoIjiCy9VEETFFylKky5iY4WlidSAIE1hAUF67yBVOixtiTzz++MkPHnmmZlMcud+2uZ7XbnuZHIymeSek3PmzDlnlNaaEYc4mhvYA9gROAb4PUnaM6htajFHQ404RoujqcDRwArAm8B8wO3AniTpDYPZtBZzLkYOo8XRROBY4EuF0heAxQvH5wL7k6T/GsimtWgx/BktjhYAfgJ8FxhtnH0cWN4oexc4EjiKJH2n+w1s0WI4M1ocjQJ2QZhsIQfVfcBKjnNPAweSpGd3oXUtWvTB8GS0ONoAMXJMLKH8J/DZEpqbgL1I0tubaFqLFjYML0aLo+WBXwCbF0p9D/B34Aue86pQx3TgRyTpCx21sUULC4YHo8XReOAHwO7AGOOs7wGuADbynFfG8SzgCOB4kvT9qs1s0cKFuQa7AV7EkSKOdkDGWvsiTKYrbO94zmEpGw8cCtyVTRO0aNEIhi6jxdE6wEzgNGBRqjFMCKP5tuWAPxFHl2fTBi1adIShx2hxtBRxdDpwLbAG9RilU0bLty8CtxJHxxFHC3b5yVuMYAydMVocjQX2QlTEcfQde7n2fWUAJwH/Yyk3x2a2MmXsvwr8DPg1Sfofx/1atLBiaEi0OJoG3AX8GBiLXyW0lbtoO5VoxboXQKYUbiWONmzw6VvMATA9KQYWcbQ64pc4if6dm8B9X9k7lnLloA2lWRFIiKNLEXeux0rqatFikCRaHC1CHJ0M3Egvk2H81pU8xe3dDq510eS/mwF3EEeHE0fzdfhGWoxwDCyjxVFEHO0J3At8k17J0QRTdUN1LLtPhIwr7yWOdiKOhoYq3mLIYeA6RhxtAtyBTAjPT/WOTkV6G6PVqSNkWxQ4BbiROJpU/yW1GKnovtUxjlYEjgK+jFsNM8vM82aZuY+jfEfgD4Vjm7XRLLftV/lVwHnAASTp0477tZjD0D1Gi6MJwI+Q8JVRWamPucp+zX3bsVm+LXBWth/CZOZxVQYr7r+LGHqObsNxWjSvOsbRKOLoO8D9wG70ZbI6KloonXkNiOpIB3V0QjcPcBAyftsm5NW1GLloVqLF0frIXNPKlI+zcPxWURnLGr8R4ljsQ6jamO9XkWrF/TYcZw5GM4wWR8sBPwe2IsyYYdsP+TX3bcdFfAEJlXGhW2qjb386cFAbjjNnoTNGi6OPIOEre9Lfsx7PMQFlxV9Xme24iP8H3OI572K0UIYL3TeP3wIOA45rw3HmDNRjtDhSwNeBw5HkN2VjFkr2fWV4ymzHOXqANZEpBRe6qTaGHD8O7EuSXuxpY4sRgOqMFkdrA78E1qLcMOA7tu2H/Pr2i3gfSWNwt+P8QKiNtmNb2dXA3iTpvY62thjmCGe0OFoKmWz+76ykihRrcrxm7tuOAd5GPgb3O56oU0brlNnM8h7gVODHJOmrjja3GKYoZ7Q4mgfYBziA3vCVMtO2We47JqAMT5ntGOANZIz2kOPJqo7POmW2UIZ7DTgYOKUNxxk58M+jSfjKA0gc1jgLhck8rvIQyVYm1UIYvLi9D6QBdKHtqFqP7x3ZrsuxIHA8kk7hy7QYEbBLtDhaDTgOWK9QWqWThjBI2b7v19y3Hb8ArA082f8Bu6o2diLNzHKAS5Dx26OW52gxTNBXokn4yq+QXPU2JrPB9XX2lYXsd7qlmepV5Zqy+4e2O/S92N6pWT4VuI84+kUbjjN8IYwm4St7AY8A38GtUvo6oI3GVRba4etcm2/5/JSpPobUad4fB71rP5Sxyt'
-      +'5ljrmB7wMPE0ffasNxhh/mysJX7kFcp+a30IR0hipf7xAJESJpfHVphMFAGC6UOets5jPY2lX2nlw0JhYDfoOkU5jsuL7FEMRo4BxkeaMqKGO+MsazHfv2bb/mvnn8n8Kvq1NXgSrUU9x3HdvaVxx7udpkjh9tWAQJ/1nhw4uU2gIZV9swG3gJMWxdBlystf7AenOl7gy4v4nJWuu3lFJ7IIGwOTbVWrumV2z33gw4sVC0u9b6Egvd/MBXgQ2BjwPzAs8CtwHTtdYPGPQ7AP8X2g4PDkX4xefWZ0PPaCRpKMik6ZLApwsEvq+4CR9dHalm28fY9zHa+4VfX6c2mcf166K31VUss7WzeM6EjznvBF5HjDxvGHTzAh9z1AnwSSRtxM7AQ0qpnbXWtvXiVvPU4UIeoTHBaEOMex7Thi2N6+c1CZRSOyHLc5na10Qk5nE/pdT+WuujCufmw/9uQjEfIpyqvqOeXNcfj3wd3kKCNJ8ouTCUAasynU81s9H66stVx9RDX2fDU5/r/fjeS8hH7D5kqam5gfWREJxO8CngKqXUlA7rKcMmFek39p1USu0G/A77ECfHXMCRSqlTK967qzAH1WshDsIXIPkVnyOsI+QIlWpVJFvdzcZoTTCXra228yHvxIWc7nFkvYGZyP/RZNbkMcAflFLdtGROVkqNLycDpdSqwFKe8xMQ1S0UuyilhkxaCVu6udHA3sCjwK6IKrkvohZA9a9xCONRYb/4a+4Xy0xGs6l2OVxqYNPjMl+bi3gBcdh+DYnSXrKE3obrEG8eEKZaDEntUJQySwDfAE7w1LMevWq4C285yiNkBdYLSq6Hcum3J6K65UiR8dwlwAfA54D96btW3k+AKUhqiX866v0O8l5yzMD9Pp6ylM1GtAwftCuvo0ZWyrwQiZ9aB9gB+braPESK15UxoI/pbOfLfs39/NhkNBOuMZWvrMq4zNYuG00ROWNdhCxPNdVDW4ZXtdY3G2XnKqVmICkecmyDn9H+obWeXbMNIAzUBKPtbhwfrrX+SeH470qp+4FLC2VfVkp9Smv9EPBvW6WZAaaI5yzvrUhvpob/wEefo2w+RiPhMDcgEm5F5Csym+5KNdtxVVWvaN7vpC5b3WXPUqYimnRvIQ7bE5FcIzcjhoSQuqrCtL6trpQaZaVsBqXjtEx9XddzfmHENS3Hu0g8Xx9orRPgVqP4k2HN7C5CJz4XQuZvpiNp1VYFzkBEtomqUq2MyXx1+rbQMZrr3r422J4j9D0UaWcDJyMM9mdEDToa+IilvqbwEL3vBkRDWbyL9/uoUmqVEpoNETXThWWM46c8UvbBkmsHBTZG83WQ9ZAvxteQxDtrIeplD+4O56vXdo6SffPXtZnzaFUlle3+traWPZsNHyAfqtWRccReiMGjbPWcjqHFudVMozDBRtsgyqRa2fl+jOahfbzk2kFBHVeeeZAwjpnABJJ0e2QweE12vkpH8XXasrrKmMTHaCHtLJN4daRZD/Jh+hxJuiuiit8K7EHvXNRAwJQG3b53p4xmjote8dC+ZBwvZKUaYHTiMzcRuIo4OgZ4jCT9LyQfvakjF1FHqlVlunyrY973tdHFWKGS5xrgiyTpN4DXiaPfIerixxz03cRixrE5+d00JrmmEZRSKwMfLbneNAg1It0HEiajVe3MAN9CfO82J0lnkqQbIVHY9znoTYR0anPf/K3LaL56bO1w0fme6R/AZiTpNODubKngW4CveNrla29HyKxmxbmtD3BY5BpEbua3oeqk9rBEU17giwOnE0dnEkdLkqRXIOrkrvT1MgnpQGVMFiqNXIxWpR5Xm0Ke5z5gO5I0JklvIo4+gRg7jqP+mKgJZvu2cfyg1vq9Buotg4uh5ghGq7I+WsgXd2NgMnH0M+C3JOn5xNFFyLzNXvRXWVx128qx7GOhz5GP0VzzaCaqzpfl5SYeR9ylLiJJNXE0NzIG24velHy+67uCzEQ+BUkPWMSlFvIiJiilvPNoWuvXA5rQj6Eyr5HhHoWgMq8VH7wT1nXVlnmROY5pxNHeJ'
-      +'Ol9wB+Jo3OBnZClbieU1O9jOrAzHsZ+6IS1j4l8TGFe8zySHeycD3N9SMawo5G5nDoeIq57h2CKUio3dc+HeIGYeB84raSe0kSvSqkJWuuycd5SSqlVtdbFrGRlZv3hgLGIo4EPPUVGa3QsAHwGuDKL2D6KJH0X+BVxdCawCzK2K3pnNyHVbIxWJUwm1K2qeO5VZK3s6SSpfPnjaH5kmeDtaEY9N+8fwngfQZyHfThcaz2QK5ZuSt/0f3OE2giddYIQVXIU8D3gWuJoPQCSdBZJejTweWQSvOhl4qs/5J5FGlN19NUB/dvg+/BoxJvjWGASSXpagcm2QOKVbGn5OtEUmkYP0O3EraaPpMlY5vGIzdocymiddpBlgBnE0YnEkcxrJOkrJOkhiNHkHMT65btPVaarYnW01el69veQD8TnSdJfkqRvAxBHHyWO/oh4eixS4d0MFvPNBVyolOoX82VgdsDmwvXG8bpZ0CZKqZWApQvnPkAWAhmOKHs/74V6hnSCYj1bINJt6w/PJunzJOkByMovieV+Icxho6szYe26H0hHOBuZCzuMJBW9XJap2oV8nqwZNPH+r0OcwddBTOvfpb8H+9KIh48P82ut5ynZXOOz2+g7dTAaCc6E/tLsJsrHOkMR7wS8n3mLjNbJn1pFNZoAHEkcnZ2tQiNI0idI0j0QZrzOU0eoVLOlMghhLvNePYhZfiOS9CCStLfjxNEqiPr1Q8RjpltqYp3rX9Va35xtV2utT0VCSc416HbsoF1l0MBfjLJNjN8cl3WxHYOOnNGq/olNdKC1gb8QR7sTR72WpyR9gCTdBTEk3Oa5n49RQlRHsw7bfa4DtiRJ9yFJe/3r4mgccXQQEv6xUoVn7pQBO3rnWuseJK6rp1C8olKqm/6AJgNt7DDrzxGMFoJO/mRXB4uQP/4S4mjNPlck6W0k6deRwDwz70SIZLIZQ0KYFMSN7L9J0l1J0r4pxePoi8hXeifk/XUqrcz2dBVa6+eBZ4ziMheoTnAlvf8FSBDr3khahhzPaq3v6mIbBh0hE9Z1OkHVL/YKwFnE0dnAkSTprA/PJOn1xNENyGTrbohhxSaFMH5DzftFk/79wPEk6Y39qOJoEWRN7k0InxOrOv9VrKObk9nP0NerfYFu3Uhr/bpS6ibEypxjP4OsTJr1GMc+ATEk/SJ9De6EwepAIeE3lxNHfZO0JKnO3Lq2QCIHXqA/I5vHRYlmO188fgJZyGPbfkwWRypbg/pySpLHWNCJit3NDmLGEXY7IavJSGaUfhmjvWgcL+qhNWPrzGsHBb6MxFXQhNTLr18YOJY4Opk46uvNkKQ9JOkFwOaIm9OrRl3FfZvV0aR9HokH+wpJehVJ2vcZ4mgFJG7sJ8gEcKdj07pjsuEOHyO9D1xVcv2/jGPfmHL5kmsHBabq2O2OUKWTrg+sRRwdD5xJkvaqD7Ic7Qzi6ELEaLIdvV/JvG6X6qiQeCYJU0nSYrSxII7GIN4rO+N3Eaqr6uXXhV6jK9Y/pKC1vlsp9Qz2seD1WmtXcp8c/RhNKTVOa/2OhfbTxvGQYLS6KsNAfZnHIvr8DOJoxX5nk/QdkvQ0RKU8A5lMzu+Vq0dFifYmMqG8JUl6joPJ1gLORxitrtN11Wuaph2KuNxRXmptzObpni4UjQF+atIppb6KRK3n6EGiKAYdpq9j0+hE4hWvm4gYS8TzIkn7hnUk6RvA8cTRDMSHcip9Vcd3kZRjf+xjaClC/BP3QZjW5uM4p0qsKUqp/h+kvrhKa122aOJl9A/RyctD8Av6ZuvaWym1FMLA/0HmCL9lXHOO1rrbEm2UUqps7P6h935VZmiSLpR+LiTl3YbE0WEk6cx+FEn6MvBz4uiMQn23AdNIUnf4exxtiuSuNEPmXe0bTAYaaKYM8YecQHmU9lXIeKxo1n9Ca20m03HhN0ieyjzH5VxI+NW2Dvoe4JDAujvBGNzS+sO2VFGNYGhIvSUQ6XUFEhXQf73nJH22sG8ma+mFrMt9IDJ5PthLIQ1lqdYxskUw/k7fSOvgSWqt'
-      +'9XtZ3v3z6JtI1YYeYD9zsYvBRD7h2jS6IfVMhpQMtHG0BXFUrYOKf+I3EGfmz9VsSzdoRzpMxqrkDaK1vhLx3fStfvomsJXW+uiKbesqqg72Bwuue8+H+BluQhwd3sdNyoU4WgmRYp/APrk5HMZVtvfxPHBF4fgOz/W3AEWLXXGu6W812pOPzx412vCQQSc+o4Ie4Frj/B2IASzH8+aNtNb3K6VWRD60GyCWzLnpXbbp/AArZhEPl7TZREr1d9Sj9KajizkZfVsoXRXaJuneR1TJi5yPG0c7A99E4uRs60YrRMq7ztWlbZpOAS+SpLao6RZDEFXGJYM5fii7dwqchfjV+XAe8lV1ScgqzzjY72PEjudGIkbjX2WlLkLrrHJvV1qBWxH/yCcBiKP5SNK+K5hKgpy5smmAw4mji5GVR4qTm91iskFlCKXUaGCRzJnYRfMp6rfzaa312456P1KmximlxtHf00MDL2qta8enZXkkeyqqkcXrQ9o+HstiiRZ8UNXq2C2mpEK9Of2LwDEk6V+BnJmmATsSR7ExGb04cBJx9GsgIUnvI452BP4LSRbkW9huoNAoQyqldkHSKawFjFNKvQzcDhyltf6rQX4/9a2uMQWjhlJqGyTGbTVgcaXUS8BdwNla699arl8HhwuWUur5rG0naK3dQwI7zkOyFn899AKl1HeQPrQasIhS6oWs7dO11jMslxyMRCKU4emc0apKlqalVRX6PG/9r0nSdzKL45eR3CS5Q+lY+i7kMBZJL/BDYFvi6HiS9GbgT8TR1Ug6uM3xd/bi+CgU3ZBm3jozCXYCEl50NuJZ8xRi/NkA+ItS6jDgx1kefrJyW73jkKj3HyCJYG24O7vvGCRJ0Tez+x4OPAYsh1h2T1NKbQjs7HCd2pK+c3ELIetTr42kXDgD2EVr/a7v+bO2jEIY+OUy2ox+PsQlb0vg9Gx7CUmPOBU4Uyn1RWA3y+IaDyL5S314ryjRhpK0ymFedxtwGEkqmZviaA2ESSbS1zAyD2LmzZEvRauQkJwTiKNbgONI0oeBg4mjCxBrZNHVqw5zFa+rQt8Ufo4sLvhVrfX5xrljs6/2rxDpdgGA1tpqRSus1nmP1vq6kvvuikiPr2itzfXQTlRKTUeiu/fFvnD7TK21lTGUUlORj+u9yPOVYVUkG/N4pdQSPrU5ww+RDF1rGOnwAKYrpTZCJqUfAI4xzs8KeDe11YU6HalOZ8qvewU4kCT9Fkn6GHG0bJbz/zT6Rjjn9OYaz/PQn2k+B5xJHB1MHC1Kkt6FeBn8HHi7RnvrSrxQ+lJapdRCiCT7qYXJAMhSGlyGdK5GkEnRvYDfW5gsv+9fkaxheyilKi1LpbXOMzx/P3Cp3snI9IUGvMvrZslPd0VS75lMlt//CmS5sv2UUmNtNGUwGa3bDFS1M+Zq4lSSNCGOFiSODgT+RO9ypjbTt4/RiteMQlTGi4mj3YCxJOkMZLGOS7rwPOZ1VehD8G1EZT6lhO5IYE2l1GoV2uDDhohB46gSupMQ48GWNe7xS0RKbRpAOwlZ7ehBPAscZtgKMQoeWUJ3MBIHNzXg/v3gkmjd7jjFa1yd9XbER/EIICWOvo2MF75Gr7XUZJx832S0sQ7aIr3UL0Ger2eZuXYAHnG0tRMJ3S361YBrtdZvltDluViWq1C3D8sDr5QlY9Vav4KErXy86g201q8iHvwfCyCfjDDaTEokGvIObi5bf0Br/RIyuV3rnZWFhA8Ew5nXv4o4j24PPEocbYmoOv9LX1Oq2eGLx6Z4t6mONoZZEFGpLiKONiBJb0Msk0cg6mSd5+lE6lXFsvgX6QNAaz0LGcMuXUYbiKXpn4fEheeRdtaBmYKhH5RSywJLIUx2A/CZEnVvacJX03mOmu8sZIzWhLQKQQ9wJrAxSXohYjU6HzgUsf646gxRHcc66GxMp5Cv1gnE0XRgIkn6B8R1yLcgRJMSr+7H6qNY3JYceI5eT/hOsVRWXwj+TX0Gf5HyZYAnI0OOfyDMFiFTHC4sSfhH9A1qvrOqniFNdCDbdie'
-      +'wFUn6U2Bx4ug3iLl1Rcc9yxjGJ9Fw7NvusRZwbmZ4GUOS7o1I2scc96+LJuoAmEW4WrYz8IcG7gnSmcti1nL8h/oLWyxIucl+EnC31nqW1vpRhLF947TR9E/+48J+iLZVGTmjDYTEsuE1ZI7mq8DLxNFhSPzT5w06H1OZ5yFMopl1+O4TIzkof4CYeGNEnbTNB/ngk6pVr7fhEfpGGDuhtZ6ptS5zoB1qWIry1ASTgWKCpZBxWhC01o/UfWdFidYJ0/iklQ09wAxkovRSJLfjNcDW2B1+bffy3ddmdXTRm+Wu5xqDSIFrESPJ7xFr22Ulz9/EByn0+vOA1TPv9hGFbJy1DJ4xqFJqAWS6pxgUPBNYRynVhMZQGzbVsckOYqvvHsS8+yPEVPs3YHf6q3uu67Hsm3RmXaZEs9XrKjcxP3AQcDXwWZL0e4irU5PLH9V9/2choSbTs7mtkYRdkHkxn+P4usj7KjLaDYiXSdkSVl1F6BitCeZ7A9FvpyIp5a5EFixcOPA+IYySb2bewHGeusskm+u6pYETs0xcsxE3sCOQ/CRV0NiHTWv9AeIVsgpwuVKqKWPHoEIp9QlkfHRKZmZ3YTLwjJEn5A7kP2lEfayLTr56oR1CI75vP0OsYmcjFkVbCgNfXo6QQMucpmwezfXrY2wc59YA/owEDx6GuDUdgkjrbqqTVmitH1JKTUGk2z1KqWOBkzrxhB8gzKOUKv5vCyNSaF3kA/0w5e5X+UT1h9Bap0qpW7J6bE7NnWK8Umr9Epp+vo45mvJ5vAcxdjyPpAfbylO/jbFs7QphQJfqSOBvqFQrYmNEqp0BfD/7PYz+CT3roBJzaq2vV0qtjjD8AcD+SqnfAkdrrZ/2Xz1o8LXrGmAzn0OxUmpuxEpsphsHUR+nddY8J1akf6S4iad9niGdfHnfRP7gaUiu+pnAVxz12ur3dXawM0VxKxujhdTjaoetjfkWId7rNyPq20bIV9jldRAi8WpJPa31y1rrXREV91Dkv7g/S3AzFLELvVmttkWcxU9F0iOsh52Bivgsosn0z44mZZ/KfEGbxp1IwijftmYV1TH0Dz8HURNjZNKwuDA81JdmVRAi0bCU+ZisCgOMRyIBdkLGbZMR6ZYvkNEVtdGGzHXpCKXUMcj/8hul1Apa68acihvCBTbv/UxSHQj8WCn1sNb6LMf1k5GJZ9uqNDcilu51CfBhVUo9hli/bbhKa71z4TjVWr9QVmeTlqn7kRCIhYGLgGXpPw5zdS4XTVEtLBujFc+7jCHmPTodr5VJoCWR2LD7kPz90xHGW87zHD7UZk6t9fuI9/ljwClKqRu01mX5CAcdWbsPVkotDhynlPqrI5xmEvCPzCBk1vGGUuq+jCbEWfx07IbCrfEvsOGEyWh1/shZiGpyB+LhvBbuXI2h0qyM2cxfEz6JZt7TJc2KZb7xmg0mzSqIkeQaJJvuRkhYic81rBEV0oTW+tQsvup3SqlltNahHh2Djdz/dUskmaqJScBlSqm1Hdc/RbknPwBaa1u8HEqpVajp1dKpRDsXseR8F1GNypKh2jpLiNGjamq3uoyW/4aokljKyxhiQ2SS/kykw+xN9aWgmsCJiGFqChIRMeShtX5NKfUAsLJ5LnMkXghhxO091bynlIoG4+NSN/DzQWQFl5cRUbxF4VyVL7JPYpTV5RtDlc2jhbTTx2RVnsvcRiFzXRcgWsDONLTiiVJqm0CvkFuRMUuVZYGHAh7A3uZ1kXSDy+AxSCDGkjUGpKUGbBLN90V+Cwnu60GCC+ejvxSrksqtTJrVURuhXKIV7+ljcrOseOxTJ0Ok7zhEHXoJCY9fDAkFGuOoL6TOI4GjkQ+hE1rrWUqpJxFDVRP4D9LuEMxNuAOyidfpvywTCKPdUTJ18UKW7GcSffOfzCa87WOo7pAAVJNof0YSruyEjMVcmaNCOkmZRMJzLmTrZTTJjuVLmOq6t68NtucIfQ8m7aLIFMCmiFta2aJ8PjyDLJgYgkUID20pw5uIw28IFkecyZvEusBNAXQ303+c9gzhoS9'
-      +'LIhmRK6OM0RQyI38EsCwyDvsY4Z2oWE9IR62i3vm2ouo4tsO6QhjTVb8LNtqJyNJEESKZngmsqwjXYn99by7Ot+ORJYWbwIuEx5gtgSyN3AiUUvMiyXj6rzveHzfR3xXracLbvjT+iXUnfBPW7yLeDU8hKs6aAfVVlWZmmasOHL+ua4qqo8uyZ7uurMzW/tBnDWWa9RHPktuROckqatajwIYBnuqbIOr/PRXq9mEmML9SalUfkVJqCaSz3tzQfUGSLI0iXKItrpQqeus8Aixf5heajX0Xxr/AhhMuRrsRuA7YBrFM9bmnZ7O20UET0pnL7udqw2jiKDfD2vKFhEipqkxW9ry+d2Lbtsi2v9Cb46MMv0I0jm+6CJRScyHpGs5ucJG+65EOWOa9sSfiXN7k/N06SLbkkFQK/0Q+XEX18UIkfcZeJdfuBzxOTSutyWjPIUy2CuLZEVHta+xjvtDOXZfBXFKt6lxVFUb0fThC3okLxWfYHFgW+WL7PNfRWj+FTLcckc359K1U0rydhfhfWueK6iCbVN4V+JpS6ns2GqXUdsBuwL6Zt0pTCB2fkflK3kVBfcyS8hwH/I9SyrqoYfZM2wOHBqxsakVudXwfYbLxhE3quTqLaXFUlnNmWVnH81kZffNtY5FBesgcWnHf9xsi5cwy2/OVMbWJhZAv978RVd5neNgbGaPeqZQ6H5GG7yAZsr6E/OdfaDq6Wmt9lVLqKOAEpdTWyAe7mKn4S0jex9ObumemIq+DZT1rD24GvmCUHYVYfWcopXZAJN+TSFqISYh718FIsK+JBbM06D68PRphstnIV9NEKEO5aKtORoe4XIVOXo8r/LqYyzzulMlCpbmv/T66xbLfN5H/rR+yr/Y3lFJXIGOx7RDL5h2IC9jJIb55BcxGkt2UQmt9gFLqPCQw76RmPAAABX9JREFUdhpimHkOcc+brLW2Ofz2ZPcIQUrf514RWIBAiZbhJuB7Sqn58rR82QT2nkqpa5C0GlsgUv8RRAL+n9b6akd9H0e0BB+eVnrT0ZsgGWRdEai2tchc5WXnzXJK9n2/5r55vDFJ+gBxNAXJaJyjLqPlvyFMZh6XlZfVZeJ2YA+S9AbH+RZDDHORpJcjY7K9sS/4HfI1Dv2Sm2V4zoVIC99xLtGaGKOFMobtuUPek4vGxL8RT5K1WiYbXhBjSJKmJOmxyIojp+JOv+XrbDYaV1lo561zbb65jCEhdZr3x0Hv2i/72LjOuZjvfWRu7ZMk6W9J0tD0aC2GCPpaHZP0JZL0u4g/2N8KZ0K/wGVf9aqdtZOtjtWx7P6h7Q59L7Z3apZfAqxEku7Xb4HFFsMG9nm0JL2LJF0fGRg+WTjj+wKHMlw3GMx2fc5otsQ8Td7P94xlHx5XO0AMCFNI0s1J0lqTpC2GDvwuWEn6J8SJ8yDsyUJDOo/v2DxXLDN/qzKKaXWsyqi++4cyoOsduT5KIJOn/wus9uFqpi2GPcqdipP0PZL0UMQqeWZWGtJxqjJGGU1IHXUZLeQ+WM6H7IcwmELGxScDnyBJTyBJa02MthiaCPfeT9JnSdLtkQm8WynvSL5j136dzXV9k54hZff1PY+tfeb7uhr4DEm6G0napNdEiyGC6oGfsvbzOsiC4C9Qzlw4zpu0Nqnho+lUooXWU0bre6ay9/E4srjHFJL0XlqMWNSLsE5STZL+EZmZPwKZ2Q+Vbua5JqRaHUYLaYPrOULa63sHbyERESuTpBfTYsSjbioDQZK+RZIeRG/ymarME0JTlxFzRpu3xrV12uXbp7B/OvBpkvRIktTqRtVi5KGZdHNJ+gSwNXG0PhKWnydQqerHWDxXxeHYBpevowkbMxT3zTKbZLOdM/dvAvYiSW/3tKXFCEVnEs1Ekl6HpJvbHXgFf8drQh0LkWhVrI6+9oW01/aszwI7kKTrtUw256JZRgNI0g9I0lOR0PwT6fX8Hki1EfpaHevW0Qnde0hm4JVJ0rMD316LEYrmGS1Hkr5Oku6DpEC4iuakWlkHz8ttqmNTjFxWz3nAKiTpISRp1V'
-      +'VBW4xAdH+xuiR9ENiMONoEcYxdoXC205gzH+Yt/JrMbEJV2Hd9GEAWPNiHJLXFXbWYg9E9iWZCwnE+gyzj9AbVpQQV6U1Gq1NH6PYiEsq/bstkLWwYOEaDPBznl4hV8nf0Sq5O1DTXVtcFq8p9UiRodmWS9Pdt+EoLF5TWTa05WANxtDqSWXcS5RHUZdmQzbIXEIY2Vx5pSn28FNifJG1y7eoWIxSDy2g54mgakpx1GewM5UtZ4Cp7E7F82tKQ2ZjNLLON6xSS/31fktSVQ6JFi34YWNXRBQnHWQ1JgfYufrXNVm4rG0dnaqNZ92tIuoe1WiZrURVDQ6IVEUdLIdLta4XSqmpjjjVxJx8tk2r5/gfIelw/bT3rW9TF0GO0HHG0DjJ+W5P6jDYFuNJxLoTRrkHM9ff7G9uihR9DQ3W0IUnzBQm+jZjP61gGF/Kc821PANNI0k1aJmvRBIYuo0EejjMdWXzuKPqG44Rsi3jOYSmbheSlX40kDVnruEWLIAxtRsuRpLNI0h8CqyNZoUIZbeFAOpAsviuTpEe14Sstmkb3XbCaRJI+DkwjjjZAwnEm4p4Xg15G86ENX2nRdQwPiWYiSa9BjCR7IFmj6qiOz9CGr7QYIAxPRoM8HOcUJB3eSYgZPoTR3gMOoQ1faTGAGLrm/aqIo4mI3+GXCqW3I1mXc5yLuE01tQBfixZBGDmMliOOpiLzbysA/0Lcum4H9mwXhmgxWBh5jAYQR3Mj47ftgBOA1rO+xaDi/wO7COZkDAUh8gAAAABJRU5ErkJggg==',
-    remoteStorageCube: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAR2SURBVFiFtddfqGVVHQfwz2/vfZ28c2WgP6hMoYkUV4qIYnSKmaQYwaaJ3oLeUnpJmDCmUhCaIhhKGelhelCqN9+ECKdAxR6kgnJASBN9KTGwP2oKTtyZs8/+9bDXPufcfe51xju6YLHX2fu3ft/v+q7fWb/fisy0o3brez6qmt4Luvo7frvx/E7cxNsmcCj2WGnuEb6JaXlbSz8zaX/ksXzj3SHwg6j8aeU28jjeh8TZ8nU3Aq8Sx+2b/ML3s3vnCHxp5YB0Hz6OTkgpMax2jxBSoMJfhGMemTx5aQQOxzWsnCC/gm6hZ+mvFMv36xUYCJQev2Jyt9P54tsj8OVYNW2+izuxIkzlAoGUQuLlMuNqKcQCgVBJNSa4X93+xK/zfxcmcLj5GtUJ8ipMC/i0gA/PQYF/lFkfHClQFxJ1IVET/6S72+n2oa0JHL7s0+RPsR9tAZuOxuNtGKS9xpL8A7BmNP4j8S2nzz+lGJaWDxB7RyCbV54DkZiSrbAhbJBt/25LtUbEY2+P1bdmQY1V8mr8DruET5Z9n4NHTOmmZK9A2ihzp3RdL3tVy+z16OeG0ElncI48yGzeogIzQgexByelp2fMZ+CDAtFK56XzxFwBXSE6C9incbL4PDha9BKBPrjCddJRVT5DHsMLczkLUGhFbPR9iJNYjJUXyGOqfEY6KlxnHrybVjwm0JVDJmV8FZ8TeZysZdyBK9FKXb/6mdTZ+4uXRXcKUxnHpavKdqV58G5JYJFdLvT3yuok3ROiuY3JZ3Rxu7CH7lxvHlPpNVX+nJU/yMk9VJ8nm5GvMc42W6Bwnhl2KRyQ7cOyaqy1R0ScEvFq6aestUdk1cj2YeEA3RwwtwbfSoHtxxmJXeS3nV25RR0/9KnJL8GZyz7i7MoD5MfQ9LZ5YZ+WY+AiW16vc8if/av8PkRevxNPiwTiLceRISPIM3iUOGxa/wfUbiTvxy3ETb3tRfi0HAMx+xgLY1XIeAUPYoO4S+YNqupyVXW5zBuIu/pvHuxtq5j5DLHkfxsFxoaBlN1vVKbEN2TQ5wdYLc8++YibhZvJx3VZizgy8rVEYhwDfUKZFxd/Jf8m4gsydtENJ17TZ8lcLbOGrFfJrKmOiDxHPk58GJ8oPqu3UmDOLr2B5/AhYt08K9Z9AMdAsCeQml6BnKdiriC+iP/iKWkdH7gQgSRfQoi4SWoLcMqsRaUcZiX1xu4yrZmpp6p721lavlLYK/PfeIm4djsCE7xZDNqSVocV9evNJCKIjq6TuTbbAlWvQGZfiCwWJqkqqb7pMUwG0IV/QXwdz1ouKjZXOP021EQjqt2i2k00/Tv1Evj8OfRnC1aPeokl2e/LrM/aYUk2Pgc43T6knqzjBCZytqqhpGpK0DXCmrC26d1Qgs3BJzihnqyPwbdWYJMaFyzLnyuW6yMFLrEsH7ftLyZ/LxbX7vRisrwFW7VHJk/a1+4njuL1udx5Rd9nW/A6cdS+dv/FgHPpl9PhorH67l9Ox62/nv8YdPX3dno9/z+G+TGrzjgPKwAAAABJRU5ErkJggg==',
-   widgetCss:
-      //make the things as a whole wide by default, or just the cube in 'connected', 'busy' and 'offline' states:
-      '#remotestorage-state { position:fixed; top:15px; right:15px; height:32px; width:275px; font:normal 16px/100% sans-serif; z-index:99999; background:rgba(0,0,0,.3); padding:5px; border-radius:7px; box-shadow:0 1px rgba(255,255,255,.05), inset 0 1px rgba(0,0,0,.05); transition:width 500ms, background 500ms; }\n' 
-      +'#remotestorage-state.connected, #remotestorage-state.busy, #remotestorage-state.offline { width:32px; background:none; box-shadow:none; }\n' 
-      //style for both buttons:
-      +'.remotestorage-button { margin:0; padding:.3em; font-size:14px; height:26px !important; background:#ddd; color:#333; border:1px solid #ccc; border-radius:3px; box-shadow:0 1px 1px #fff inset; }\n' 
-      //style for the register button:
-      +'#remotestorage-register-button { position:absolute; left:25px; top:8px; max-height:16px; text-decoration:none; font-weight:normal; }\n' 
-      //style for the connect button:
-      +'#remotestorage-connect-button { position:absolute; right:8px; top:8px; padding:0 0 0 17px; width:90px; cursor:pointer; text-align:left; border-radius:0 3px 3px 0; font-weight:normal; }\n' 
-      +'#remotestorage-connect-button:hover, #remotestorage-connect-button:focus, .remotestorage-button:hover, .remotestorage-button:focus { background:#eee; color:#000; text-decoration:none; }\n' 
-      //style for the useraddress text input:
-      +'#remotestorage-useraddress { position:absolute; left:25px; top:8px; margin:0; padding:0 17px 0 3px; height:25px; width:142px; background:#eee; color:#333; border:0; border-radius:3px 0 0 3px; box-shadow:0 1px #fff, inset 0 1px #999; font-weight:normal; font-size:14px;}\n'
-      +'#remotestorage-useraddress:hover, #remotestorage-useraddress:focus { background:#fff; color:#000; }\n' 
-      //style for the cube:
-      +'#remotestorage-cube { position:absolute; right:84px; -webkit-transition:right 500ms; -moz-transition:right 500ms; transition:right 500ms; z-index:99997; }\n' 
-      //style for the questionmark and infotexts:
-      +'#remotestorage-questionmark { position:absolute; left:0; padding:9px 8px; color:#fff; text-decoration:none; z-index:99999; font-weight:normal; }\n' 
-      +'.infotext { position:absolute; left:0; top:0; width:255px; height:32px; padding:6px 5px 4px 25px; font-size:10px; background:black; color:white; border-radius:7px; opacity:.85; text-decoration:none; white-space:nowrap; z-index:99998; }\n' 
-      +'#remotestorage-questiomark:hover { color:#fff; }\n' 
-      +'#remotestorage-questionmark:hover+#remotestorage-infotext { display:inline; }\n' 
-      //make cube spin in busy and connecting states: 
-      +'#remotestorage-state.busy #remotestorage-cube, #remotestoreage-state.authing #remotestorage-cube, #remotestorage-state.connecting #remotestorage-cube {' 
-      +'   -webkit-animation-name:remotestorage-loading; -webkit-animation-duration:2s; -webkit-animation-iteration-count:infinite; -webkit-animation-timing-function:linear;\n' 
-      +'   -moz-animation-name:remotestorage-loading; -moz-animation-duration:2s; -moz-animation-iteration-count:infinite; -moz-animation-timing-function:linear;\n' 
-      +'   -o-animation-name:remotestorage-loading; -o-animation-duration:2s; -o-animation-iteration-count:infinite; -o-animation-timing-function:linear;\n' 
-      +'   -ms-animation-name:remotestorage-loading; -ms-animation-duration:2s; -ms-animation-iteration-count:infinite; -ms-animation-timing-function:linear; }\n' 
-      
-      +'   @-webkit-keyframes remotestorage-loading { from{-webkit-transform:rotate(0deg)} to{-webkit-transform:rotate(360deg)} }\n' 
-      +'   @-moz-keyframes remotestorage-loading { from{-moz-transform:rotate(0deg)} to{-moz-transform:rotate(360deg)} }\n' 
-      +'   @-o-keyframes remotestorage-loading { from{-o-transform:rotate(0deg)} to{-o-transform:rotate(360deg)} }\n' 
-      +'   @-ms-keyframes remotestorage-loading { from{-ms-transform:rotate(0deg)} to{ -ms-transform:rotate(360deg)} }\n' 
-      //hide all elements by default:
-      +'#remotestorage-connect-button, #remotestorage-questionmark, #remotestorage-register-button, #remotestorage-cube, #remotestorage-useraddress, #remotestorage-infotext, #remotestorage-devsonly, #remotestorage-disconnect { display:none }\n' 
-      //in anonymous, interrupted, authing and failed state, display register-button, connect-button, cube, questionmark:
-      +'#remotestorage-state.anonymous #remotestorage-cube, #remotestorage-state.anonymous #remotestorage-connect-button, #remotestorage-state.anonymous #remotestorage-register-button, #remotestorage-state.anonymous #remotestorage-questionmark { display: block }\n'
-      +'#remotestorage-state.connecting #remotestorage-cube, #remotestorage-state.connecting #remotestorage-connect-button, #remotestorage-state.connecting #remotestorage-useraddress, #remotestorage-state.connecting #remotestorage-questionmark { display: block }\n'
-      +'#remotestorage-state.interrupted #remotestorage-cube, #remotestorage-state.interrupted #remotestorage-connect-button, #remotestorage-state.interrupted #remotestorage-register-button, #remotestorage-state.interrupted #remotestorage-questionmark { display: block }\n'
-      +'#remotestorage-state.failed #remotestorage-cube, #remotestorage-state.failed #remotestorage-connect-button, #remotestorage-state.failed #remotestorage-register-button, #remotestorage-state.failed #remotestorage-questionmark { display: block }\n'
-      +'#remotestorage-state.authing #remotestorage-cube, #remotestorage-state.authing #remotestorage-connect-button, #remotestorage-state.authing #remotestorage-useraddress, #remotestorage-state.authing #remotestorage-questionmark { display: block }\n'
-      //in typing state, display useraddress, connect-button, cube, questionmark:
-      +'#remotestorage-state.typing #remotestorage-cube, #remotestorage-state.typing #remotestorage-connect-button, #remotestorage-state.typing #remotestorage-useraddress, #remotestorage-state.typing #remotestorage-questionmark { display: block }\n'
-      //display the cube when in connected, busy or offline state:
-      +'#remotestorage-state.connected #remotestorage-cube, #remotestorage-state.busy #remotestorage-cube, #remotestorage-state.offline #remotestorage-cube { right:0; opacity:.5; cursor:pointer; display: block }\n'
-      //display the devsonly text when in devsonly state:
-      +'#remotestorage-state.devsonly #remotestorage-devsonly { display: block }\n'
-      //style for disconnect hover only while hovering of widget:
-      +'#remotestorage-disconnect { position:absolute; right:6px; top:9px; padding:5px 28px 2px 6px; height:17px; white-space:nowrap; font-size:10px; background:#000; color:#fff; border-radius:5px; opacity:.5; text-decoration:none; z-index:99996; }\n' 
-      +'#remotestorage-disconnect strong { font-weight:bold; }\n' 
-      +'#remotestorage-state.connected #remotestorage-cube:hover, #remotestorage-state.busy #remotestorage-cube:hover, #remotestorage-state.offline #remotestorage-cube:hover { opacity:1; }\n' 
-      +'#remotestorage-state.connected #remotestorage-disconnect:hover, #remotestorage-state.busy #remotestorage-disconnect:hover, #remotestorage-state.offline #remotestorage-disconnect:hover { display:inline; }\n' 
-      +'#remotestorage-state.connected #remotestorage-cube:hover+#remotestorage-disconnect, #remotestorage-state.busy #remotestorage-cube:hover+#remotestorage-disconnect, #remotestorage-state.offline #remotestorage-cube:hover+#remotestorage-disconnect { display:inline; }\n'
-  };
-});
-
+/*global Buffer */
+/*global window */
+/*global console */
+/*global Uint8Array */
+/*global setTimeout */
+/*global localStorage */
+/*global ArrayBuffer */
 
 define('lib/util',[], function() {
 
@@ -419,9 +361,232 @@ define('lib/util',[], function() {
 
   var loggers = {}, silentLogger = {};
 
-  var knownLoggers = ['base', 'sync', 'webfinger', 'getputdelete', 'platform', 'baseClient', 'widget', 'store'];
+  var knownLoggers = [];
+
+  var logFn = null;
+
+  var logLevels = {
+    error: true,
+    info: true,
+    debug: false
+  };
+
+  var atob, btoa;
+
+  // btoa / atob for nodejs implemented here, so util/platform don't form
+  // a circular dependency.
+  if(typeof(window) === 'undefined') {
+    atob = function(str) {
+      var buffer = str instanceof Buffer ? str : new Buffer(str, 'base64');
+      return buffer.toString('binary');
+    };
+    btoa = function(str) {
+      var buffer = str instanceof Buffer ? str : new Buffer(str, 'binary');
+      return buffer.toString('base64');
+    };
+  } else {
+    atob = window.atob;
+    btoa = window.btoa;
+  }
+
+  var Warning = function() {
+    Error.apply(this, arguments);
+  };
+  Warning.prototype = Error.prototype;
+
+  var Promise = function(chained) {
+    this.result = undefined;
+    this.success = undefined;
+    this.handlers = {};
+    this.__defineSetter__('onsuccess', function(fulfilledHandler) {
+      if(typeof(fulfilledHandler) !== 'function') {
+        throw "Success callback must be a function!";
+      }
+      this.handlers.fulfilled = fulfilledHandler;
+      if(! this.nextPromise) {
+        this.nextPromise = new Promise(true);
+      }
+    });
+    this.__defineSetter__('onerror', function(failedHandler) {
+      if(typeof(failedHandler) !== 'function') {
+        throw "Error callback must be a function!";
+      }
+      this.handlers.failed = failedHandler;
+      if(! this.nextPromise) {
+        this.nextPromise = new Promise(true);
+      }
+    });
+
+    // //BEGIN-DEBUG
+    // if(! chained) {
+    //   var _this = this;
+    //   var stack;
+    //   try { throw new Error(); } catch(exc) { stack = exc.stack; };
+    //   this.debugTimer = setTimeout(function() {
+    //     if(_this.result) {
+    //       // already resolved for some reason, without clearing the timer.
+    //       return;
+    //     }
+    //     if(_this.handlers.fulfilled) { // only care if someone's listening
+    //       console.error("WARNING: promise timed out, failing!", stack);
+    //       _this.fail();
+    //     }
+    //   }, 10000);
+    // }
+    // //END-DEBUG
+  };
+
+  Promise.prototype = {
+    fulfill: function() {
+      if(typeof(this.success) !== 'undefined') {
+        console.error("Fulfillment value: ", arguments);
+        throw new Warning("Can't fulfill promise, already resolved as: " +
+                          (this.success ? 'fulfilled' : 'failed'));
+      }
+      //BEGIN-DEBUG
+      clearTimeout(this.debugTimer);
+      //END-DEBUG
+      this.result = util.toArray(arguments);
+      this.success = true;
+      if(! this.handlers.fulfilled) {
+        return;
+      }
+      var nextResult;
+      try {
+        nextResult = this.handlers.fulfilled.apply(this, this.result);
+      } catch(exc) {
+        if(this.nextPromise) {
+          this.nextPromise.fail(exc);
+        } else {
+          console.error("Uncaught exception: ", exc, exc.getStack());
+        }
+        return;
+      }
+      var nextPromise = this.nextPromise;
+      if(nextPromise) {
+        if(nextResult && typeof(nextResult.then) === 'function') {
+          // chain our promise after this one.
+          nextResult.then(function() {
+            nextPromise.fulfill.apply(nextPromise, arguments);
+          }, function() {
+            nextPromise.fail.apply(nextPromise, arguments);
+          });
+        } else {
+          nextPromise.fulfill(nextResult);
+        }
+      }
+    },
+
+    fail: function() {
+      if(typeof(this.success) !== 'undefined') {
+        console.error("Failure value: ", arguments);
+        throw new Error("Can't fail promise, already resolved as: " +
+                        (this.success ? 'fulfilled' : 'failed'));
+      }
+      //BEGIN-DEBUG
+      clearTimeout(this.debugTimer);
+      //END-DEBUG
+      this.result = util.toArray(arguments);
+      this.success = false;
+      if(this.handlers.failed) {
+        try {
+          this.handlers.failed.apply(this, this.result);
+        } catch(exc) {
+          if(this.nextPromise) {
+            this.nextPromise.fail(exc);
+          } else {
+            console.error("Uncaught error: ", this.result, (this.result[0] && this.result[0].stack));
+          }
+        }
+      } else if(this.nextPromise) {
+        this.nextPromise.fail.apply(this.nextPromise, this.result);
+      } else {
+        console.error("Uncaught error: ", this.result, (this.result[0] && this.result[0].stack));
+      }
+    },
+
+    fulfillLater: function() {
+      var args = util.toArray(arguments);
+      util.nextTick(function() {
+        this.fulfill.apply(this, args);
+      }.bind(this));
+      return this;
+    },
+
+    failLater: function() {
+      var args = util.toArray(arguments);
+      util.nextTick(function() {
+        this.fail.apply(this, args);
+      }.bind(this));
+      return this;
+    },
+
+    then: function(fulfilledHandler, errorHandler) {
+      this.handlers.fulfilled = fulfilledHandler;
+      this.handlers.failed = errorHandler;
+      this.nextPromise = new Promise(true);
+      return this.nextPromise;
+    },
+
+    get: function() {
+      var propertyNames = util.toArray(arguments);
+      return this.then(function(result) {
+        var promise = new Promise();
+        var values = [];
+        if(typeof(result) !== 'object') {
+          promise.failLater(new Error(
+            "Can't get properties of non-object (properties: " + 
+              propertyNames.join(', ') + ')'
+          ));
+        } else {
+          propertyNames.forEach(function(propertyName) {
+            values.push(result[propertyName]);
+          });
+          promise.fulfillLater.apply(promise, values);
+        }
+        return promise;
+      });
+    },
+
+    call: function(methodName) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      return this.then(function(result) {
+        return result[methodName].apply(result, args);
+      });
+    }
+  };
+
 
   var util = {
+
+    bufferToRaw: function(buffer) {
+      var view = new Uint8Array(buffer);
+      var nData = view.length;
+      var rawData = '';
+      for(var i=0;i<nData;i++) {
+        rawData += String.fromCharCode(view[i]);
+      }
+      return rawData;
+    },
+
+    rawToBuffer: function(rawData) {
+      var nData = rawData.length;
+      var buffer = new ArrayBuffer(nData);
+      var view = new Uint8Array(buffer);
+
+      for(var i=0;i<nData;i++) {
+        view[i] = rawData.charCodeAt(i);
+      }
+      return buffer;
+    },
+
+    encodeBinary: function(buffer) {
+      return btoa(this.bufferToRaw(buffer));
+    },
+
+    decodeBinary: function(data) {
+      return this.rawToBuffer(atob(data));
+    },
 
     // Method: toArray
     // Convert something into an Array.
@@ -435,10 +600,38 @@ define('lib/util',[], function() {
       return Array.prototype.slice.call(arrayLike);
     },
 
+    nextTick: function(action) {
+      setTimeout(action, 0);
+    },
+
     // Method: isDir
     // Convenience method to check if given path is a directory.
     isDir: function(path) {
       return path.substr(-1) == '/';
+    },
+
+    pathParts: function(path) {
+      var parts = [];
+      var md;
+      while((md = path.match(/^(.*?)([^\/]+\/?)$/))) {
+        parts.unshift(md[2]);
+        path = md[1];
+      }
+      parts.unshift('/');
+      return parts;
+    },
+
+    extend: function() {
+      var result = arguments[0];
+      var objs = Array.prototype.slice.call(arguments, 1);
+      objs.forEach(function(obj) {
+        if(obj) {
+          for(var key in obj) {
+            result[key] = obj[key];
+          }
+        }
+      });
+      return result;
     },
 
     // Method: containingDir
@@ -464,16 +657,86 @@ define('lib/util',[], function() {
       }
     },
 
+    // Function: bindAll
+    // Bind all function properties of given object to it's object.
+    //
+    // Makes it a lot easier to use methods as callbacks.
+    //
+    // Example:
+    //   (start code)
+    //   var o = { foo: function() { return this; } };
+    //   util.bindAll(o);
+    //    
+    //   var f = o.foo; // detach function from object
+    //    
+    //   f() === o; // -> true, function is still bound to object "o".
+    //   (end code)
+    //
     bindAll: function(object) {
       for(var key in object) {
         if(typeof(object[key]) === 'function') {
-          object[key] = this.bindContext(object[key], object);
+          object[key] = this.bind(object[key], object);
         }
       }
       return object;
     },
 
-    bindContext: function(callback, context) {
+    // Function: curry
+    // <Curry at http://www.cs.nott.ac.uk/~gmh/faq.html#currying> given function.
+    //
+    // Example:
+    //   (start code)
+    //   function f(n, m) {
+    //     console.log("N: " + n + ", M: " + m);
+    //   }
+    //   var f3 = curry(f, 3);
+    //   // later:
+    //   f3(4);
+    //   // prints "N: 3, M: 4";
+    //   (end code)
+    curry: function(f) {
+      if(typeof(f) !== 'function') {
+        throw new Error("Can only curry functions!");
+      }
+      var _a = Array.prototype.slice.call(arguments, 1);
+      return function() {
+        var a = util.toArray(arguments);
+        for(var i=(_a.length-1);i>=0;i--) {
+          a.unshift(_a[i]);
+        }
+        return f.apply(this, a);
+      };
+    },
+
+    // Function: rcurry
+    // Same as <curry>, but append instead of prepend given arguments.
+    //
+    // Example:
+    //   (start code)
+    //   function f(n, m) {
+    //     console.log("N: " + n + ", M: " + m);
+    //   }
+    //   var f3 = rcurry(f, 3);
+    //   // later:
+    //   f3(4);
+    //   // prints "N: 4, M: 3";
+    //   (end code)
+    //
+    rcurry: function(f) {
+      if(typeof(f) !== 'function') {
+        throw new Error("Can only curry functions!");
+      }
+      var _a = Array.prototype.slice.call(arguments, 1);
+      return function() {
+        var a = util.toArray(arguments);
+        _a.forEach(function(item) {
+          a.push(item);
+        });
+        return f.apply(this, a);
+      };
+    },
+
+    bind: function(callback, context) {
       if(context) {
         return function() { return callback.apply(context, arguments); };
       } else {
@@ -481,38 +744,129 @@ define('lib/util',[], function() {
       }
     },
 
+    hostNameFromUri: function(url) {
+      var md = url.match(/^https?:\/\/([^\/]+)/);
+      return md ? md[1] : '';
+    },
+
     deprecate: function(methodName, replacement) {
       console.log('WARNING: ' + methodName + ' is deprecated, use ' + replacement + ' instead');
     },
 
+    // Function: highestAccess
+    // Combine two access modes and return the highest one.
+    //
+    // Parameters:
+    //   a, b - Access modes. Either 'r', 'rw' or undefined.
+    //
+    // Returns:
+    //   'rw' or 'r' or null.
+    highestAccess: function(a, b) {
+      return (a == 'rw' || b == 'rw') ? 'rw' : (a == 'r' || b == 'r') ? 'r' : null;
+    },
+
+    // Method: getEventEmitter
+    //
+    // Create a new EventEmitter object and return it.
+    //
+    // It gets all valid events as it's arguments.
+    //
+    // Example:
+    // (start code)
+    // var events = util.getEventEmitter('change', 'error');
+    // events.on('error', function(what) { alert('something happens: ' + what); });
+    // events.emit('error', 'fired!');
+    // (end code)
+    //
     getEventEmitter: function() {
+      var eventNames = util.toArray(arguments);
+
+      function setupHandlers() {
+        var handlers = {};
+        eventNames.forEach(function(name) {
+          handlers[name] = [];
+        });
+        return handlers;
+      }
+
+      function validEvent(eventName) {
+        if(! this._handlers[eventName]) {
+          throw new Error("Unknown event: " + eventName);
+        }
+      }
 
       return this.bindAll({
 
-        _handlers: (function() {
-          var eventNames = Array.prototype.slice.call(arguments);
-          var handlers = {};
-          eventNames.forEach(function(name) {
-            handlers[name] = [];
-          });
-          return handlers;
-        }).apply(null, arguments),
+        _handlers: setupHandlers(),
+        //BEGIN-DEBUG
+        // Event cache is only used by debug-events at the moment, so
+        // doesn't have to be part of regular build.
+        _eventCache: {},
+        //END-DEBUG
 
         emit: function(eventName) {
           var handlerArgs = Array.prototype.slice.call(arguments, 1);
-          if(this._handlers[eventName]) {
+          // console.log("EMIT", eventName, handlerArgs);
+          validEvent.call(this, eventName);
+          if(this.hasHandler(eventName)) {
             this._handlers[eventName].forEach(function(handler) {
-              handler.apply(null, handlerArgs);
+              if(handler) {
+                handler.apply(null, handlerArgs);
+              }
             });
           }
+          //BEGIN-DEBUG
+          else if(eventName in this._eventCache) {
+            this._eventCache[eventName].push(handlerArgs);
+          }
+          //END-DEBUG
+        },
+
+        once: function(eventName, handler) {
+          validEvent.call(this, eventName);
+          var i = this._handlers[eventName].length;
+          if(typeof(handler) !== 'function') {
+            throw "Expected function as handler, got: " + typeof(handler);
+          }
+          this.on(eventName, function() {
+            delete this._handlers[eventName][i];
+            handler.apply(this, arguments);
+          }.bind(this));
         },
 
         on: function(eventName, handler) {
-          if(! this._handlers[eventName]) {
-            throw "Unknown event: " + eventName;
+          validEvent.call(this, eventName);
+          if(typeof(handler) !== 'function') {
+            throw "Expected function as handler, got: " + typeof(handler);
           }
           this._handlers[eventName].push(handler);
+          //BEGIN-DEBUG
+          if(this._eventCache[eventName]) {
+            this._eventCache[eventName].forEach(function(args) {
+              handler.apply(null, args);
+            });
+            delete this._eventCache[eventName];
+          }
+          //END-DEBUG
+        },
+
+        reset: function() {
+          this._handlers = setupHandlers();
+        },
+
+        hasHandler: function(eventName) {
+          validEvent.call(this, eventName);
+          return this._handlers[eventName].length > 0;
         }
+
+        //BEGIN-DEBUG
+        ,
+        enableEventCache: function() {
+          util.toArray(arguments).forEach(util.bind(function(eventName) {
+            this._eventCache[eventName] = [];
+          }, this));
+        }
+        //END-DEBUG
 
       });
 
@@ -533,6 +887,7 @@ define('lib/util',[], function() {
     getLogger: function(name) {
 
       if(! loggers[name]) {
+        knownLoggers.push(name);
         loggers[name] = {
 
           info: function() {
@@ -548,8 +903,11 @@ define('lib/util',[], function() {
           },
 
           log: function(level, args, type) {
-            if(silentLogger[name]) {
+            if(silentLogger[name] || logLevels[level] === false) {
               return;
+            }
+            if(logFn) {
+              return logFn(name, level, args);
             }
 
             if(! type) {
@@ -557,13 +915,27 @@ define('lib/util',[], function() {
             }
 
             args.unshift("[" + name.toUpperCase() + "] -- " + level + " ");
-            
+
             (console[type] || console.log).apply(console, args);
           }
-        }
+        };
       }
 
       return loggers[name];
+    },
+
+    // Method: setLogFunction
+    //
+    // Override the default logger with a custom function.
+    // After this, remoteStorage.js will no longer log through the global console object,
+    // but instead pass each logger call to the provided function.
+    //
+    // Log function parameters:
+    //   name  - Name of the logger.
+    //   level - loglevel, one of 'info', 'debug', 'error'
+    //   args  - Array of arguments passed to the logger. can be anything.
+    setLogFunction: function(logFunction) {
+      logFn = logFunction;
     },
 
     // Method: silenceLogger
@@ -574,7 +946,8 @@ define('lib/util',[], function() {
     //
     silenceLogger: function() {
       var names = util.toArray(arguments);
-      for(var i=0;i<names.length;i++) {
+      var numNames = names.length;
+      for(var i=0;i<numNames;i++) {
         silentLogger[ names[i] ] = true;
       }
     },
@@ -584,7 +957,8 @@ define('lib/util',[], function() {
     // The opposite of <silenceLogger>
     unsilenceLogger: function() {
       var names = util.toArray(arguments);
-      for(var i=0;i<names.length;i++) {
+      var numNames = names.length;
+      for(var i=0;i<numNames;i++) {
         delete silentLogger[ names[i] ];
       }
     },
@@ -599,8 +973,289 @@ define('lib/util',[], function() {
     // opposite of <silenceAllLoggers>
     unsilenceAllLoggers: function() {
       this.unsilenceLogger.apply(this, knownLoggers);
+    },
+
+    // Method: setLogLevel
+    // Set the maximum log level to use. Messages with
+    // a lower log level won't be displayed.
+    //
+    // Log levels are:
+    //   > debug < info < error
+    //
+    // Example:
+    //   (start code)
+    //   util.setLogLevel('info');
+    //   var logger = util.getLogger('my-logger');
+    //   logger.error("something went wrong"); // displayed
+    //   logger.info("hey, how's it going?");  // displayed
+    //   logger.debug("foo bar baz"); // not displayed
+    //   (end code)
+    setLogLevel: function(level) {
+      if(level == 'debug') {
+        logLevels.debug = true;
+        logLevels.info = true;
+      } else if(level == 'info') {
+        logLevels.info = true;
+        logLevels.debug = false;
+      } else if(level == 'error') {
+        logLevels.info = false;
+        logLevels.debug = false;
+      } else {
+        throw "Unknown log level: " + level;
+      }
+    },
+
+    // Method: grepLocalStorage
+    // Find a list of keys that match a given pattern.
+    //
+    // Iterates over all localStorage keys and calls given 'iter'
+    // for each key that matches given 'pattern'.
+    //
+    // The iter receives the matching key as it's only argument.
+    grepLocalStorage: function(pattern, iter) {
+      var numLocalStorage = localStorage.length;
+      var keys = [];
+      for(var i=0;i<numLocalStorage;i++) {
+        var key = localStorage.key(i);
+        if(pattern.test(key)) {
+          keys.push(key);
+        }
+      }
+      keys.forEach(iter);
+    },
+
+    getPromise: function() {
+      return new Promise();
+    },
+
+    // Function: isPromise
+    // Tests whether the given Object is a <Promise>.
+    //
+    // This method only checks for a "then" property, that is a function.
+    // That way it can interact with other implementations of Promises/A
+    // as well.
+    isPromise: function(object) {
+      return typeof(object) === 'object' && typeof(object.then) === 'function';
+    },
+
+    // Function: makePromise
+    // Create a new <Promise> object, and run given function.
+    //
+    // Returns: the created promise.
+    //
+    // The given callback function will be run in the future.
+    // If the callback throws an exception, that will cause the
+    // supplied callback to fail.
+    // If the callback returns a promise, that promise will be
+    // chained to the returned one.
+    //
+    // Example:
+    //   (start code)
+    //   function a() {
+    //     return util.makePromise(function(promise) {
+    //       // promise will be fulfilled in next tick
+    //       promise.fulfill(a + b);
+    //     });
+    //   }
+    //
+    //   function b() {
+    //     return util.makePromise(function(promise) {
+    //       // promise will be fulfilled as soon as the returned promise is fulfilled
+    //       return asyncFunctionReturningPromise();
+    //     });
+    //   }
+    //
+    //   function c() {
+    //     return util.makePromise(function(promise) {
+    //       // promise will fail with the thrown exception as it's result value
+    //       throw new Error("Something went wrong!");
+    //     });
+    //   }
+    //
+    //   a().then(b).then(c).then(function() {
+    //     // everything alright (never reached, "c" fails)
+    //   }, function(error) {
+    //     // one of the above failed.
+    //   });
+    //   (end code)
+    //
+    makePromise: function(futureCallback) {
+      var promise = new Promise();
+      util.nextTick(function() {
+        try {
+          var result = futureCallback(promise);
+          if(result && result.then && typeof(result.then) === 'function') {
+            result.then(
+              promise.fulfill.bind(promise),
+              promise.fail.bind(promise)
+            );
+          }
+        } catch(exc) {
+          promise.fail(exc);
+        }
+      });
+      return promise;
+    },
+
+    // Function: asyncGroup
+    // Run a bunch of asynchronous functions in parallel
+    //
+    // Returns a <Promise>.
+    //
+    // All given parameters must be functions. All functions will be
+    // run in the given order. The returned promise will be fulfilled,
+    // when for all given functions one of the following is true,
+    //
+    // Either:
+    //   The function returned no promise.
+    //
+    // Or:
+    //   The function returned a promise and that promise has been
+    //   fulfilled or failed.
+    //
+    // The promise fill be fulfilled with:
+    //   results - An array of return or fulfill values of the given
+    //             functions in the same order.
+    //   errors  - Array of errors reported by promise-returning
+    //             functions.
+    //
+    // Example:
+    //   (start code)
+    //   return util.asyncGroup(
+    //     function() { // asynchronous function
+    //       return util.makePromise(function(p) {
+    //         asyncGetSomeNumber(function(number) { p.fulfill(number) });
+    //       });
+    //     },
+    //     function() { // synchronous function
+    //       return 50 - 8;
+    //     }
+    //   ).then(function(numbers, errors) {
+    //     numbers[0]; // -> (whatever 'number' was in the async function)
+    //     numbers[1]; // -> 42
+    //   });
+    //   (end code)
+    // 
+    asyncGroup: function() {
+      var functions = util.toArray(arguments);
+      var results = [];
+      var todo = functions.length;
+      var errors = [];
+      return util.makePromise(function(promise) {
+        //BEGIN-DEBUG
+        clearTimeout(promise.debugTimer);
+        //END-DEBUG
+        if(functions.length === 0) {
+          return promise.fulfill([], []);
+        }
+        function finishOne(result, index) {
+          results[index] = result;
+          todo--;
+          if(todo === 0) {
+            promise.fulfill(results, errors);
+          }
+        }
+        function failOne(error) {
+          console.error("asyncGroup part failed: ", (error && error.stack) || error);
+          errors.push(error);
+          finishOne();
+        }
+        functions.forEach(function(fun, index) {
+          if(typeof(fun) !== 'function') {
+            throw new Error("asyncGroup got non-function: " + fun);
+          }
+          var _result = fun();
+          if(_result && _result.then && typeof(_result.then) === 'function') {
+            _result.then(function(result) {
+              finishOne(result, index);
+            }, failOne);
+          } else {
+            finishOne(_result, index);
+          }
+        });
+      });
+    },
+
+    // Function: asyncEach
+    // Asynchronously iterate over array.
+    //
+    // Returns a <Promise>.
+    //
+    // Calls the given iterator function for each element in 'array',
+    // passing in the element itself and the index within the array.
+    //
+    // The iterator function and returned promise are subject to the
+    // same semantics as in <util.asyncGroup>.
+    //
+    asyncEach: function(array, iterator) {
+      return util.makePromise(function(promise) {
+        util.asyncGroup.apply(
+          util, array.map(function(element, index) {
+            return util.curry(iterator, element, index);
+          })
+        ).then(function(results, errors) {
+          promise.fulfill(array, errors);
+        });
+      });
+    },
+
+    // Function: asyncMap
+    //
+    // Asynchronously map an array.
+    //
+    // Returns a <Promise>.
+    //
+    // Calls the given "mapper" for each element in the given "array",
+    // through <util.asyncGroup>.
+    //
+    asyncMap: function(array, mapper) {
+      return util.asyncGroup.apply(
+        util, array.map(function(element) {
+          return util.curry(mapper, element);
+        })
+      );
+    },
+
+    asyncSelect: function(array, testFunction) {
+      var a = [];
+      return util.asyncEach(array, function(element) {
+        return testFunction(element).then(function(result) {
+          if(result) {
+            a.push(element);
+          }
+        });
+      }).then(function() {
+        return a;
+      });
+    },
+
+    getSettingStore: function(prefix) {
+      function makeKey(key) {
+        return prefix + ':' + key;
+      }
+      return {
+        get: function(key) {
+          var data = localStorage.getItem(makeKey(key));
+          try { data = JSON.parse(data); } catch(e) {}
+          return data;
+        },
+        set: function(key, value) {
+          if(typeof(value) !== 'string') {
+            value = JSON.stringify(value);
+          }
+          return localStorage.setItem(makeKey(key), value);
+        },
+        remove: function(key) {
+          return localStorage.removeItem(makeKey(key));
+        },
+        clear: function() {
+          util.grepLocalStorage(new RegExp('^' + prefix), function(key) {
+            localStorage.removeItem(key);
+          });
+        }
+      }
     }
-  }
+  };
 
   // Class: Logger
   //
@@ -616,9 +1271,43 @@ define('lib/util',[], function() {
   // Will use the browser's error logging facility, if available.
   //
 
+  // Class: EventEmitter
+  //
+  // Method: emit
+  //
+  // Fire an event
+  //
+  // Parameters:
+  //   eventName - name of the event. Must have been passed to getEventEmitter.
+  //   *rest     - arguments passed to the handler.
+  //
+  // Method: on
+  //
+  // Install an event handler
+  //
+  // Parameters:
+  //   eventName - name of the event. Must have been passed to getEventEmitter.
+  //   handler   - handler to call when an event is emitted.
+  //
+
   return util;
 });
 
+
+/*global window */
+/*global console */
+/*global XMLHttpRequest */
+/*global XDomainRequest */
+/*global Blob */
+/*global setTimeout */
+/*global clearTimeout */
+/*global DOMParser */
+/*global Element */
+/*global document */
+
+if(typeof(global) !== 'undefined' && typeof(nodeRequire) === 'undefined') {
+  var nodeRequire = require;
+}
 
 define('lib/platform',['./util'], function(util) {
 
@@ -662,7 +1351,7 @@ define('lib/platform',['./util'], function(util) {
   //   web browser - YES (if browser <supports CORS at http://caniuse.com/#feat=cors>)
   //   IE - Partially, no support for setting headers.
   //   node - YES, CORS not an issue at all
-  // 
+  //
   //
   // Method: parseXml
   //
@@ -672,50 +1361,36 @@ define('lib/platform',['./util'], function(util) {
   //   browser - yes, if DOMParser is available
   //   node - yes, if xml2js is available
   //
-  //
-  // Method: setElementHTML
-  //
-  // Set the HTML content of an element.
-  //
-  // Parameters:
-  //   element - either an Element or a DOM ID resolving to an element
-  //   content - HTML content to set
-  //
-  // Platform support:
-  //   browser - Yes
-  //   node - not implemented
-  //
-  //
-  // Method: getElementValue
-  //
-  //
-  // Method: eltOn
-  //
-  //
-  // Method: getLocation
-  //
-  //
-  // Method: setLocation
-  //
-  //
-  // Method: alert
-  //
 
   var logger = util.getLogger('platform');
 
+  // downcase all header keys
+  function normalizeHeaders(headers) {
+    var h = {};
+    for(var key in headers) {
+      h[key.toLowerCase()] = headers[key];
+    }
+    return h;
+  }
+
   function browserParseHeaders(rawHeaders) {
+    if(! rawHeaders) {
+      // firefox bug. workaround in ajaxBrowser.
+      return null;
+    }
     var headers = {};
     var lines = rawHeaders.split(/\r?\n/);
     var lastKey = null, md, key, value;
-    for(var i=0;i<lines.length;i++) {
-      if(lines[i].length == 0) {
+    var numLines = lines.length;
+    for(var i=0;i<numLines;i++) {
+      if(lines[i].length === 0) {
         // empty line. obviously.
         continue;
       } else if((md = lines[i].match(/^([^:]+):\s*(.+)$/))) {
         // The escaped colon in the following (previously added) comment is
         // necessary, to prevent NaturalDocs from generating a toplevel
         // document called "value line" to the documentation. True story.
-        
+
         // key\: value line
         key = md[1], value = md[2];
         headers[key] = value;
@@ -729,67 +1404,89 @@ define('lib/platform',['./util'], function(util) {
         logger.error("Failed to parse header line: " + lines[i]);
       }
     }
-    return headers;
+    return normalizeHeaders(headers);
+  }
+
+  var successStates = { 200:true, 201:true, 204:true, 207:true };
+
+  function isSuccessful(xhr) {
+    return !! successStates[xhr.status];
   }
 
   function ajaxBrowser(params) {
-    var timedOut = false;
-    var timer;
-    if(params.timeout) {
-      timer = window.setTimeout(function() {
-        timedOut = true;
-        params.error('timeout');
-      }, params.timeout);
-    }
-    var xhr = new XMLHttpRequest();
-    if(!params.method) {
-      params.method='GET';
-    }
-    xhr.open(params.method, params.url, true);
-    if(params.headers) {
-      for(var header in params.headers) {
-        xhr.setRequestHeader(header, params.headers[header]);
+    return util.makePromise(function(promise) {
+      var timedOut = false;
+      var timer;
+      var xhr = new XMLHttpRequest();
+      if(params.timeout) {
+        timer = window.setTimeout(function() {
+          timedOut = true;
+          xhr.abort();
+          promise.fail('timeout');
+        }, params.timeout);
       }
-    }
-    logger.debug('A '+params.url);
-    xhr.onreadystatechange = function() {
-      if((xhr.readyState==4) && (!timedOut)) {
-        logger.debug('B '+params.url);
-        if(timer) {
-          window.clearTimeout(timer);
-        }
-        logger.debug('xhr cb '+params.url);
-        if(xhr.status==200 || xhr.status==201 || xhr.status==204 || xhr.status==207) {
-          params.success(xhr.responseText, browserParseHeaders(xhr.getAllResponseHeaders()));
-        } else {
-          params.error(xhr.status || 'unknown error');
+
+      if(!params.method) {
+        params.method = 'GET';
+      }
+
+      xhr.open(params.method, params.url, true);
+
+      if(params.headers) {
+        for(var header in params.headers) {
+          xhr.setRequestHeader(header, params.headers[header]);
         }
       }
-    }
-    logger.debug('xhr '+params.url);
-    if(typeof(params.data) === 'string') {
+
+      xhr.onreadystatechange = function() {
+        if((xhr.readyState == 4)) {
+          if(timer) {
+            window.clearTimeout(timer);
+          }
+          if(isSuccessful(xhr)) {
+            logger.debug("REQUEST SUCCESSFUL", params.url, xhr.responseText);
+            var headers = browserParseHeaders(xhr.getAllResponseHeaders());
+            if(! headers) {
+              // Firefox' getAllResponseHeaders is broken for CORS requests since forever.
+              // https://bugzilla.mozilla.org/show_bug.cgi?id=608735
+              // Any additional headers that are needed by other code, should be added here.
+              headers = {
+                'content-type': xhr.getResponseHeader('Content-Type')
+              };
+            }
+            promise.fulfill(xhr.responseText, headers);
+          } else {
+            logger.debug("REQUEST FAILED", xhr.status, params.url);
+            promise.fail(xhr.status || 'network error');
+          }
+        }
+      };
+
       xhr.send(params.data);
-    } else {
-      xhr.send();
-    }
+    });
   }
+
   function ajaxExplorer(params) {
-    //this won't work, because we have no way of sending the Authorization header. It might work for GET to the 'public' category, though.
-    var xdr=new XDomainRequest();
-    xdr.timeout=params.timeout || 3000;//is this milliseconds? documentation doesn't say
+    // this won't work, because we have no way of sending
+    // the Authorization header. It might work for GET to
+    // the 'public' category, though.
+    var promise = util.getPromise();
+    var xdr = new XDomainRequest();
+    xdr.timeout = params.timeout || 3000;//is this milliseconds? documentation doesn't say
     xdr.open(params.method, params.url);
-    xdr.onload=function() {
-      if(xdr.status==200 || xdr.status==201 || xdr.status==204) {
-        params.success(xhr.responseText);
+    xdr.onload = function() {
+      if(xdr.status == 200 || xdr.status == 201 || xdr.status == 204) {
+        promise.fulfill(xdr.responseText);
       } else {
-        params.error(xhr.status);
+        params.fail(xdr.status);
       }
     };
     xdr.onerror = function() {
-      err('unknown error');//See http://msdn.microsoft.com/en-us/library/ms536930%28v=vs.85%29.aspx
+      // See http://msdn.microsoft.com/en-us/library/ms536930%28v=vs.85%29.aspx
+      promise.fail('network error');
     };
     xdr.ontimeout = function() {
-      err(timeout);
+      promise.fail('timeout');
     };
     if(params.data) {
       xdr.send(params.data);
@@ -797,85 +1494,79 @@ define('lib/platform',['./util'], function(util) {
       xdr.send();
     }
   }
+
   function ajaxNode(params) {
-    var http=require('http'),
-      https=require('https'),
-      url=require('url');
-    if(!params.method) {
-      params.method='GET';
-    }
-    if(params.data) {
-      params.headers['content-length'] = params.data.length;
-    } else {
-      params.data = null;
-    }
-    var urlObj = url.parse(params.url);
-    var options = {
-      method: params.method,
-      host: urlObj.hostname,
-      path: urlObj.path,
-      port: (urlObj.port?port:(urlObj.protocol=='https:'?443:80)),
-      headers: params.headers
-    };
-    var timer, timedOut;
 
-    if(params.timeout) {
-      timer = setTimeout(function() {
-        params.error('timeout');
-        timedOut=true;
-      }, params.timeout);
-    }
+    return util.makePromise(function(promise) {
 
-    // nodejs represents headers like:
-    // 'message-id' : '...',
-    //
-    // we want:
-    //
-    // 'Message-Id' : '...'
-    function normalizeHeaders(headers) {
-      var h = {};
-      for(var key in headers) {
-        h[key.replace(/(?:^|\-)[a-z]/g, function(match) {
-          return match.toUpperCase();
-        })] = headers[key];
+      if(typeof(params.data) === 'object' && params.data instanceof ArrayBuffer) {
+        throw new Error("Sending binary data not yet implemented for nodejs");
       }
-      return h;
-    }
 
-    var lib = (urlObj.protocol=='https:'?https:http);
-    var request = lib.request(options, function(response) {
-      var str='';
-      response.setEncoding('utf8');
-      response.on('data', function(chunk) {
-        str+=chunk;
+      var http=nodeRequire('http'),
+      https=nodeRequire('https'),
+      url=nodeRequire('url');
+      if(!params.method) {
+        params.method='GET';
+      }
+      if(params.data) {
+        params.headers['content-length'] = params.data.length;
+      } else {
+        params.data = null;
+      }
+      var urlObj = url.parse(params.url);
+      var options = {
+        method: params.method,
+        host: urlObj.hostname,
+        path: urlObj.path,
+        port: (urlObj.port ? urlObj.port : (urlObj.protocol=='https:'?443:80)),
+        headers: params.headers
+      };
+      var timer, timedOut;
+
+      if(params.timeout) {
+        timer = setTimeout(function() {
+          promise.fail('timeout');
+          timedOut=true;
+        }, params.timeout);
+      }
+
+      var lib = (urlObj.protocol=='https:'?https:http);
+      var request = lib.request(options, function(response) {
+        var str='';
+        response.setEncoding('utf8');
+        response.on('data', function(chunk) {
+          str+=chunk;
+        });
+        response.on('end', function() {
+          if(timer) {
+            clearTimeout(timer);
+          }
+          if(!timedOut) {
+            if(response.statusCode==200 || response.statusCode==201 || response.statusCode==204) {
+              promise.fulfill(str, normalizeHeaders(response.headers));
+            } else {
+              promise.fail(response.statusCode);
+            }
+          }
+        });
       });
-      response.on('end', function() {
+      request.on('error', function(e) {
         if(timer) {
           clearTimeout(timer);
         }
-        if(!timedOut) {
-          if(response.statusCode==200 || response.statusCode==201 || response.statusCode==204) {
-            params.success(str, normalizeHeaders(response.headers));
-          } else {
-            params.error(response.statusCode);
-          }
-        }
+        promise.fail(e && e.message);
       });
-    });
-    request.on('error', function(e) {
-      if(timer) {
-        clearTimeout(timer);
+      if(params.data) {
+        request.end(params.data);
+      } else {
+        request.end();
       }
-      params.error(e.message);
     });
-    if(params.data) {
-      request.end(params.data);
-    } else {
-      request.end();
-    }
   }
+
   function parseXmlBrowser(str, cb) {
-    var tree=(new DOMParser()).parseFromString(str, 'text/xml')
+    var tree=(new DOMParser()).parseFromString(str, 'text/xml');
     var nodes=tree.getElementsByTagName('Link');
     var obj={
       Link: []
@@ -888,13 +1579,13 @@ define('lib/platform',['./util'], function(util) {
         }
       }
       var props = nodes[i].getElementsByTagName('Property');
-      link.properties = {}
+      link.properties = {};
       for(var k=0; k<props.length;k++) {
         link.properties[
           props[k].getAttribute('type')
         ] = props[k].childNodes[0].nodeValue;
       }
-      if(link['rel']) {
+      if(link.rel) {
         obj.Link.push({
           '@': link
         });
@@ -902,107 +1593,34 @@ define('lib/platform',['./util'], function(util) {
     }
     cb(null, obj);
   }
+
   function parseXmlNode(str, cb) {
-    var xml2js=require('xml2js');
+    var xml2js=nodeRequire('xml2js');
     new xml2js.Parser().parseString(str, cb);
   }
 
-  function harvestParamNode() {
-  }
-  function harvestParamBrowser(param) {
-    if(location.hash.length) {
-      var pairs = location.hash.substring(1).split('&');
-      for(var i=0; i<pairs.length; i++) {
-        if(pairs[i].substring(0, (param+'=').length) == param+'=') {
-          var ret = decodeURIComponent(pairs[i].substring((param+'=').length));
-          delete pairs[i];
-          location = '#'+pairs.join('&');
-          return ret;
-        }
-      }
-    }
-  }
-  function setElementHtmlNode(eltName, html) {
-  }
-  function setElementHtmlBrowser(eltName, html) {
-    var elt = eltName;
-    if(! (elt instanceof Element)) {
-      elt = document.getElementById(eltName);
-    }
-    elt.innerHTML = html;
-  }
-  function getElementValueNode(eltName) {
-  }
-  function getElementValueBrowser(eltName) {
-    return document.getElementById(eltName).value;
-  }
-  function eltOnNode(eltName, eventType, cb) {
-  }
-  function eltOnBrowser(eltName, eventType, cb) {
-    if(eventType == 'click') {
-      document.getElementById(eltName).onclick = cb;
-    } else if(eventType == 'hover') {
-      document.getElementById(eltName).onmouseover = cb;
-    } else if(eventType == 'type') {
-      document.getElementById(eltName).onkeyup = cb;
-    }
-  }
-  function getLocationBrowser() {
-    //TODO: deal with http://user:a#aa@host.com/ although i doubt someone would actually use that even once between now and the end of the internet
-    return window.location.href.split('#')[0];
-  }
-  function getLocationNode() {
-  }
-  function setLocationBrowser(location) {
-    window.location = location;
-  }
-  function setLocationNode() {
-  }
-  function alertBrowser(str) {
-    alert(str);
-  }
-  function alertNode(str) {
-    console.log(str);
-  }
+  var platform;
+
   if(typeof(window) === 'undefined') {
-    return {
+    platform = {
       ajax: ajaxNode,
-      parseXml: parseXmlNode,
-      harvestParam: harvestParamNode,
-      setElementHTML: setElementHtmlNode,
-      getElementValue: getElementValueNode,
-      eltOn: eltOnNode,
-      getLocation: getLocationNode,
-      setLocation: setLocationNode,
-      alert: alertNode
-    }
+      parseXml: parseXmlNode
+    };
   } else {
     if(window.XDomainRequest) {
-      return {
+      platform = {
         ajax: ajaxExplorer,
-        parseXml: parseXmlBrowser,
-        harvestParam: harvestParamBrowser,
-        setElementHTML: setElementHtmlBrowser,
-        getElementValue: getElementValueBrowser,
-        eltOn: eltOnBrowser,
-        getLocation: getLocationBrowser,
-        setLocation: setLocationBrowser,
-        alert: alertBrowser
+        parseXml: parseXmlBrowser
       };
     } else {
-      return {
+      platform = {
         ajax: ajaxBrowser,
-        parseXml: parseXmlBrowser,
-        harvestParam: harvestParamBrowser,
-        setElementHTML: setElementHtmlBrowser,
-        getElementValue: getElementValueBrowser,
-        eltOn: eltOnBrowser,
-        getLocation: getLocationBrowser,
-        setLocation: setLocationBrowser,
-        alert: alertBrowser
+        parseXml: parseXmlBrowser
       };
     }
   }
+
+  return platform;
 });
 
 define('lib/webfinger',
@@ -1049,317 +1667,219 @@ define('lib/webfinger',
 
     var logger = util.getLogger('webfinger');
 
+    var timeout = 10000;
+
       ///////////////
      // Webfinger //
     ///////////////
 
-    function userAddress2hostMetas(userAddress, cb) {
+    // PARSE
+
+    // parse user address
+    function extractHostname(userAddress) {
       var parts = userAddress.toLowerCase().split('@');
+      var error;
       if(parts.length < 2) {
-        cb('That is not a user address. There is no @-sign in it');
+        error = 'no-at';
       } else if(parts.length > 2) {
-        cb('That is not a user address. There is more than one @-sign in it');
+        error = 'multiple-at';
       } else {
         if(!(/^[\.0-9a-z\-\_]+$/.test(parts[0]))) {
-          cb('That is not a user address. There are non-dotalphanumeric symbols before the @-sign: "'+parts[0]+'"');
+          error = 'non-dotalphanum';
         } else if(!(/^[\.0-9a-z\-]+$/.test(parts[1]))) {
-          cb('That is not a user address. There are non-dotalphanumeric symbols after the @-sign: "'+parts[1]+'"');
-        } else {
-          var query = '?resource=acct:'+encodeURIComponent(userAddress);
-          cb(null, [
-            'https://'+parts[1]+'/.well-known/host-meta.json'+query,
-            'https://'+parts[1]+'/.well-known/host-meta'+query,
-            'http://'+parts[1]+'/.well-known/host-meta.json'+query,
-            'http://'+parts[1]+':8887/.well-known/host-meta.json'+query,
-            'http://'+parts[1]+':8888/.well-known/host-meta.json'+query,
-            'http://'+parts[1]+'/.well-known/host-meta'+query
-            ]);
+          error = 'non-dotalphanum';
         }
       }
-    }
-    function fetchXrd(addresses, timeout, cb) {
-      var firstAddress = addresses.shift();
-      if(firstAddress) {
-        platform.ajax({
-          url: firstAddress,
-          success: function(data) {
-            parseAsJrd(data, function(err, obj){
-              if(err) {
-                parseAsXrd(data, function(err, obj){
-                  if(err) {
-                    fetchXrd(addresses, timeout, cb);
-                  } else {
-                    cb(null, obj);
-                  }
-                });
-              } else {
-                cb(null, obj);
-              }
-            });
-          },
-          error: function(data) {
-            fetchXrd(addresses, timeout, cb);
-          },
-          timeout: timeout
-        });
-      } else {
-        cb('could not fetch xrd');
+      if(error) {
+        throw error;
       }
+      return parts[1];
     }
-    function parseAsXrd(str, cb) {
-      platform.parseXml(str, function(err, obj) {
-        if(err) {
-          cb(err);
-        } else {
-          if(obj && obj.Link) {
-            var links = {};
-            if(obj.Link && obj.Link['@']) {//obj.Link is one element
-              if(obj.Link['@'].rel) {
-                links[obj.Link['@'].rel]=obj.Link['@'];
-              }
-            } else {//obj.Link is an array
-              for(var i=0; i<obj.Link.length; i++) {
-                if(obj.Link[i]['@'] && obj.Link[i]['@'].rel) {
-                  links[obj.Link[i]['@'].rel]=obj.Link[i]['@'];
+
+    function parseXRD(str) {
+      return util.makePromise(function(promise) {
+        platform.parseXml(str, function(err, obj) {
+          if(err) {
+            promise.fail(err);
+          } else {
+            if(obj && obj.Link) {
+              var links = {};
+              if(obj.Link && obj.Link['@']) {//obj.Link is one element
+                if(obj.Link['@'].rel) {
+                  links[obj.Link['@'].rel]=obj.Link['@'];
+                }
+              } else {//obj.Link is an array
+                for(var i=0; i<obj.Link.length; i++) {
+                  if(obj.Link[i]['@'] && obj.Link[i]['@'].rel) {
+                    links[obj.Link[i]['@'].rel]=obj.Link[i]['@'];
+                  }
                 }
               }
+              promise.fulfill(links);
+            } else {
+              promise.fail('invalid-xml');
             }
-            cb(null, links);
-          } else {
-            cb('found valid xml but with no Link elements in there');
           }
+        });
+      });
+    }
+
+    function parseJRD(data) {
+      var object = JSON.parse(data);
+      if(! object.links) {
+        throw 'invalid-jrd';
+      }
+      var links = {};
+      object.links.forEach(function(link) {
+        // just take the first one of each rel:
+        if(link.rel && (! links[link.rel])) {
+          links[link.rel] = link;
+        }
+      });
+      return links;
+    }
+
+    // request a single profile
+    function fetchProfile(address) {
+      logger.info('fetch profile', address);
+      return platform.ajax({
+        url: address,
+        timeout: timeout
+      }).then(function(body, headers) {
+        var mimeType = headers && headers['content-type'] && headers['content-type'].split(';')[0];
+        logger.debug('fetched', body, mimeType);
+        if(mimeType && mimeType.match(/^application\/json/)) {
+          return parseJRD(body);
+        } else {
+          return util.makePromise(function(jrdPromise) {
+            parseXRD(body).then(
+              function(xrd) {
+                jrdPromise.fulfill(xrd);
+              }, function(error) {
+                jrdPromise.fulfill(parseJRD(body));
+              });
+          });
         }
       });
     }
-    function parseAsJrd(str, cb) {
-      var obj;
-      try {
-        obj = JSON.parse(str);
-      } catch(e) {
-        cb('not valid JSON');
-        return;
-      }
-      if(! obj.links) {
-        cb('JRD contains no links');
-      }
-      var links = {};
-      for(var i=0; i<obj.links.length; i++) {
-        //just take the first one of each rel:
-        if(obj.links[i].rel) {
-          links[obj.links[i].rel]=obj.links[i];
+
+    // fetch profile from all given addresses and yield the first one that
+    // succeeds.
+    function fetchHostMeta(protocol, addresses) {
+      addresses = addresses.map(function(addr) {
+        return protocol + addr;
+      });
+      return util.asyncMap(addresses, fetchProfile).
+        then(function(profiles, errors) {
+          logger.debug('host meta mapped', profiles);
+          for(var i=0;i<profiles.length;i++) {
+            if(profiles[i]) {
+              return profiles[i];
+            }
+          }
+          // if any of the requests failed due to a timeout, that's our
+          // reason as well.
+          for(var j=0;j<errors.length;j++) {
+            if(errors[j] === 'timeout') {
+              throw "timeout";
+            }
+          }
+          // otherwise we just fail with a generic reason.
+          throw 'requests-failed';
+        });
+    }
+
+    function extractRemoteStorageLink(links) {
+      logger.debug('extract remoteStorage link', links);
+      var remoteStorageLink = links.remoteStorage || links.remotestorage;
+      var lrddLink;
+      if(remoteStorageLink) {
+        logger.info('remoteStorageLink', remoteStorageLink);
+        if(remoteStorageLink.href &&
+           remoteStorageLink.type &&
+           remoteStorageLink.properties &&
+           remoteStorageLink.properties['auth-endpoint']) {
+          return remoteStorageLink;
+        } else {
+          throw new Error("Invalid remoteStorage link. Required properties are:" +
+                          "href, type, properties, properties.auth-endpoint. " +
+                          JSON.stringify(remoteStorageLink));
         }
-      }
-      cb(null, links);
-    }
-
-    function parseRemoteStorageLink(obj, cb) {
-      // TODO:
-      //   * check for and validate properties.auth-method
-      //   * validate type
-      if(obj
-          && obj['href']
-          && obj['type']
-          && obj['properties']
-          && obj['properties']['auth-endpoint']
-        ) {
-        cb(null, obj);
+      } else if((lrddLink = links.lrdd) && links.lrdd.template) {
+        return fetchProfile(
+          lrddLink.template.replace('{uri}', 'acct:' + userAddress)
+        ).then(extractRemoteStorageLink);
       } else {
-        cb('could not extract storageInfo from lrdd');
+        throw 'not-supported';
       }
     }
 
-
-    // Method: getStorageInfo
+    // method: getStorageInfo
     // Get the storage information of a given user address.
     //
     // Parameters:
     //   userAddress - a string in the form user@host
-    //   options     - see below
-    //   callback    - to receive the discovered storage info
-    //
-    // Options:
-    //   timeout     - time in milliseconds, until resulting in a 'timeout' error.
     //
     // Callback parameters:
     //   err         - either an error message or null if discovery succeeded
     //   storageInfo - the format is equivalent to that of the JSON representation of the remotestorage link (see above)
     //
-    function getStorageInfo(userAddress, options, cb) {
-      userAddress2hostMetas(userAddress, function(err1, hostMetaAddresses) {
-        logger.debug("HOST META ADDRESSES", hostMetaAddresses, '(error: ', err1, ')');
-        if(err1) {
-          cb(err1);
-        } else {
-          fetchXrd(hostMetaAddresses, options.timeout, function(err2, hostMetaLinks) {
-            if(err2) {
-              cb('could not fetch host-meta for '+userAddress);
-            } else {
-              if(hostMetaLinks['remoteStorage'] || hostMetaLinks['remotestorage']) {
-                parseRemoteStorageLink(
-                  hostMetaLinks['remoteStorage'] || hostMetaLinks['remotestorage'],
-                  cb
-                );
-              } else if(hostMetaLinks['lrdd'] && hostMetaLinks['lrdd'].template) {
-                var parts = hostMetaLinks['lrdd'].template.split('{uri}');
-                var lrddAddresses=[parts.join('acct:'+userAddress), parts.join(userAddress)];
-                 fetchXrd(lrddAddresses, options.timeout, function(err4, lrddLinks) {
-                  if(err4) {
-                    cb('could not fetch lrdd for '+userAddress);
-                  } else if(lrddLinks['remoteStorage']) {
-                    parseRemoteStorageLink(lrddLinks['remoteStorage'], cb);
-                  } else if(lrddLinks['remotestorage']) {
-                    parseRemoteStorageLink(lrddLinks['remotestorage'], cb);
-                  } else {
-                    cb('could not extract storageInfo from lrdd');
-                  }
-                });
-              } else {
-                cb('could not extract lrdd template from host-meta');
-              }
-            }
-          });
+    // Returns:
+    //   A promise for the user's webfinger profile
+    //
+    function getStorageInfo(userAddress) {
+
+      /*
+
+        - validate userAddres
+        - fetch host-meta
+        - parse host-meta
+        - (optionally) fetch lrdd
+        - (optionally) parse lrdd
+        - extract links
+
+       */
+
+      try {
+        var hostname = extractHostname(userAddress)
+      } catch(error) {
+        if(error) {
+          return util.getPromise().failLater(error);
         }
+      }
+      var query = '?resource=acct:' + encodeURIComponent(userAddress);
+      var addresses = [
+        '://' + hostname + '/.well-known/webfinger' + query,
+        '://' + hostname + '/.well-known/host-meta.json' + query,
+        '://' + hostname + '/.well-known/host-meta' + query,
+      ];
+
+      return util.makePromise(function(promise) {
+        fetchHostMeta('https', addresses).
+          then(extractRemoteStorageLink, function() {
+            return fetchHostMeta('http', addresses).
+              then(extractRemoteStorageLink).
+              then(function(profile) {
+                promise.fulfill(profile);
+              }, promise.fail.bind(promise));
+          }).
+          then(function(profile) {
+            promise.fulfill(profile);
+          }, promise.fail.bind(promise));
       });
     }
+
     return {
-      getStorageInfo: getStorageInfo
-    }
-});
+      getStorageInfo: getStorageInfo,
 
-define('lib/hardcoded',
-  ['./platform'],
-  function (platform) {
+      setTimeout: function(t) {
+        timeout = t;
+      },
 
-    
-
-    // Namespace: hardcoded
-    //
-    // Legacy webfinger fallbacks for dutch universities.
-
-    var guesses={
-      //'dropbox.com': {
-      //  api: 'Dropbox',
-      //  authPrefix: 'http://proxy.unhosted.org/OAuth.html?userAddress=',
-      //  authSuffix: '',
-      //  templatePrefix: 'http://proxy.unhosted.org/Dropbox/',
-      //  templateSuffix: '/{category}/'
-      //},
-      //'gmail.com': {
-      //  api: 'GoogleDocs',
-      //  authPrefix: 'http://proxy.unhosted.org/OAuth.html?userAddress=',
-      //  authSuffix: '',
-      //  templatePrefix: 'http://proxy.unhosted.org/GoogleDocs/',
-      //  templateSuffix: '/{category}/'
-      //},
-      'iriscouch.com': {
-        type: 'https://www.w3.org/community/unhosted/wiki/remotestorage-2011.10#couchdb',
-        authPrefix: 'http://proxy.unhosted.org/OAuth.html?userAddress=',
-        hrefPrefix: 'http://proxy.unhosted.org/CouchDb',
-        pathFormat: 'host/user'
+      getTimeout: function() {
+        return timeout;
       }
     };
-    (function() {
-      var surfnetSaml= {
-        type: 'https://www.w3.org/community/unhosted/wiki/remotestorage-2011.10#simple',
-        authPrefix: 'https://storage.surfnetlabs.nl/saml/oauth/authorize?user_address=',
-        hrefPrefix: 'https://storage.surfnetlabs.nl/saml',
-        pathFormat: 'user@host'
-      };
-      var surfnetBrowserId= {
-        type: 'https://www.w3.org/community/unhosted/wiki/remotestorage-2011.10#simple',
-        authPrefix: 'https://storage.surfnetlabs.nl/browserid/oauth/authorize?user_address=',
-        hrefPrefix: 'https://storage.surfnetlabs.nl/browserid',
-        pathFormat: 'user@host'
-      };
-      var dutchUniversitiesNoSaml= ['leidenuniv.nl', 'leiden.edu', 'uva.nl', 'vu.nl', 'eur.nl', 'maastrichtuniversity.nl',
-        'ru.nl', 'rug.nl', 'uu.nl', 'tudelft.nl', 'utwente.nl', 'tue.nl', 'tilburguniversity.edu', 'uvt.nl', 'wur.nl',
-        'wageningenuniversity.nl', 'ou.nl', 'lumc.nl', 'amc.nl',
-        'ahk.nl', 'cah.nl', 'driestar.nl', 'che.nl', 'chn.nl', 'hen.nl', 'huygens.nl', 'diedenoort.nl', 'efa.nl', 'dehaagsehogeschool.nl',
-        'hasdenbosch.nl', 'inholland.nl', 'hsbrabant.nl', 'dehorst.nl', 'kempel.nl', 'domstad.nl', 'hsdrenthe.nl', 'edith.nl', 'hsleiden.nl',
-        'interport.nl', 'schumann.nl', 'hsbos.nl', 'hva.nl', 'han.nl', 'hvu.nl', 'hesasd.nl', 'hes-rdam.nl', 'hku.nl', 'hmtr.nl',
-        'hzeeland.nl', 'hotelschool.nl', 'ichtus-rdam.nl', 'larenstein.nl', 'iselinge.nl', 'koncon.nl', 'kabk.nl', 'lhump.nl', 'msm.nl', 'hsmarnix.nl',
-        'nhtv.nl', 'nth.nl', 'nhl.nl', 'sandberg.nl', 'hsij.nl', 'stoas.nl', 'thrijswijk.nl', 'tio.nl', 'vhall.nl', 'chw.nl', 'hogeschoolrotterdam.nl'];
-      var dutchUniversitiesSaml= ['surfnet.nl', 'fontys.nl'];
-      for(var i=0;i<dutchUniversitiesSaml.length;i++) {
-        guesses[dutchUniversitiesSaml[i]]=surfnetSaml;
-      }
-      for(var i=0;i<dutchUniversitiesNoSaml.length;i++) {
-        guesses[dutchUniversitiesNoSaml[i]]=surfnetBrowserId;
-      }
-    })();
-
-    function testIrisCouch(userAddress, options, cb) {
-      platform.ajax({
-        url: 'http://proxy.unhosted.org/irisCouchCheck?q=acct:'+userAddress,
-        //url: 'http://proxy.unhosted.org/lookup?q=acct:'+userAddress,
-        success: function(data) {
-          var obj;
-          try {
-            obj=JSON.parse(data);
-          } catch(e) {
-          }
-          if(!obj) {
-            cb('err: unparsable response from IrisCouch check');
-          } else {
-            cb(null, obj);
-          }
-        },
-        error: function(err) {
-          cb('err: during IrisCouch test:'+err);
-        },
-        timeout: options.timeout/*,
-        data: userName*/
-      });
-    }
-    function mapToIrisCouch(userAddress) {
-      var parts=userAddress.split('@');
-      if(['libredocs', 'mail', 'browserid', 'me'].indexOf(parts[0]) == -1) {
-        return parts[0]+'@iriscouch.com';
-      } else {
-        return parts[2].substring(0, parts[2].indexOf('.'))+'@iriscouch.com';
-      }
-    }
-    function guessStorageInfo(userAddress, options, cb) {
-      var parts=userAddress.split('@');
-      if(parts.length < 2) {
-        cb('That is not a user address. There is no @-sign in it');
-      } else if(parts.length > 2) {
-        cb('That is not a user address. There is more than one @-sign in it');
-      } else {
-        if(!(/^[\.0-9A-Za-z]+$/.test(parts[0]))) {
-          cb('That is not a user address. There are non-dotalphanumeric symbols before the @-sign: "'+parts[0]+'"');
-        } else if(!(/^[\.0-9A-Za-z\-]+$/.test(parts[1]))) {
-          cb('That is not a user address. There are non-dotalphanumeric symbols after the @-sign: "'+parts[1]+'"');
-        } else {
-          while(parts[1].indexOf('.') != -1) {
-            if(guesses[parts[1]]) {
-              blueprint=guesses[parts[1]];
-              cb(null, {
-                rel: 'https://www.w3.org/community/unhosted/wiki/personal-data-service-00',
-                type: blueprint.type,
-                href: blueprint.hrefPrefix+'/'+(blueprint.pathFormat=='user@host'?userAddress:parts[1]+'/'+parts[0]),
-                properties: {
-                  'access-methods': ['http://oauth.net/core/1.0/parameters/auth-header'],
-                  'auth-methods': ['http://oauth.net/discovery/1.0/consumer-identity/static'],
-                  'auth-endpoint': blueprint.authPrefix+userAddress
-                }
-              });
-              return;
-            }
-            parts[1]=parts[1].substring(parts[1].indexOf('.')+1);
-          }
-          if(new Date() < new Date('9/9/2012')) {//temporary measure to help our 160 fakefinger users migrate learn to use their @iriscouch.com user addresses
-            //testIrisCouch(mapToIrisCouch(userAddress), cb);
-            testIrisCouch(userAddress, options, cb);
-          } else {
-            cb('err: not a guessable domain, and fakefinger-migration has ended');
-          }
-        }
-      }
-    }
-    return {
-      guessStorageInfo: guessStorageInfo
-    }
 });
 
 define('lib/getputdelete',
@@ -1372,70 +1892,110 @@ define('lib/getputdelete',
 
     var defaultContentType = 'application/octet-stream';
 
-    function doCall(method, url, value, mimeType, token, cb, deadLine) {
-      var platformObj = {
-        url: url,
-        method: method,
-        error: function(err) {
-          cb(err);
-        },
-        success: function(data, headers) {
-          //logger.debug('doCall cb '+url, 'headers:', headers);
-          cb(null, data, headers['Content-Type'] || defaultContentType);
-        },
-        timeout: 5000
-      }
+    var timeout = 10000;
 
-      platformObj.headers = {
-        'Authorization': 'Bearer ' + token
-      }
-      if(mimeType) {
-        platformObj.headers['Content-Type'] = mimeType;
-      }
+    function realDoCall(method, url, body, mimeType, token) {
+      return util.makePromise(function(promise) {
+        logger.info(method, url);
+        var platformObj = {
+          url: url,
+          method: method,
+          timeout: timeout,
+          headers: {}
+        };
 
-      platformObj.fields = {withCredentials: 'true'};
-      if(method != 'GET') {
-        platformObj.data =value;
-      }
-      //logger.debug('platform.ajax '+url);
-      platform.ajax(platformObj);
-    }
-
-    function get(url, token, cb) {
-      doCall('GET', url, null, null, token, function(err, data, mimetype) {
-        if(err == 404) {
-          cb(null, undefined);
-        } else {
-          if(util.isDir(url)) {
-            try {
-              data = JSON.parse(data);
-            } catch (e) {
-              cb('unparseable directory index');
-              return;
-            }
-          }
-          cb(err, data, mimetype);
+        if(token) {
+          platformObj.headers['Authorization'] = 'Bearer ' + token;
         }
+        if(mimeType) {
+          if(typeof(body) == 'object' && body instanceof ArrayBuffer) {
+            mimeType += '; charset=binary';
+          }
+          platformObj.headers['Content-Type'] = mimeType;
+        }
+
+        platformObj.fields = {withCredentials: 'true'};
+        if(method != 'GET') {
+          platformObj.data = body;
+        }
+
+        platform.ajax(platformObj).
+          then(function(data, headers) {
+            var contentType = headers['content-type'] || defaultContentType;
+            var mimeType = contentType.split(';')[0]
+
+            if(contentType.match(/charset=binary/)) {
+              data = util.rawToBuffer(data);
+            } else if(mimeType === 'application/json') {
+              try {
+                data = JSON.parse(data);
+              } catch(exc) {
+                // ignore invalid JSON
+              }
+            }
+
+            promise.fulfill(data, mimeType);            
+          }, function(error) {
+            if(error === 404) {
+              return promise.fulfill(undefined);
+            } else if(error === 401 || error === 403) {
+              error = 'unauthorized';
+            };
+            promise.fail(error);
+          });
       });
     }
 
-    function put(url, value, mimeType, token, cb) {
-      if(typeof(value) !== 'string') {
-        cb("invalid value given to PUT, only strings allowed, got " + typeof(value));
+    var inProgress = 0;
+    var maxInProgress = 10;
+    var pendingQueue = [];
+
+    function doCall() {
+      var args = util.toArray(arguments);
+      function finishOne() {
+        inProgress--;
+        if(pendingQueue.length > 0) {
+          var c = pendingQueue.shift();
+          doCall.apply(this, c.a).then(c.p.fulfill.bind(c.p), c.p.fail.bind(c.p));
+        } else {
+        }
       }
-
-      logger.info('calling PUT '+url, ' (' + value.length + ')');
-      doCall('PUT', url, value, mimeType, token, function(err, data) {
-        //logger.debug('cb from PUT '+url);
-        cb(err, data);
-      });
+      if(inProgress < maxInProgress) {
+        inProgress++;
+        return realDoCall.apply(this, arguments).then(function(data, mimeType) {
+          finishOne();
+          return util.makePromise(function(p) { p.fulfill(data, mimeType); });
+        }, function(error) {
+          finishOne();
+          throw error;
+        });
+      } else {
+        return util.makePromise(function(p) {
+          pendingQueue.push({
+            a: args,
+            p: p
+          });
+        });
+      }
     }
 
-    function set(url, valueStr, mimeType, token, cb) {
+    function get(url, token) {
+      return doCall('GET', url, null, null, token);
+    }
+
+    function put(url, value, mimeType, token) {
+      if(! (typeof(value) === 'string' || (typeof(value) === 'object' &&
+                                           value instanceof ArrayBuffer))) {
+        throw new Error("invalid value given to PUT, only strings or ArrayBuffers allowed, got " + typeof(value));
+      }
+      return doCall('PUT', url, value, mimeType, token);
+    }
+
+    function set(url, valueStr, mimeType, token) {
       if(typeof(valueStr) == 'undefined') {
-        doCall('DELETE', url, null, null, token, cb);
+        return doCall('DELETE', url, null, null, token);
       } else {
-        put(url, valueStr, mimeType, token, cb);
+        return put(url, valueStr, mimeType, token);
       }
     }
 
@@ -1474,9 +2034,21 @@ define('lib/getputdelete',
       //   data     - raw response data
       //   mimeType - value of the response's Content-Type header. If none was returned, this defaults to application/octet-stream.
       //
-      set:    set
-    }
+      set:    set,
+
+      setTimeout: function(t) {
+        timeout = t;
+      },
+
+      getTimeout: function() {
+        return timeout;
+      }
+
+    };
 });
+
+/*global localStorage */
+/*global ArrayBuffer */
 
 define('lib/wireClient',['./getputdelete', './util'], function (getputdelete, util) {
 
@@ -1484,71 +2056,65 @@ define('lib/wireClient',['./getputdelete', './util'], function (getputdelete, ut
 
   var prefix = 'remote_storage_wire_';
 
-  var events = util.getEventEmitter('connected', 'error');
+  var events = util.getEventEmitter('connected', 'disconnected', 'error');
 
-  function set(key, value) {
-    localStorage.setItem(prefix+key, JSON.stringify(value));
+  var state = 'anonymous';
 
-    if(getState() == 'connected') {
-      events.emit('connected');
-    }
+  var settings = util.getSettingStore('remotestorage_wire');
+
+  function setSetting(key, value) {
+    settings.set(key, value);
+
+    calcState();
   }
-  function remove(key) {
-    localStorage.removeItem(prefix+key);
+
+  function removeSetting(key) {
+    settings.remove(key);
   }
-  function get(key) {
-    var valStr = localStorage.getItem(prefix+key);
-    if(typeof(valStr) == 'string') {
-      try {
-        return JSON.parse(valStr);
-      } catch(e) {
-        localStorage.removeItem(prefix+key);
-      }
-    }
-    return null;
+
+  function getSetting(key) {
+    return settings.get(key);
   }
+
   function disconnectRemote() {
-    remove('storageType');
-    remove('storageHref');
-    remove('bearerToken');
-  }
-  function getState() {
-    if(get('storageType') && get('storageHref')) {
-      if(get('bearerToken')) {
-        return 'connected';
-      } else {
-        return 'authing';
-      }
-    } else {
-      return 'anonymous';
-    }
-  }
-  function on(eventType, cb) {
-    events.on(eventType, cb);
+    settings.clear();
+    calcState();
   }
 
-  function resolveKey(storageType, storageHref, basePath, relPath) {
-    var item = ((basePath.length?(basePath + '/'):'') + relPath);
-    return storageHref + item;
+  function getState() {
+    return state;
   }
-  function setChain(driver, hashMap, mimeType, token, cb, timestamp) {
-    var i;
-    for(i in hashMap) {
-      break;
-    }
-    if(i) {
-      var thisOne = hashMap[i];
-      delete hashMap[i];
-      driver.set(i, thisOne, mimeType, token, function(err, timestamp) {
-        if(err) {
-          cb(err);
-        } else {
-          setChain(driver, hashMap, mimeType, token, cb, timestamp);
-        }
-      });
+
+  function calcState() {
+    var oldState = state;
+
+    if(getSetting('storageType') && getSetting('storageHref')) {
+      if(getSetting('bearerToken')) {
+        state = 'connected';
+      } else {
+        state = 'authing';
+      }
     } else {
-      cb(null, timestamp);
+      state = 'anonymous';
     }
+
+    if(state === 'connected') {
+      events.emit('connected');
+    } else if(state === 'anonymous' && oldState === 'connected') {
+      events.emit('disconnected');
+    }
+    return state;
+  }
+
+  function resolveKey(path) {
+    var storageHref = getSetting('storageHref');
+    return storageHref + path;
+  }
+
+  var foreignKeyRE = /^([^\/][^:]+):(\/.*)$/;
+
+  function isForeign(path) {
+    return foreignKeyRE.test(path);
   }
 
   // Namespace: wireClient
@@ -1558,63 +2124,128 @@ define('lib/wireClient',['./getputdelete', './util'], function (getputdelete, ut
   // Event: connected
   //
   // Fired once everything is configured.
-  return {
 
-    // Method: get
-    //
-    // Get data from given path from remotestorage
-    //
-    // Parameters:
-    //   path     - absolute path (starting from storage root)
-    //   callback - see <getputdelete.get> for details on the callback parameters
-    get: function (path, cb) {
-      var storageType = get('storageType'),
-        storageHref = get('storageHref'),
-        token = get('bearerToken');
-      if(typeof(path) != 'string') {
-        cb('argument "path" should be a string');
-      } else {
-        getputdelete.get(resolveKey(storageType, storageHref, '', path), token, cb);
-      }
-    },
+  // Method: get
+  //
+  // Get data from given path from remotestorage
+  //
+  // Parameters:
+  //   path     - absolute path (starting from storage root)
+  //
+  function get(path) {
+    if(isForeign(path)) {
+      return getForeign(path);
+    } else if(state != 'connected') {
+      throw new Error('not-connected');
+    }
+    return getputdelete.get(
+      resolveKey(path),
+      getSetting('bearerToken')
+    );
+  }
 
-    // Method: set
-    //
-    // Write data to given path in remotestorage
-    //
-    // Parameters:
-    //   path     - absolute path (starting from storage root)
-    //   valueStr - raw data to write
-    //   mimeType - MIME type to set as Content-Type header
-    //   callback - see <getputdelete.set> for details on the callback parameters.
-    set: function (path, valueStr, mimeType, cb) {
-      var storageType = get('storageType'),
-        storageHref = get('storageHref'),
-        token = get('bearerToken');
-      if(typeof(path) != 'string') {
-        cb('argument "path" should be a string');
-      } else {
-        getputdelete.set(resolveKey(storageType, storageHref, '', path), valueStr, mimeType, token, cb);
+  function getForeign(fullPath) {
+    var md = fullPath.match(foreignKeyRE);
+    var userAddress = md[1];
+    var path = md[2];
+    var base = getStorageHrefForUser(userAddress);
+    return getputdelete.get(base + path, null);
+  }
+
+  // Method: set
+  //
+  // Write data to given path in remotestorage
+  //
+  // Parameters:
+  //   path     - absolute path (starting from storage root)
+  //   valueStr - raw data to write
+  //   mimeType - MIME type to set as Content-Type header
+  //   callback - see <getputdelete.set> for details on the callback parameters.
+  function set(path, valueStr, mimeType, cb) {
+    if(isForeign(path)) {
+      throw new Error("Foreign storage is read-only");
+    } else if(state != 'connected') {
+      throw new Error('not-connected');
+    }
+    var token = getSetting('bearerToken');
+    if(typeof(path) != 'string') {
+      throw new Error('argument "path" should be a string');
+    } else {
+      if(valueStr && typeof(valueStr) != 'string' &&
+         !(typeof(valueStr) == 'object' && valueStr instanceof ArrayBuffer)) {
+        valueStr = JSON.stringify(valueStr);
       }
-    },
+      return getputdelete.set(resolveKey(path), valueStr, mimeType, token);
+    }
+  }
+
+  // Method: remove
+  //
+  // Remove data at given path from remotestorage
+  //
+  // Parameters:
+  //   path     - absolute path (starting from storage root)
+  //   callback - see <getputdelete.set> for details on the callback parameters.
+  function remove(path, cb) {
+    if(isForeign(path)) {
+      return cb(new Error("Foreign storage is read-only"));
+    }
+    var token = getSetting('bearerToken');
+    return getputdelete.set(resolveKey(path), undefined, undefined, token, cb);
+  }
+
+  function getStorageHrefForUser(userAddress) {
+    var info = getSetting('storageInfo:' + userAddress);
+    if(! info) {
+      throw new Error("userAddress unknown to wireClient: " + userAddress);
+    }
+    return info.href;
+  }
+
+  function addStorageInfo(userAddress, storageInfo) {
+    setSetting('storageInfo:' + userAddress, storageInfo);
+  }
+
+  function hasStorageInfo(userAddress) {
+    return !! getSetting('storageInfo:' + userAddress);
+  }
+
+  return util.extend(events, {
+
+    get: get,
+    set: set,
+    remove: remove,
 
     // Method: setStorageInfo
     //
     // Configure wireClient.
     //
-    // Parameters:
+    // Storage info object:
     //   type - the storage type (see specification)
     //   href - base URL of the storage server
     //
     // Fires:
     //   configured - if wireClient is now fully configured
     //
-    setStorageInfo   : function(type, href) { set('storageType', type); set('storageHref', href); },
+    setStorageInfo   : function(info) {
+      setSetting('storageType', info.type);
+      setSetting('storageHref', info.href);
+      return info;
+    },
+
+    getStorageInfo: function() {
+      return {
+        type: getSetting('storageType'),
+        href: getSetting('storageHref')
+      };
+    },
 
     // Method: getStorageHref
     //
     // Get base URL of the user's remotestorage.
-    getStorageHref   : function() { return get('storageHref') },
+    getStorageHref   : function() {
+      return getSetting('storageHref');
+    },
     
     // Method: SetBearerToken
     //
@@ -1626,7 +2257,31 @@ define('lib/wireClient',['./getputdelete', './util'], function (getputdelete, ut
     // Fires:
     //   configured - if wireClient is now fully configured.
     //
-    setBearerToken   : function(bearerToken) { set('bearerToken', bearerToken); },
+    setBearerToken   : function(bearerToken) {
+      setSetting('bearerToken', bearerToken);
+    },
+
+    getBearerToken   : function(bearerToken) {
+      return getSetting('bearerToken');
+    },
+
+    // Method: addStorageInfo
+    //
+    // Add another user's storage info.
+    // After calling this, keys in the form userAddress:path can be resolved.
+    //
+    // Parameters:
+    //   userAddress - a user address in the form user@host
+    //   storageInfo - an object, with at least an 'href' attribute
+    addStorageInfo: addStorageInfo,
+
+    // Method: hasStorageInfo
+    //
+    // Find out if the wireClient has cached storageInfo for the given userAddress.
+    //
+    // Parameters:
+    //   userAddress - a user address to look up
+    hasStorageInfo: hasStorageInfo,
 
     // Method: disconnectRemote
     //
@@ -1638,7 +2293,6 @@ define('lib/wireClient',['./getputdelete', './util'], function (getputdelete, ut
     // Install an event handler
     //
     // 
-    on               : on,
 
     // Method: getState
     //
@@ -1648,55 +2302,604 @@ define('lib/wireClient',['./getputdelete', './util'], function (getputdelete, ut
     //   anonymous - no information set
     //   authing   - storage's type & href set, but no token received yet
     //   connected - all information present.
-    getState         : getState
+    getState         : getState,
+    calcState: calcState
+  });
+});
+
+define('lib/store/syncTransaction',['../util'], function(util) {
+
+  // Namespace: syncTranscation
+  //
+  // Shared transaction implementation for synchronous storage backends (memory, localStorage).
+  // Takes a 'store' (methods: get, set, remove) and a logger.
+  // Makes sure that only one transaction runs at the same time.
+
+  // Method: syncTransaction
+  // Returns a new syncTransactionAdapter.
+  //
+  // You can extend it with your own stuff (to create a proper storageAdapter you
+  // at least need 'forgetAll' and 'on')
+  //
+  // Parameters:
+  //   store  - actual store implementation (get, set, remove)
+  //   logger - a logger, to log begin / end of transaction and implicit commits.
+  return function(store, logger) {
+
+    var errorStub = function() { throw new Error("Transaction already committed!"); };
+    var staleStore = { get: errorStub, set: errorStub, remove: errorStub, commit: errorStub };
+
+    var tid = 0;
+
+    function makeTransaction(write, body) {
+      var promise = util.getPromise();
+      var transaction = util.extend({
+        id: ++tid,
+        commit: function() {
+          finish();
+        }
+      }, store);
+
+      if(! write) {
+        delete transaction.set;
+        delete transaction.remove;
+      }
+
+      function finish(implicit) {
+        logger.debug(transaction.id, 'FINISH Transaction (', write ? 'read-write' : 'read-only', ')');
+        busy = false;
+        util.extend(transaction, staleStore);
+        promise.fulfill();
+        runIfReady();
+      }
+
+      return {
+        run: function() {
+          busy = true;
+          logger.debug(transaction.id, 'BEGIN Transaction (', write ? 'read-write' : 'read-only', ')');
+          var result = body(transaction);
+          if(! write) {
+            logger.debug(transaction.id, 'schedule implicit commit (read-only transaction)');
+            finish(true);
+          }
+        },
+        promise: promise
+      };
+    }
+
+    var busy = false;
+    var transactions = [];
+
+    function runIfReady() {
+      if(! busy) {
+        var transaction = transactions.shift();
+        if(transaction) {
+          logger.debug('SHIFT TRANSACTION', transactions.length, 'left');
+          transaction.run();
+        }
+      }
+    }
+
+    return {
+
+      // Object: syncTransactionAdapter
+
+      // Method: transaction
+      //
+      // Parameters:
+      //   write - boolean. whether this is a write or read-only transaction.
+      //   body  - method to call with the actual transaction object
+      transaction: function(write, body) {
+        var transaction = makeTransaction(write, body);
+        transactions.push(transaction);
+        util.nextTick(runIfReady);
+        return transaction.promise;
+      },
+
+      // Method: get
+      // Forwarded from store (to simplify transaction-less 'get's in tests).
+      get: store.get
+    };
   };
 });
 
-define('lib/store',['./util'], function (util) {
+define('lib/store/memory',['../util', './syncTransaction'], function(util, syncTransactionAdapter) {
+
+  // Namespace: store.memory
+  // <StorageAdapter> implementation that keeps data in memory.
+
+  return function(logName) {
+    var logger = util.getLogger(logName || 'store::memory');
+    var nodes = {};
+
+    var store = {
+      get: function(path) {
+        logger.info('get', path);
+        return util.getPromise().fulfillLater(nodes[path]);
+      },
+
+      set: function(path, node) {
+        logger.info('set', path, node.data);
+        nodes[path] = node;
+        return util.getPromise().fulfillLater();
+      },
+
+      remove: function(path) {
+        logger.info('remove', path);
+        delete nodes[path];
+        return util.getPromise().fulfillLater();
+      }
+    };
+
+    return util.extend({
+
+      _nodes: nodes,
+
+      on: function() {},
+
+      forgetAll: function() {
+        logger.info('forgetAll');
+        this._nodes = nodes = {};
+        return util.getPromise().fulfillLater();
+      },
+
+      hasKey: function(path) {
+        return !! nodes[path];
+      },
+
+      // wireClient STUB
+
+      getState: function() {
+        return 'connected';
+      },
+
+      // TESTS & DEBUGGING
+
+      printTree: function() {
+        var printOne = function(path, indent) {
+          return this.get(path).
+            then(function(node) {
+              if(! node) {
+                throw "No node for path: " + path;
+              }
+              if(util.isDir(path)) {
+                console.log(indent + '+ ' + util.baseName(path));
+                return util.asyncEach(Object.keys(node.data), function(key) {
+                  return printOne(path + key, indent + '| ');
+                });
+              } else {
+                console.log(indent + util.baseName(path) + ' ' +
+                            node.data.length + ' bytes, ' +
+                            node.mimeType);
+              }
+            });
+        }.bind(this);
+
+        return printOne('/', '');
+      },
+
+      // FIXME: implement through 'set' and move to common.
+      init: function(dataTree, mimeType, timestamp, access) {
+        this.forgetAll();
+        var initNode = function (path, tree) {
+          var node = {
+            startAccess: Object.keys(access).reduce(function(a, k) {
+              return (k === path) ? access[k] : a;
+            }, null),
+            startForce: null,
+            startForceTree: null,
+            timestamp: timestamp,
+            lastUpdatedAt: timestamp
+          };
+          if(typeof(tree) == 'object') {
+            node.mimeType = 'application/json';
+            node.data = Object.keys(tree).reduce(function(listing, _key) {
+              var key = _key;
+              if(typeof(tree[_key]) === 'object') {
+                key += '/';
+              }
+              initNode(path + key, tree[_key]);
+              listing[key] = timestamp;
+              return listing;
+            }, {});
+            node.diff = {};
+          } else {
+            node.mimeType = mimeType;
+            node.data = tree;
+          }
+          nodes[path] = node;
+        }.bind(this);
+
+        initNode('/', dataTree);
+      }
+
+    }, store, syncTransactionAdapter(store, logger));
+  };
+});
+
+define('lib/store/common',['../util'], function(util) {
+
+  return {
+    packData: function(node) {
+      node = util.extend({}, node);
+      if(typeof(node.data) === 'object' && node.data instanceof ArrayBuffer) {
+        node.binary = true;
+        node.data = util.encodeBinary(node.data);
+      } else {
+        node.binary = false;
+        if(node.mimeType === 'application/json' && typeof(node.data) === 'object') {
+          node.data = JSON.stringify(node.data);
+        } else {
+          node.data = node.data;
+        }
+      }
+      return node;
+    },
+
+    unpackData: function(node) {
+      node = util.extend({}, node);
+      if(node.binary) {
+        node.data = util.decodeBinary(node.data);
+      }
+      if(node.mimeType === 'application/json' && node.data) {
+        if(node.data instanceof ArrayBuffer) {
+          console.log('CONVERT BINARY', node);
+          // convert accidental binary data back into a string
+          node.binary = false;
+          node.data = util.bufferToRaw(node.data);
+        } else if(typeof(node.data) === 'object') {
+          return node;
+        }
+        try {
+          node.data = JSON.parse(node.data);
+        } catch(exc) {
+          console.error("Failed to parse node: ", node);
+          throw new Error("Failed to parse JSON data: " + node.data + " (Error was: " + exc.message + ')');
+        };
+      }
+      return node;
+    }
+  };
+
+});
+define('lib/store/localStorage',['../util', './common', './syncTransaction'], function(util, common, syncTransactionAdapter) {
+
+  // Namespace: store.localStorage
+  // <StorageAdapter> implementation that keeps data localStorage.
+
+  var localStorage;
+
+  var logger = util.getLogger('store::localStorage');
+
+  var events = util.getEventEmitter('change', 'debug');
+
+  //BEGIN-DEBUG
+  function debugEvent(method, path) {
+    events.emit('debug', {
+      method: method,
+      path: path,
+      timestamp: new Date()
+    });
+  }
+  
+  events.enableEventCache('debug');
+  //END-DEBUG
+
+  // node metadata key prefix
+  var prefixNodes = 'remote_storage_nodes:';
+  // note payload data key prefix
+  var prefixNodesData = 'remote_storage_node_data:';
+
+  function isMetadataKey(key) {
+    return key.substring(0, prefixNodes.length) == prefixNodes;
+  }
+
+  function prefixNode(path) {
+    return prefixNodes + path;
+  }
+
+  function prefixData(path) {
+    return prefixNodesData + path;
+  }
+
+  // forward events from other tabs
+  if(typeof(window) !== 'undefined') {
+    window.addEventListener('storage', function(event) {
+      if(isMetadataKey(event.key)) {
+        event.path = event.key.replace(new RegExp('^' + prefixNodes), '');
+        events.emit('change', event);
+      }
+    });
+  }
+
+  return function(_localStorage) {
+    localStorage = _localStorage || (typeof(window) !== 'undefined' && window.localStorage);
+
+    if(! localStorage) {
+      throw new Error("Not supported: localStorage not found.");
+    }
+
+    var store = {
+      get: function(path) {
+        //BEGIN-DEBUG
+        debugEvent('GET', path);
+        //END-DEBUG
+        logger.debug('GET', path);
+        return util.makePromise(function(promise) {
+          var rawMetadata = localStorage.getItem(prefixNode(path));
+          if(! rawMetadata) {
+            promise.fulfill(undefined);
+            return;
+          }
+          var payload = localStorage.getItem(prefixData(path));
+          var node;
+          try {
+            node = JSON.parse(rawMetadata);
+          } catch(exc) {
+          }
+          if(node) {
+            node.data = payload;
+          }
+          promise.fulfill(common.unpackData(node));
+        });
+      },
+
+      set: function(path, node) {
+        //BEGIN-DEBUG
+        debugEvent('SET', path);
+        //END-DEBUG
+        logger.debug('SET', path, node);
+        return util.makePromise(function(promise) {
+          var metadata = common.packData(node);
+          var rawData = metadata.data;
+          delete metadata.data;
+          var rawMetadata = JSON.stringify(metadata);
+          localStorage.setItem(prefixNode(path), rawMetadata);
+          if(rawData) {
+            localStorage.setItem(prefixData(path), rawData);
+          }
+          promise.fulfill();
+        });
+      },
+
+      remove: function(path) {
+        //BEGIN-DEBUG
+        debugEvent('REMOVE', path);
+        //END-DEBUG
+        logger.debug('SET', path);
+        return util.makePromise(function(promise) {
+          localStorage.removeItem(prefixNode(path));
+          localStorage.removeItem(prefixData(path));
+          promise.fulfill();
+        });
+      }
+    };
+
+    return util.extend({
+
+      on: events.on,
+
+      forgetAll: function() {
+        return util.makePromise(function(promise) {
+          var numLocalStorage = localStorage.length;
+          var keys = [];
+          for(var i=0; i<numLocalStorage; i++) {
+            if(localStorage.key(i).substr(0, prefixNodes.length) == prefixNodes ||
+               localStorage.key(i).substr(0, prefixNodesData.length) == prefixNodesData) {
+              keys.push(localStorage.key(i));
+            }
+          }
+
+          keys.forEach(function(key) {
+            localStorage.removeItem(key);
+          });
+
+          promise.fulfill();
+        });
+      }
+    }, syncTransactionAdapter(store, logger));
+  };
+});
+
+
+define('lib/store/pending',['../util'], function(util) {
+
+  var logger = util.getLogger('store::pending');
+
+  return function() {
+    var requestQueue = [];
+
+    function queueRequest(name, args, dontPromise) {
+      logger.debug(name, args[0]);
+      if(! dontPromise) {
+        return util.makePromise(function(promise) {
+          requestQueue.push({
+            method: name,
+            args: args,
+            promise: promise
+          });
+        });
+      } else {
+        requestQueue.push({
+          method: name,
+          args: args
+        });
+      }
+    }
+
+    var pendingAdapter = {
+      transaction: function(write, body) {
+        return queueRequest('transaction', [write, body]);
+      },
+      on: function(eventName, handler) {
+        return queueRequest('on', [eventName, handler], true);
+      },
+      get: function(key) {
+        return queueRequest('get', [key]);
+      },
+      put: function(key, value) {
+        return queueRequest('put', [key, value]);
+      },
+      remove: function(key) {
+        return queueRequest('remove', [key]);
+      },
+      forgetAll: function(key) {
+        return queueRequest('forgetAll', []);
+      },
+      flush: function(adapter) {
+        requestQueue.forEach(function(request) {
+          logger.debug('QUEUE FLUSH', request.method, request.args[0]);
+          if(request.promise) {
+            adapter[request.method].apply(adapter, request.args).
+              then(request.promise.fulfill.bind(request.promise),
+                   request.promise.fail.bind(request.promise));
+          } else {
+            adapter[request.method].apply(adapter, request.args);
+          }
+        });
+        requestQueue = [];
+      },
+      replaceWith: function(adapter) {
+        pendingAdapter.flush(adapter);
+        util.extend(pendingAdapter, adapter);
+        delete pendingAdapter.flush;
+        delete pendingAdapter.replaceWith;
+      }
+    };
+
+    return pendingAdapter;
+  };
+
+});
+
+/*global window */
+/*global console */
+
+define('lib/store',[
+  './util',
+  './platform',
+  './store/memory',
+  './store/localStorage',
+  './store/pending'
+], function (util, platform, memoryAdapter, localStorageAdapter, pendingAdapter) {
 
   
 
   // Namespace: store
   //
   // The store stores data locally. It treats all data as raw nodes, that have *metadata* and *payload*.
-  // Metadata and payload are stored under separate keys.
-  //
-  // This is what a node's metadata looks like:
-  //   startAccess - either "r" or "rw". Flag means, that this node has been claimed access on (see <remoteStorage.claimAccess>) (default: null)
-  //   startForce  - boolean flag to indicate that this node shall always be synced. (see <BaseClient.sync>) (default: null)
-  //   timestamp   - last time this node was (apparently) updated (default: 0)
-  //   keep        - A flag to indicate, whether this node should be kept in cache. Currently unused. (default: true)
-  //   diff        - difference in the node's data since the last synchronization.
-  //   mimeType    - MIME media type
-  //
-  // Event: change
-  // See <BaseClient.Events>
-  //
-  // Event: error
-  // See <BaseClient.Events>
+  // Where the actual data is stored is determined by the <StorageAdapter> that is being used.
+
 
   var logger = util.getLogger('store');
 
-  var events = util.getEventEmitter('change', 'error');
+  // foreign nodes are prefixed with a user address
+  var userAddressRE = /^[^@]+@[^:]+:\//;
 
-  var onChange=[], onError=[],
-    prefixNodes = 'remote_storage_nodes:',
-    prefixNodesData = 'remote_storage_node_data:';
+  var events = util.getEventEmitter('error', 'change', 'foreign-change');
 
-  if(typeof(window) !== 'undefined') {
-    window.addEventListener('storage', function(e) {
-      if(e.key.substring(0, prefixNodes.length == prefixNodes)) {
-        e.path = e.key.substring(prefixNodes.length);
-        if(!util.isDir(e.path)) {
-          e.origin='device';
-          events.emit('change', e);
-        }
+  var dataStore;
+
+  // Method: setAdapter
+  // Set the storage adapter. See <StorageAdapter> for a description of
+  // the required interface.
+  function setAdapter(adapter) {
+    dataStore = adapter;
+    // forward changes from data store (e.g. made in other tabs)
+    dataStore.on('change', function(event) {
+      if(! util.isDir(event.path)) {
+        fireChange('device', event.path, event.oldValue);
       }
     });
   }
 
+  // (function() {
+  //   if(typeof(window) !== 'undefined') {
+  //     var idb = indexedDbAdapter.detect();
+  //     if(idb) {
+  //       setAdapter(indexedDbAdapter(idb));
+  //     } else if(typeof(window.openDatabase) !== 'undefined') {
+  //       setAdapter(webSqlAdapter());
+  //     } else if(typeof(window.localStorage) !== 'undefined') {
+  //       setAdapter(localStorageAdapter(window.localStorage));
+  //     } else {
+  //       throw "Running in browser, but no storage adapter supported!";
+  //     }
+  //   } else {
+  //     console.error("WARNING: falling back to in-memory storage");
+  //     setAdapter(memoryAdapter());
+  //   }
+  // })();
+
+  if(typeof(window) !== 'undefined') {
+    setAdapter(localStorageAdapter(window.localStorage));
+  } else {
+    console.error("WARNING: falling back to in-memory storage");
+    setAdapter(memoryAdapter());
+  }
+
+  //
+  // Type: Node
+  //
+  // Represents a node within the local store.
+  //
+  // Properties:
+  //   startAccess    - either "r" or "rw". Flag means, that this node has been claimed access on (see <remoteStorage.claimAccess>) (default: null)
+  //   startForce     - boolean flag to indicate that this node shall always be synced. (see <BaseClient.use> and <BaseClient.release>) (default: null)
+  //   startForceTree - boolean flag that all directory children of this node shall be synced.
+  //   timestamp      - last time this node was (apparently) updated (default: 0)
+  //   lastUpdatedAt  - Last time this node was upated from remotestorage
+  //   mimeType       - MIME media type
+  //   diff           - (directories only) marks children that have been modified.
+  //   data           - Actual data of the node. A String, a JSON-Object or an ArrayBuffer.
+  //   binary         - boolean indicating if this node is binary. If true, 'data' is an ArrayBuffer.
+  //
+
+  // Event: change
+  // See <BaseClient.Events>
+
+  function fireChange(origin, path, oldValue) {
+    return getNode(path).
+      get('data', 'timestamp').
+      then(function(newValue, timestamp) {
+        events.emit('change', {
+          path: path,
+          origin: origin,
+          oldValue: oldValue,
+          newValue: newValue,
+          timestamp: timestamp
+        });
+      });
+  }
+
+  // Event: foreign-change
+  // Fired when a foreign node is updated.
+
+  function fireForeignChange(path, oldValue) {
+    return getNode(path).
+      get('data', 'timestamp').
+      then(function(newValue, timestamp) {
+        events.emit('foreign-change', {
+          path: path,
+          oldValue: oldValue,
+          newValue: newValue,
+          timestamp: timestamp
+        });
+      });
+  }
+
+  //
+  // Event: error
+  // See <BaseClient.Events>
+
+  //
+  // Method: on
+  //
+  // Install an event handler
+  // See <util.EventEmitter.on> for documentation.
+
   // Method: getNode
-  // get a node's metadata
+  // Get a node.
   //
   // Parameters:
   //   path - absolute path
@@ -1705,31 +2908,236 @@ define('lib/store',['./util'], function (util) {
   //   a node object. If no node is found at the given path, a new empty
   //   node object is constructed instead.
   function getNode(path) {
+    logger.info('getNode', path);
     if(! path) {
-      throw "No path given!";
+      // FIXME: fail returned promise instead.
+      throw new Error("No path given!");
     }
     validPath(path);
-    var valueStr = localStorage.getItem(prefixNodes+path);
-    var value;
-    if(valueStr) {
-      try {
-        value = JSON.parse(valueStr);
-      } catch(e) {
-        logger.error("Invalid node data in store: ", valueStr);
-        // invalid JSON data is treated like a node that doesn't exist.
+    return dataStore.get(path).then(function(node) {
+      if(! node) {
+        node = {//this is what an empty node looks like
+          startAccess: null,
+          startForce: null,
+          startForceTree: null,
+          timestamp: 0,
+          lastUpdatedAt: 0,
+          mimeType: "application/json"
+        };
+        if(util.isDir(path)) {
+          node.diff = {};
+          node.data = {};
+        }
+      }
+
+      return node;
+    });
+  }
+
+
+  // Method: forgetAll
+  // Forget all data stored by <store>.
+  //
+  function forgetAll() {
+    return dataStore.forgetAll();
+  }
+
+  // Function: setNodeData
+  //
+  // update a node's payload
+  //
+  // Parameters:
+  //   path      - absolute path from the storage root
+  //   data      - node data to set, or undefined to delete the node
+  //   outgoing  - boolean, whether this update is to be propagated
+  //   timestamp - timestamp to set for the update
+  //   mimeType  - MIME media type of the node's data
+  //
+  // Fires:
+  //   change w/ origin=remote - unless this is an outgoing change
+  //
+  function setNodeData(path, data, outgoing, timestamp, mimeType) {
+    logger.debug('PUT', path, { data: data, mimeType: mimeType });
+    return getNode(path).then(function(node) {
+
+      var oldValue = node.data;
+
+      node.data = data;
+
+      if(! outgoing) {
+        if(typeof(timestamp) !== 'number') {
+          throw "Attempted to set non-number timestamp in incoming change: " + timestamp + ' (' + typeof(timestamp) + ') at path ' + path;
+        }
+        node.lastUpdatedAt = timestamp;
+
+        delete node.error;
+      }
+
+      if(! mimeType) {
+        mimeType = 'application/json';
+      }
+      node.mimeType = mimeType;
+
+      // FIXME: only set this when incoming data is set?
+      delete node.pending;
+
+      return updateNode(path, (typeof(node.data) !== 'undefined' ? node : undefined), outgoing, false, timestamp, oldValue);
+    });
+  }
+
+  function setLastSynced(path, timestamp) {
+    logger.info('setLastSynced', path, 'requested');
+    return dataStore.transaction(true, function(transaction) {
+      logger.info('setLastSynced', path, 'started');
+      return getNode(path, transaction).then(function(node) {
+        node.lastUpdatedAt = timestamp;
+        return updateNode(path, node, false, true, undefined, undefined, transaction).
+          then(function() {
+            logger.info('setLastSynced', path, 'done', timestamp);
+            transaction.commit();
+          });
+      });
+    });
+  }
+
+  function removeNode(path, timestamp) {
+    return setNodeData(path, undefined, false, timestamp || getCurrTimestamp());
+  }
+
+  function updateMetadata(path, attributes, node) {
+    function doUpdate(node) {
+      util.extend(node, attributes);
+      return updateNode(path, node, false, true);
+    }
+    if(node) {
+      return doUpdate(node);
+    } else {
+      return getNode(path).then(doUpdate);
+    }
+  }
+
+  // Method: setNodeAccess
+  //
+  // Set startAccess flag on a node.
+  //
+  // Parameters:
+  //   path  - absolute path to the node
+  //   claim - claim to set. Either "r" or "rw"
+  //
+  function setNodeAccess(path, claim) {
+    logger.debug('setNodeAccess', path, claim);
+    return getNode(path).then(function(node) {
+      if((claim !== node.startAccess) &&
+         (claim === 'rw' || node.startAccess === null)) {
+        return updateMetadata(path, {
+          startAccess: claim
+        }, node);
+      }
+    });
+  }
+
+  function setNodeError(path, error) {
+    logger.debug('setNodeError', path, error);
+    return updateMetadata(path, {
+      error: error
+    });
+  }
+
+  // Method: setNodeForce
+  //
+  // Set startForce and startForceTree flags on a node.
+  //
+  // Parameters:
+  //   path      - absolute path to the node
+  //   dataFlag  - whether to sync data
+  //   treeFlag  - whether to sync the tree
+  //
+  function setNodeForce(path, dataFlag, treeFlag) {
+    logger.debug('setNodeForce', path, dataFlag, treeFlag);
+    return updateMetadata(path, {
+      startForce: dataFlag,
+      startForceTree: treeFlag
+    });
+  }
+
+  // Method: clearDiff
+  //
+  // Clear diff flag of given node on it's parent.
+  //
+  // Recurses upwards, when the parent's diff becomes empty.
+  //
+  // Clearing the diff is usually done, once the changes have been
+  // propagated through sync.
+  //
+  // Parameters:
+  //   path      - absolute path to the node
+  //   timestamp - new timestamp (received from remote) to set on the node.
+  //
+  function clearDiff(path, timestamp) {
+    logger.debug('clearDiff', path);
+    return getNode(path).then(function(node) {
+
+      function clearDiffOnParent() {
+        var parentPath = util.containingDir(path);
+        if(parentPath) {
+          var baseName = util.baseName(path);
+          return getNode(parentPath).then(function(parent) {
+            delete parent.diff[baseName];
+            if(Object.keys(parent.diff).length === 0) {
+              parent.lastUpdatedAt = parent.timestamp;
+            }
+            return updateNode(parentPath, parent, false, true).then(function() {
+              if(Object.keys(parent.diff).length === 0) {
+                return clearDiff(parentPath, timestamp);
+              }
+            });
+          });
+        }
+      }
+
+      if(util.isDir(path) && Object.keys(node.data).length === 0 &&
+         !(node.startAccess || node.startForce || node.startForceTree)) {
+        // remove empty dir
+        return updateNode(path, undefined, false, false).then(clearDiffOnParent);
+      } else if(timestamp) {
+        // set last updated
+        node.timestamp = node.lastUpdatedAt = timestamp;
+        return updateNode(path, node, false, true).then(clearDiffOnParent);
+      } else {
+        return clearDiffOnParent();
+      }
+    });
+  }
+
+  // Method: fireInitialEvents
+  //
+  // Fire a change event with origin=device for each node present in store.
+  //
+  // This is so apps don't need to add event handlers *and* initially request
+  // listings to fill their views.
+  //
+  function fireInitialEvents() {
+    logger.info('fire initial events');
+
+    function iter(path) {
+      if(util.isDir(path)) {
+        return getNode(path).then(function(node) {
+          if(node.data) {
+            var keys = Object.keys(node.data);
+            var next = function() {
+              if(keys.length > 0) {
+                return iter(path + keys.shift()).then(next);
+              }
+            };
+            return next();
+          }
+        });
+      } else {
+        return fireChange('device', path);
       }
     }
-    if(!value) {
-      value = {//this is what an empty node looks like
-        startAccess: null,
-        startForce: null,
-        timestamp: 0,
-        mimeType: "application/json",
-        keep: true,
-        diff: {}
-      };
-    }
-    return value;
+
+    return iter('/');
   }
 
   function getFileName(path) {
@@ -1746,860 +3154,1919 @@ define('lib/store',['./util'], function (util) {
   }
 
   function validPath(path) {
-    if(path[0] != '/') {
-      throw "Invalid path: " + path;
+    if(! (path[0] == '/' || userAddressRE.test(path))) {
+      throw new Error("Invalid path: " + path);
     }
   }
 
-  function updateNodeData(path, data) {
-    validPath(path);
-    if(! path) {
-      console.trace();
-      throw "Path is required!";
-    }
-    var encodedData;
-    if(typeof(data) !== 'undefined') {
-      if(typeof(data) === 'object') {
-        encodedData = JSON.stringify(data);
-      } else {
-        encodedData = data;
-      }
-      localStorage.setItem(prefixNodesData+path, encodedData)
-    } else {
-      localStorage.removeItem(prefixNodesData+path)
-    }
+  function isForeign(path) {
+    return path[0] != '/';
   }
 
-  function updateNode(path, node, outgoing, meta, timestamp) {
-    validPath(path);
-    if(node) {
-      localStorage.setItem(prefixNodes+path, JSON.stringify(node));
-    } else {
-      localStorage.removeItem(prefixNodes+path);
-    }
-    var containingDir = util.containingDir(path);
-
-    if(containingDir) {
-
-      var parentNode=getNode(containingDir);
-      var parentData = getNodeData(containingDir) || {};
-      var baseName = getFileName(path);
-
-      if(meta) {
-        if(! (parentData && parentData[baseName])) {
-          parentData[baseName] = 0;
-          updateNodeData(containingDir, parentData);
+  function determineDirTimestamp(path, transaction) {
+    return getNode(path, transaction).
+      get('data').then(function(data) {
+        var t = 0;
+        if(data) {
+          for(var key in data) {
+            if(data[key] > t) {
+              t = data[key];
+            }
+          }
         }
-        updateNode(containingDir, parentNode, false, true, timestamp);
-      } else if(outgoing) {
-        if(node) {
-          parentData[baseName] = getCurrTimestamp();
+        return t > 0 ? t : getCurrTimestamp();
+      });
+  }
+
+  function touchNode(path) {
+    return dataStore.transaction(true, function(transaction) {
+      logger.info("touchNode", path);
+      return getNode(path, transaction).
+        then(function(node) {
+          if(typeof(node.data) === 'undefined') {
+            node.pending = true;
+          }
+          return updateNode(path, node, false, true, undefined, undefined, transaction).
+            then(transaction.commit);
+        });
+    });
+  }
+
+  // FIXME: this argument list is getting too long!!!
+  function updateNode(path, node, outgoing, meta, timestamp, oldValue,
+                      transaction) {
+    logger.debug('updateNode', path, node, outgoing, meta, timestamp);
+
+    validPath(path);
+
+    function adjustTimestamp(transaction) {
+      logger.debug('updateNode.adjustTimestamp', path);
+      return util.makePromise(function(promise) {
+        function setTimestamp(t) {
+          if(t) { timestamp = t; }
+          if(node && typeof(timestamp) == 'number') {
+            node.timestamp = timestamp;
+          }
+          promise.fulfill();
+        }
+        if((!meta) && (! timestamp)) {
+          if(outgoing) {
+            timestamp = getCurrTimestamp();
+            setTimestamp();
+          } else if(util.isDir(path)) {
+            determineDirTimestamp(path, transaction).then(setTimestamp);
+          } else {
+            throw new Error('no timestamp given for node ' + path);
+          }
         } else {
-          delete parentData[baseName];
+          setTimestamp();
         }
-        parentNode.diff[baseName] = getCurrTimestamp();
-        updateNodeData(containingDir, parentData);
-        updateNode(containingDir, parentNode, true, false, timestamp);
-      } else {//incoming
-        if(node) {//incoming add or change
-          if(!parentData[baseName] || parentData[baseName] < timestamp) {
-            parentData[baseName] = timestamp;
-            delete parentNode.diff[baseName];
-            updateNodeData(containingDir, parentData);
-            updateNode(containingDir, parentNode, false, false, timestamp);
-          }
-        } else {//incoming deletion
-          if(parentData[baseName]) {
-            delete parentData[baseName];
-            delete parentNode.diff[baseName];
-            updateNodeData(containingDir, parentData);
-            updateNode(containingDir, parentNode, false, false, timestamp);
-          }
-        }
-        if(path.substr(-1)!='/') {
-          events.emit('change', {
-            path: path,
-            origin: 'remote',
-            oldValue: undefined,
-            newValue: (node ? getNodeData(path) : undefined),
-            timestamp: timestamp
+      });
+    }
+
+    function storeNode(transaction) {
+      logger.debug('updateNode.storeNode', path, node);
+      if(node) {
+        return transaction.set(path, node);
+      } else {
+        return transaction.remove(path);
+      }
+    }
+
+    function updateParent(transaction) {
+      var parentPath = util.containingDir(path);
+      var baseName = util.baseName(path);
+      if(parentPath) {
+        return getNode(parentPath, transaction).
+          then(function(parent) {
+            if(meta) { // META
+              if(! parent.data[baseName]) {
+                logger.debug('-> meta, create');
+                parent.data[baseName] = 0;
+                return updateNode(parentPath, parent, false, true, timestamp, undefined, transaction);
+              }
+            } else if(outgoing) { // OUTGOING
+              if(node) {
+                logger.debug('-> outgoing, set');
+                parent.data[baseName] = timestamp;
+              } else {
+                logger.debug('-> outgoing, remove');
+                delete parent.data[baseName];
+              }
+              parent.diff[baseName] = timestamp;
+              logger.debug('-> diff, update');
+              return updateNode(parentPath, parent, true, false, timestamp, undefined, transaction);
+            } else { // INCOMING
+              if(node) { // add or change
+                if((! parent.data[baseName]) || parent.data[baseName] < timestamp) {
+                  logger.debug('-> incoming, set');
+                  parent.data[baseName] = timestamp;
+                  delete parent.diff[baseName];
+                  return updateNode(parentPath, parent, false, false, timestamp, undefined, transaction);
+                }
+              } else { // deletion
+                logger.debug('-> incoming, remove');
+                delete parent.data[baseName];
+                delete parent.diff[baseName];
+                return updateNode(parentPath, parent, false, false, timestamp, undefined, transaction);
+              }
+            }
           });
+      }
+    }
+
+    function fireEvents() {
+      if((!meta) && (! outgoing) && (! util.isDir(path))) {
+        // fire changes
+        if(isForeign(path)) {
+          return fireForeignChange(path, oldValue);
+        } else {
+          return fireChange('remote', path, oldValue);
         }
       }
     }
-  }
 
-  // Method: forget
-  // Forget node at given path
-  //
-  // Parameters:
-  //   path - absolute path
-  function forget(path) {
-    validPath(path);
-    localStorage.removeItem(prefixNodes+path);
-    localStorage.removeItem(prefixNodesData+path);
-  }
-
-  // Method: forgetAll
-  // Forget all data stored by <store>.
-  //
-  function forgetAll() {
-    for(var i=0; i<localStorage.length; i++) {
-      if(localStorage.key(i).substr(0, prefixNodes.length) == prefixNodes ||
-         localStorage.key(i).substr(0, prefixNodesData.length) == prefixNodesData) {
-        localStorage.removeItem(localStorage.key(i));
-        i--;
-      }
+    function doUpdate(transaction, dontCommit) {
+      return adjustTimestamp(transaction).
+        then(util.curry(storeNode, transaction)).
+        then(util.curry(updateParent, transaction)).
+        then(function() {
+          if(! dontCommit) {
+            transaction.commit();
+          }
+        }).
+        then(fireEvents);
     }
-  }
 
-  // Function: setNodeData
-  //
-  // update a node's metadata
-  //
-  // Parameters:
-  //   path      - absolute path from the storage root
-  //   data      - node data to set, or undefined to delete the node
-  //   outgoing  - boolean, whether this update is to be propagated
-  //   timestamp - timestamp to set for the update
-  //   mimeType  - MIME media type of the node's data
-  //
-  // Fires:
-  //   change w/ origin=remote - unless this is an outgoing change
-  //
-  function setNodeData(path, data, outgoing, timestamp, mimeType) {
-    var node = getNode(path);
-    if(!mimeType) {
-      mimeType='application/json';
-    }
-    node.mimeType = mimeType;
-    if(!timestamp) {
-      timestamp = getCurrTimestamp();
-    }
-    updateNodeData(path, data);
-    updateNode(path, (data ? node : undefined), outgoing, false, timestamp);
-  }
-
-  // Method: getNodeData
-  // get a node's data
-  //
-  // Parameters:
-  //   path - absolute path
-  //   raw  - (optional) if given and true, don't attempt to unpack JSON data
-  //
-  function getNodeData(path, raw) {
-    logger.info('GET', path);
-    validPath(path);
-    var valueStr = localStorage.getItem(prefixNodesData+path);
-    var node = getNode(path);
-    if(valueStr) {
-      if((!raw) && (node.mimeType == "application/json")) {
-        try {
-          return JSON.parse(valueStr);
-        } catch(exc) {
-          events.emit('error', "Invalid JSON node at " + path + ": " + valueStr);
-        }
-      }
-
-      return valueStr;
+    if(transaction) {
+      return doUpdate(transaction, true);
     } else {
-      return undefined;
+      return dataStore.transaction(true, doUpdate);
     }
   }
 
-  function removeNode(path) {
-    setNodeData(path, '', false);
-  }
+  function isForced(path) {
+    var parts = util.pathParts(path);
 
-  // Method: setNodeAccess
-  //
-  // Set startAccess flag on a node.
-  //
-  // Parameters:
-  //   path  - absolute path to the node
-  //   claim - claim to set. Either "r" or "rw"
-  //
-  function setNodeAccess(path, claim) {
-    var node = getNode(path);
-    if((claim != node.startAccess) && (claim == 'rw' || node.startAccess == null)) {
-      node.startAccess = claim;
-      updateNode(path, node, false, true);//meta
-    }
-  }
+    return util.makePromise(function(promise) {
 
-  // Method: setNodeForce
-  //
-  // Set startForce flag on a node.
-  //
-  // Parameters:
-  //   path  - absolute path to the node
-  //   force - value to set for the force flag (boolean)
-  //
-  function setNodeForce(path, force) {
-    var node = getNode(path);
-    node.startForce = force;
-    updateNode(path, node, false, true);//meta
-  }
+      function checkOne(node) {
+        if(node.startForce || node.startForceTree) {
+          promise.fulfill(true);
+        } else {
+          parts.pop();
+          checkNext();
+        }
+      }
 
-  // Method: clearDiff
-  //
-  // Clear current diff on the node. This only applies to
-  // directory nodes.
-  //
-  // Clearing the diff is usually done, once the changes have been
-  // propagated through sync.
-  //
-  // Parameters:
-  //   path      - absolute path to the directory node
-  //   childName - name of the child who's change has been propagated
-  //
-  function clearDiff(path, childName) {
-    logger.debug('clearDiff', path, childName);
-    var node = getNode(path);
-    delete node.diff[childName];
-    updateNode(path, node, false, true);//meta
+      function checkNext() {
+        if(parts.length === 0) {
+          promise.fulfill(false);
+        } else {
+          getNode(parts.join('')).
+            then(checkOne, promise.fail.bind(promise));
+        }
+      }
 
-    var parentPath;
-    if(Object.keys(node.diff).length === 0 && (parentPath = util.containingDir(path))) {
-      clearDiff(parentPath, util.baseName(path));
-    }
+      checkNext();
+
+    });
   }
 
   return {
-    // Method: on
-    // Install an event handler
-    //
-    on            : events.on,
 
-    getNode       : getNode,
-    getNodeData   : getNodeData,
-    setNodeData   : setNodeData,
-    setNodeAccess : setNodeAccess,
-    setNodeForce  : setNodeForce,
-    clearDiff     : clearDiff,
-    removeNode    : removeNode,
-    forget        : forget,
-    forgetAll     : forgetAll
+    memory: memoryAdapter,
+    localStorage: localStorageAdapter,
+    pending: pendingAdapter,
+
+    events: events,
+
+    // method         , local              , used by
+
+    getNode           : getNode,          // sync
+    setNodeData       : setNodeData,      // sync
+    clearDiff         : clearDiff,        // sync
+    removeNode        : removeNode,       // sync
+    setLastSynced     : setLastSynced,    // sync
+
+    isForced          : isForced,         // baseClient
+
+    on                : events.on,
+    setNodeAccess     : setNodeAccess,
+    setNodeForce      : setNodeForce,
+    setNodeError      : setNodeError,
+    touchNode         : touchNode,
+
+    forgetAll         : forgetAll,        // widget
+    fireInitialEvents : fireInitialEvents,// widget
+
+    setAdapter        : setAdapter,
+    getAdapter        : function() { return dataStore; }
+  };
+
+  // Interface: StorageAdapter
+  //
+  // Backend for the <store>.
+  //
+  // Currently supported:
+  // * memory
+  // * localStorage
+  // * indexedDB
+  //
+  // Planned:
+  // * WebSQL
+  //
+  // Method: get(path)
+  // Get node from given path
+  // Returns a promise.
+  //
+  // Method: set(path, node)
+  // Create / update node at given path. See <store.Node> for a reference on how nodes look.
+  // Returns a promise.
+  //
+  // Method: remove(path)
+  // Remove node from given path
+  // Returns a promise.
+  //
+  // Method: forgetAll()
+  // Remove all data.
+  // Returns a promise.
+  //
+  // Method: on(eventName)
+  // Install an event handler.
+  //
+  // Event: change
+  // Fired when the store changes from another source (such as another tab / window).
+  //
+
+});
+
+define('lib/store/remoteCache',[
+  '../util', '../wireClient', './memory'
+], function(util, wireClient, memoryAdapter) {
+
+  var logger = util.getLogger('store::remote_cache');
+
+  var remoteClient = wireClient;
+
+  return function() {
+    var cache = memoryAdapter('store::remote_cache_backend');
+
+    function determineTimestamp(path) {
+      return util.makePromise(function(promise) {
+        var parentPath = util.containingDir(path);
+        if(parentPath && cache.hasKey(parentPath)) {
+          var baseName = util.baseName(path)
+          cache.get(parentPath).
+            then(function(parentNode) {
+              promise.fulfill(parentNode.data[baseName] || 0);
+            }, function(error) {
+              if(typeof(error) === 'undefined') {
+                promise.fulfill(new Date().getTime());
+              } else {
+                promise.fail(error);
+              }
+            });
+        } else {
+          promise.fulfill(new Date().getTime());
+        }
+      });
+    }
+
+    return {
+      get: function(path) {
+        if(cache.hasKey(path)) {
+          logger.debug('GET HIT', path);
+          return cache.get(path);
+        } else {
+          logger.debug('GET MISS', path);
+          var node = {};
+          return wireClient.get(path).
+            // build node
+            then(function(data, mimeType) {
+              node.data = data;
+              node.mimeType = mimeType;
+              node.binary = data instanceof ArrayBuffer;
+              if(typeof(data) === 'undefined') {
+                node.deleted = true;
+                return undefined;
+              } else {
+                node.deleted = false;
+                return determineTimestamp(path);
+              }
+            }).then(function(timestamp) {
+              node.timestamp = timestamp;
+              return cache.set(path, node);
+            }).then(function() {
+              return node;
+            });
+        }
+      },
+
+      set: function(path, node) {
+        logger.debug('SET', path);
+        return cache.set(path, node).
+          then(util.curry(wireClient.set, path, node.data, node.mimeType));
+      },
+
+      remove: function(path) {
+        logger.debug('REMOVE', path);
+        return cache.remove(path).
+          then(util.curry(wireClient.remove, path));
+      },
+
+      getState: function() {
+        return wireClient.getState();
+      },
+
+      expireKey: function(path) {
+        logger.debug('EXPIRE', path);
+        return cache.remove(path);
+      },
+
+      clearCache: function() {
+        return cache.forgetAll();
+      }
+    };
   };
 });
 
-define('lib/sync',['./wireClient', './store', './util'], function(wireClient, store, util) {
+/*global localStorage */
+
+define('lib/sync',[
+  './util', './store', './store/remoteCache', './wireClient'
+], function(util, store, remoteCacheAdapter, wireClient) {
 
   
 
-  // Namespace: sync
-  //
-  // Sync is where all the magic happens. It connects the <store> and <wireClient>
-  //
+  var remoteAdapter = remoteCacheAdapter();
 
-  var sync; // set below.
-
-  var prefix = '_remoteStorage_', busy=false, syncOkNow=true;
-
+  var events = util.getEventEmitter('error', 'conflict', 'state', 'busy', 'ready', 'timeout', 'debug');
   var logger = util.getLogger('sync');
-  var events = util.getEventEmitter('state');
 
-  function getState(path) {//should also distinguish between synced and locally modified for the path probably
-    if(busy) {
-      return 'busy';
-    } else {
-      return 'connected';
+  //BEGIN-DEBUG
+  events.enableEventCache('debug');
+  //END-DEBUG
+
+  /*******************/
+  /* Namespace: sync */
+  /*******************/
+
+  // Settings. Trivial.
+
+  var settings = util.getSettingStore('remotestorage_sync');
+
+
+  // Section: How to configure sync
+  //
+  // remotestorageJS takes care of all the synchronization of remote and local data.
+  //
+  // As an app developer you need to do three things, to make it work:
+  // * claim access on the root of the tree in question (see <remoteStorage.claimAccess>)
+  // * state which branches you wish to have synced
+  // * release paths you no longer need from the sync plan, so they won't impact performance
+  //
+  // Now suppose you have a data tree like this:
+  //   (start code)
+  //
+  //         A
+  //        / \
+  //       B   C
+  //      / \   \
+  //     d   E   f
+  //        / \
+  //       g   h
+  //
+  //   (end code)
+  //
+  // Let's consider *A* to be our root node (it may be a module root, doesn't
+  // really matter for this example), and let's say we have a <BaseClient>
+  // instance called *client*, that treats paths relative to *A*.
+  //
+  // The simplest thing we can do, is request everything:
+  //   > client.use('');
+  // Now as soon as sync is triggered (usually this happens when connecting
+  // through the widget), the entire tree, with all it's nodes, including data
+  // nodes (files) will be synchronized and cached to localStorage.
+  //
+  // If we previously set up a 'change' handler, it will now be called for each
+  // data node, as it has been synchronized.
+  //
+  // At this point, we can use the synchronous versions of the <BaseClient>
+  // methods for getting data. These methods will only hit the local cache (they
+  // may trigger <syncOne>, but we'll get to that later).
+  //   > client.getListing('B/'); // -> ['d', 'E/']
+  //   > client.getObject('B/d'); // -> { ... }
+  //
+  // That was the simplest usecase. Let's look at another one:
+  //
+  // Suppose that all the data files within our tree contain a lot of data. They
+  // could be music, videos, large images etc. Given that, it would be very
+  // impractical to transfer all of them, even though we don't know at this point
+  // if the user even wants to use them in the current session.
+  // So one option we have, is to tell remoteStorage only to synchronize the
+  // *directory tree*, but not the content of files.
+  //   > client.use('', true);
+  // The second argument given is called *treeOnly*.
+  //
+  // When we now (after the 'ready' event has been fired) use *getListing*, we
+  // still get a listing of all known paths:
+  //   > client.getListing(''); // -> ['B/', 'C/']
+  //   > client.getListing('B/'); // -> ['d', 'E/']
+  //
+  // Getting an object on the other hand, will not return anything.
+  //   > client.getObject('B/d'); // -> undefined
+  //
+  // We can use this scenario, to display a *tree of available data* to the user.
+  // As soon as the user chooses one of the items, we can retrieve it, by passing
+  // a callback to getObject:
+  //   > client.getObject('B/d', function(object) {
+  //   >   console.log("received object is: ", object);
+  //   > });
+  //
+
+  function needsSync(path) {
+    if(! path) {
+      path = '/';
     }
-  }
-  function setBusy(val) {
-    busy=val;
-
-    events.emit('state', val ? 'busy' : 'connected');
-  }
-
-  function dirMerge(dirPath, remote, cached, diff, force, access, startOne, finishOne, clearCb) {
-    for(var i in remote) {
-      if((!cached[i] && !diff[i]) || cached[i] < remote[i]) {//should probably include force and keep in this decision
-        pullNode(dirPath+i, force, access, startOne, finishOne);
+    if(! util.isDir(path)) {
+      return util.getPromise().fulfillLater(false);
+    }
+    return store.getNode(path).then(function(root) {
+      if(Object.keys(root.diff).length > 0) {
+        return true;
       }
-    }
-    for(var i in cached) {
-      if(!remote[i] && !diff[i]) { // incoming delete
-        store.removeNode(dirPath + i);
-      } else if(!remote[i] || cached[i] > remote[i]) {
-        if(util.isDir(i)) {
-          pullNode(dirPath+i, force, access, startOne, finishOne);
-        } else {//recurse
-          logger.debug('dirMerge will push', cached[i], '>', remote[i]);
-
-          var childNode = store.getNode(dirPath+i);
-          var childData = store.getNodeData(dirPath + i);
-          startOne();
-          if(typeof(childData) === 'object') {
-            childData = JSON.stringify(childData);
+      var keys = Object.keys(root.data);
+      function next() {
+        var key = keys.shift();
+        if(! key) {
+          return false;
+        }
+        return needsSync(path + key).then(function(value) {
+          if(value) {
+            return true;
+          } else {
+            return next();
           }
-          wireClient.set(dirPath+i, childData, childNode.mimeType, function(err) {
-            if(err) {
-              logger.error('wireclient said error', err);
-            }
-            finishOne(err);
-          });
-        }
+        });
       }
-    }
-    for(var i in diff) {
-      if(!cached[i]) {//outgoing delete
-        if(remote[i]) {
-          startOne();
-          wireClient.set(dirPath+i, undefined, undefined, function(err) {
-            finishOne();
-          });
-        } else {
-          clearCb(i);
-        }
-      } else {
-        clearCb(i);
-      }
-    }
+      return next();
+    });
   }
 
-  function getFileName(path) {
-    var parts = path.split('/');
-    if(util.isDir(path)) {
-      return parts[parts.length-2]+'/';
-    } else {
-      return parts[parts.length-1];
-    }
+  var disabled = false;
+
+  function disable() {
+    disabled = true;
+    events.emit('ready');
   }
 
-  function findForce(path, node) {
-    if(! node) {
-      return null;
-    } else if(! node.startForce) {
-      var parentPath = util.containingDir(path);
-      if((!path) || (parentPath == path)) {
-        return false;
-      } else if(parentPath) {
-        return findForce(parentPath, store.getNode(parentPath));
-      }
-    } else {
-      return node.startForce;
-    }
+  function enable() {
+    enabled = true;
   }
 
-  function hasDiff(parentPath, fname) {
-    var parent = store.getNode(parentPath);
-    return !! parent.diff[fname];
-  }
+  /**************************************/
 
-  function pushNode(path, startOne, finishOne) {
-    if(util.isDir(path)) {
-      var dirNode = store.getNode(path);
-      dirMerge(path, store.getNodeData(path), dirNode.diff, false, false, startOne, finishOne, function(i) { store.clearDiff(path, i); });
-    }
-    logger.debug('pushNode', path);
-    var parentPath = util.containingDir(path);
-    var fname = getFileName(path)
-    if(hasDiff(parentPath, fname)) {
-      logger.debug('pushNode!', path);
-      var data = store.getNodeData(path, true);
-      var node = store.getNode(path);
-      if(! data) {
-        logger.error("ATTEMPTED TO PUSH EMPTY DATA", node, data);
+  // Section: High-level sync functions
+  //
+  // These are the functions that are usually called from outside this
+  // file to initiate some synchronization task.
+  //
+  //
+
+  // Function: fullSync
+  //
+  // Perform a full sync cycle.
+  //
+  // Will update local and remote data as needed.
+  //
+  // Calls it's callback once the cycle is complete.
+  //
+  // Fires:
+  //   ready    - when the sync queue is empty afterwards
+  //   conflict - when there are two incompatible versions of the same node
+  //   change   - when the local store is updated
+  //
+  function fullSync(pushOnly) {
+    return util.makePromise(function(promise) {
+      if(disabled) {
+        promise.fulfillLater()
         return;
       }
-      wireClient.set(path, data, node.mimeType, function(err) {
-        logger.debug("wire client set result", arguments);
-        if(! err) {
-          store.clearDiff(parentPath, fname);
-        } else {
-          logger.error('pushNode', err);
+      if(! isConnected()) {
+        promise.fail('not-connected');
+        return;
+      }
+
+      logger.info("full " + (pushOnly ? "push" : "sync") + " started");
+
+      findRoots().then(function(roots) {
+        logger.debug("SYNCING ROOTS", roots);
+        var synced = 0;
+
+        function rootCb(path) {
+          return function() {
+            logger.debug("SYNCED ROOT", path);
+            synced++;
+            if(synced == roots.length) {
+              sync.lastSyncAt = new Date();
+              promise.fulfill();
+            }
+          };
         }
-        finishOne(err);
-      });
-    }
-  }
 
-  function pullNode(path, force, access, startOne, finishOne) {
-    var thisNode = store.getNode(path);
-    var thisData = store.getNodeData(path);
-    var isDir = util.isDir(path);
-    if((! thisData) && isDir) {
-      thisData = {};
-    }
-    logger.debug('pullNode "'+path+'"', thisNode);
+        if(roots.length === 0) {
+          return promise.fail(new Error("No access claimed!"));
+        }
 
-    if(thisNode.startAccess == 'rw' || !access) {
-      force = thisNode.startAccess;
-    }
-
-    if(! force) {
-      force = findForce(path, thisNode);
-    }
-    
-    startOne();
-
-    if(force || access) {
-      wireClient.get(path, function(err, data) {
-        if(!err && data) {
-          if(isDir) {
-            dirMerge(path, data, thisData, thisNode.diff, force, access, startOne, finishOne, function(i) {
-              store.clearDiff(path, i);
+        roots.forEach(function(root) {
+          enqueueTask(function() {
+            return traverseTree(root, processNode, {
+              pushOnly: pushOnly
             });
-          } else {
-            store.setNodeData(path, data, false);
-          }
-        } else {
-          pushNode(path, startOne, finishOne);
-        }
-        
-        finishOne(err);
-        
+          }, rootCb(root));
+        });
       });
+    });
+  }
 
+  // Function: fullPush
+  //
+  // Perform a full sync cycle, but only update remote data.
+  //
+  // Used before disconnecting, to clear local diffs.
+  //
+  // Fires:
+  //   ready    - when the sync queue is empty afterwards
+  //   conflict - when there are two incompatible versions of the same node
+  //   change   - when the local store is updated
+  //
+  function fullPush(callback) {
+    return fullSync(callback, true);
+  }
+
+  // Function: partialSync
+  //
+  // Sync a partial tree, starting at given path.
+  //
+  // Parameters:
+  //   startPath - path to start at. Must be a directory path.
+  //   depth     - maximum depth of directories to traverse. null for infinite depth.
+  //   callback  - callback to call when done. receives no parameters.
+  //
+  // Fires:
+  //   ready    - when the sync queue is empty afterwards
+  //   conflict - when there are two incompatible versions of the same node
+  //   change   - when the local store is updated
+  //
+  function partialSync(startPath, depth) {
+    return util.makePromise(function(promise) {
+      if(! isConnected()) {
+        return promise.fulfill();
+      }
+
+      validatePath(startPath);
+      logger.info("partial sync requested: " + startPath);
+      enqueueTask(function() {
+        logger.info("partial sync started from: " + startPath);
+        return traverseTree(startPath, processNode, {
+          depth: depth,
+          force: true
+        });
+      }, promise.fulfill.bind(promise));
+    });
+  }
+
+  // Function: updateDataNode
+  //
+  // Sync a single data node, bypassing cache. Used by <BaseClient> to
+  // fetch pending nodes.
+  //
+  // TODO: handle pushing nodes as well (if localNode is given)
+  function updateDataNode(path, localNode) {
+    if(localNode) {
+      return wireClient.set(path, localNode.data, localNode.mimeType);
+    } else {
+      return remoteAdapter.get(path).
+        then(function(node) {
+          remoteAdapter.expireKey(path);
+          return node;
+        });
+    }
+  }
+
+
+  /**************************************/
+
+  // Section: Scheduling and state
+  //
+  // Scheduling happens using three variables:
+  //
+  //   ready state - a boolean, set to false when any task is in progress
+  //
+  //   task queue  - a queue of procedures to call when 'ready' is fired.
+  //                 All <High-level sync functions> enqueue their task here,
+  //                 when the the ready state is currently false.
+  //
+  //   deferred iteration queue - a queue of spawnQueue tasks to start, when the
+  //                 'ready' event *would* be fired. Enqueued from spawnQueue,
+  //                 when it's called with ready state set to false.
+  //
+
+
+  var ready = true;
+
+  // queue of spawnQueue calls
+  // (for queueing *within* a sync cycle)
+  var deferredIterationQueue = [];
+  // queue of sync tasks
+  // (if requested, while not ready)
+  var taskQueue = [];
+
+  // function to call when current task is done, before next task is popped from taskQueue.
+  var currentFinalizer = null;
+
+  function beginTask() {
+    setBusy();
+    var task = taskQueue.shift();
+    if(! task) {
+      throw new Error("Can't begin task, queue is empty");
+    }
+    currentFinalizer = task.finalizer;
+    var result = task.run();
+    if(util.isPromise(result)) {
+      result.then(finishTask, function(error) {
+        logger.error("TASK FAILED", (error && error.stack) || error);
+        finishTask();
+        fireError(null, error);
+      });
+    }
+  }
+
+  function finishTask() {
+    remoteAdapter.clearCache();
+    if(currentFinalizer) {
+      currentFinalizer();
+    }
+    if(taskQueue.length > 0) {
+      beginTask();
+    } else {
+      setReady();
+    }
+  }
+
+  function enqueueTask(callback, finalizer) {
+    taskQueue.push({
+      run: callback,
+      finalizer: finalizer
+    });
+    if(ready) {
+      beginTask();
+    } else {
+      logger.info('not ready, enqueued task');
+    }
+  }
+
+  function setBusy() {
+    ready = false;
+    events.emit('state', 'busy');
+    events.emit('busy');
+  }
+  function setReady() {
+    ready = true;
+    events.emit('state', 'connected');
+    events.emit('ready');
+  }
+
+  // Function: getState
+  // Get the current ready state of synchronization. Either 'connected' or 'busy'.
+  function getState() {
+    return disabled ? 'disabled' : (ready ? 'connected' : 'busy');
+  }
+
+  // Section: Events
+
+  // Event: ready
+  //
+  // Fired when sync becomes ready. This means the current sync cycle has ended.
+  //
+  // Shouldn't be used from application code, as the state may move back to 'busy'
+  // immediately afterwards, in case tasks have been enqueued by the high-level
+  // sync functions.
+
+  // Event: conflict
+  //
+  // Both local and remote data of a node has been modified.
+  // You need to specify a resolution.
+  //
+  // Properties:
+  //   path        - path of the conflicting node
+  //   localValue  - locally cached (and modified) value
+  //   remoteValue - new value seen on the remote server
+  //   localTime   - Date object, representing last local update
+  //   remoteTime  - Date object, representing last remote update
+  //   lastUpdate  - Date object, representing last synchronization of this node
+  //   resolve     - Function to call, in order to specify a resolution
+  //   type        - type of conflict, either "delete" or "merge"
+  //
+  // Example:
+  //   (start code)
+  //
+  //   client.on('conflict', function(event) {
+  //
+  //     console.log(event.type, ' conflict at ', event.path,
+  //                 event.localTime, 'vs', event.remoteTime,
+  //                 '(last seen: ', event.lastUpdate, ')');
+  //
+  //     event.resolve('local'); // overwrite remote version
+  //     // OR
+  //     event.resolve('remote'); // overwrite local version
+  //   });
+  //
+  //   (end code)
+  //
+
+  function fireConflict(type, path, local, remote) {
+    events.emit('conflict', {
+      type: type,
+      path: path,
+      localValue: local.data,
+      remoteValue: remote.data,
+      localTime: new Date(local.timestamp),
+      remoteTime: new Date(remote.timestamp),
+      lastUpdate: new Date(local.lastUpdatedAt),
+      resolve: makeConflictResolver(path, local, remote)
+    });
+  }
+
+  // Event: error
+  //
+  // Fired when either one of the underlying layers propagates an error,
+  // or an exception is called within a sync callback.
+  //
+  // Properties:
+  //   path  - path that is associated with this error. May be null.
+  //   error - Either an error message (string) or a Error object.
+  //   stack - If this was an error and the browser supports the error.stack
+  //           property, this holds the stack as an array of lines.
+
+
+  function fireError(path, error) {
+    var event = { path: path, source: 'sync' };
+    if(typeof(error) == 'object') {
+      event.stack = error.stack;
+      if(typeof(event.stack) == 'string') {
+        event.stack = event.stack.split('\n');
+      }
+      event.message = error.message;
+      event.exception = error;
+    } else if(error == 'timeout') {
+      events.emit('timeout');
       return;
-
-    } else if(thisData && isDir) {
-      for(var i in thisData) {
-        if(util.isDir(i)) {
-          pullNode(path+i, force, access, startOne, finishOne);
-        }
-      }
+    } else {
+      event.message = error;
     }
-
-    // this is an edge case, reached when all of the following are true:
-    // * this is NOT a directory node
-    // * neither this node nor any of it's parent have startForce set
-    // * this node doesn't have it's startAccess flag set
-    // * neither 'force' nor 'access' are forced by this pullNode call
-    finishOne();
-
+    events.emit('error', event);
   }
 
-  // TODO: DRY those two:
+  // Section: Update functions
 
-  function fetchNow(path, callback) {
-    var outstanding = 0, errors=[];
-    function startOne() {
-      outstanding++;
-    }
-    function finishOne(err) {
-      if(err) {
-        errors.push(err);
-      }
-      outstanding--;
-      if(outstanding == 0) {
-        setBusy(false);
-        callback(errors || null, store.getNode(path));
-      }
-    }
-    setBusy(true);
-    pullNode(path, false, true, startOne, finishOne)
+  // Function: deleteLocal
+  //
+  // remove local data at path.
+  // Fires: change
+  function deleteLocal(path, local, remote) {
+    logger.info('DELETE', path, 'REMOTE -> LOCAL');
+    return store.removeNode(path, remote.timestamp);
   }
 
-  function syncNow(path, callback, force) {
+  // Function: deleteRemote
+  //
+  // remove remote data, then clear local diff.
+  // Fires: error
+  function deleteRemote(path, local, remote) {
+    logger.info('DELETE', path, 'LOCAL -> REMOTE');
+    return remoteAdapter.
+      remove(path).
+      then(function() {
+        store.clearDiff(path);
+      });
+  }
+
+  // Function: updateLocal
+  //
+  // update local data at path.
+  function updateLocal(path, local, remote) {
+    logger.info('UPDATE', path, 'REMOTE -> LOCAL');
+    return store.setNodeData(path, remote.data, false, remote.timestamp, remote.mimeType);
+  }
+
+  // Function: updateRemote
+  //
+  // update remote data at path, then clear local diff.
+  // Fires: error
+  function updateRemote(path, local, remote) {
+    logger.info('UPDATE', path, 'LOCAL -> REMOTE');
+    var parentPath = util.containingDir(path);
+    var baseName = util.baseName(path);
+    return remoteAdapter.set(path, local).
+      then(util.curry(remoteAdapter.expireKey, parentPath)).
+      then(util.curry(remoteAdapter.get, parentPath)).
+      then(function(remoteNode) {
+        return store.clearDiff(
+          path, remoteNode ? remoteNode.data[baseName] : undefined
+        );
+      });
+  }
+
+  // Function: processNode
+  //
+  // Decides which action to perform on the node in order to synchronize it.
+  //
+  // Used as a callback for <traverseTree>.
+  function processNode(path, local, remote) {
+
+    //BEGIN-DEBUG
+    function debugEvent(message) {
+      events.emit('debug', {
+        path: path,
+        method: 'processNode',
+        message: message,
+        timestamp: new Date()
+      });
+    }
+    //END-DEBUG
 
     if(! path) {
-      throw "path is required";
+      throw new Error("Can't process node without a path!");
     }
 
-    if((! syncOkNow) && (! force)) {
-      return callback(null);
+    if(util.isDir(path)) {
+      throw new Error("Attempt to process directory node: " + path);
     }
 
-    if(wireClient.getState() == 'anonymous') {
-      if(callback) {
-        callback(['not connected']);
+    var action = null;
+
+    if(local.deleted) {
+      // outgoing delete!
+      //BEGIN-DEBUG
+      debugEvent('outgoing delete');
+      //END-DEBUG
+      action = deleteRemote;
+
+    } else if(remote.deleted && local.lastUpdatedAt > 0) {
+      if(local.timestamp == local.lastUpdatedAt) {
+        // incoming delete!
+        //BEGIN-DEBUG
+        debugEvent('incoming delete');
+        //END-DEBUG
+        action = deleteLocal;
+
+      } else {
+        // deletion conflict!
+        //BEGIN-DEBUG
+        debugEvent('deletion conflict', 'remote', remote, 'local', local);
+        //END-DEBUG
+        action = util.curry(fireConflict, 'delete');
+
       }
+    } else if(local.timestamp == remote.timestamp) {
+      // no action today!
+      //BEGIN-DEBUG
+      debugEvent('no action today', 'remote', remote, 'local', local);
+      //END-DEBUG
       return;
+
+    } else if((!remote.timestamp) || local.timestamp > remote.timestamp) {
+      // local updated happpened before remote update
+      if((!remote.timestamp) || local.lastUpdatedAt == remote.timestamp) {
+        // outgoing update!
+        //BEGIN-DEBUG
+        debugEvent('outgoing update');
+        //END-DEBUG
+        action = updateRemote;
+
+      } else {
+        // merge conflict!
+        //BEGIN-DEBUG
+        debugEvent('merge conflict (local > remote)', 'remote', remote, 'local', local);
+        //END-DEBUG
+        action = util.curry(fireConflict, 'merge');
+
+      }
+    } else if(local.timestamp < remote.timestamp) {
+      // remote updated happened before local update
+      if(local.lastUpdatedAt == local.timestamp) {
+        // incoming update!
+        //BEGIN-DEBUG
+        debugEvent('incoming update');
+        //END-DEBUG
+        action = updateLocal;
+
+      } else {
+        // merge conflict!
+        //BEGIN-DEBUG
+        debugEvent('merge conflict (local < remote)', 'remote', remote, 'local', local);
+        //END-DEBUG
+        action = util.curry(fireConflict, 'merge');
+
+      }
     }
 
-    var outstanding=0, errors=[];
-    function startOne() {
-      outstanding++;
+    if(! action) {
+      console.error("NO ACTION DETERMINED!!!", path, local, 'vs', remote);
+      var exc = new Error("Something went terribly wrong.");
+      exc.path = path;
+      exc.localNode = local;
+      exc.remoteNode = remote;
+      throw exc;
     }
-    function finishOne(err) {
-      if(err) {
-        errors.push(path);
-      }
-      outstanding--;
-      if(outstanding==0) {
-        setBusy(false);
-        setTimeout(function() {
-          syncOkNow = true;
-        }, sync.minPollInterval);
-        if(callback) {
-          callback(errors.length > 0 ? errors : null);
-        } else {
-          logger.info('syncNow done');
+
+    return action(path, local, remote);
+  }
+
+  /**************************************/
+
+  // Function: fetchLocalNode
+  //
+  // Fetch a local node at given path.
+  //
+  // Loads a <store.Node> and extends it with the following:
+  //   data - data of the node, as received from <store.getNodeData>
+  //   deleted - whether this node is considered deleted.
+  function fetchLocalNode(path, isDeleted) {
+    return store.getNode(path).
+      then(function(localNode) {
+        logger.info("fetch local", path, localNode);
+
+        if(isForeignPath(path)) {
+          // can't modify foreign data locally
+          isDeleted = false;
         }
+
+        function yieldNode(node) {
+          localNode.deleted = isDeleted;
+          return localNode;
+        }
+
+        if(typeof(isDeleted) === 'undefined') {
+          // in some contexts we don't have the parent present already to check.
+          var parentPath = util.containingDir(path);
+          var baseName = util.baseName(path);
+          if(parentPath) {
+            return store.getNode(parentPath).
+              then(function(parent) {
+                isDeleted = (! parent.data[baseName]) && parent.diff[baseName];
+                return yieldNode();
+              });
+          } else {
+            // root node can't be deleted.
+            isDeleted = false;
+          }
+        }
+        return yieldNode();
+      });
+  }
+
+  // Function: fetchRemoteNode
+  //
+  // Fetch node at given path from remote.
+  //
+  // Constructs a node like this:
+  //   timestamp - last update of the node, if known. Otherwise 0.
+  //   data - data of the node received from remotestorage, or undefined
+  //   deleted - whether remotestorage knows this node.
+  //   mimeType - MIME type of the node
+  //
+  function fetchRemoteNode(path, isDeleted) {
+    logger.info("fetch remote", path);
+    return remoteAdapter.get(path).
+      then(function(node) {
+        if(! node) {
+          node = {};
+        }
+        if(util.isDir(path) && (! node.data)) {
+          node.data = {};
+        }
+        return node;
+      });
+  }
+
+  // Section: Trivial helpers
+
+  function isConnected() {
+    return remoteAdapter.getState() === 'connected';
+  }
+
+  function makeSet(a, b) {
+    var o = {};
+    var al = a.length, bl = b.length;
+    for(var i=0;i<al;i++) { o[a[i]] = true; }
+    for(var j=0;j<bl;j++) { o[b[j]] = true; }
+    return Object.keys(o);
+  }
+
+  var foreignPathRE = /^[^\/][^:]+:\//;
+  var ownPathRE = /^\//;
+
+  function isOwnPath(path) {
+    return ownPathRE.test(path);
+  }
+
+  function isForeignPath(path) {
+    return foreignPathRE.test(path);
+  }
+
+  function validPath(path, foreignOk) {
+    return isOwnPath(path) || (foreignOk ? isForeignPath(path) : false);
+  }
+
+  function validatePath(path, foreignOk) {
+    if(! validPath(path, foreignOk)) {
+      throw new Error("Invalid path: " + path);
+    }
+  }
+
+  function findRoots() {
+    return store.getNode('/').then(function(root) {
+      if(root.startAccess) {
+        return ['/'];
+      } else {
+        return store.getNode('/public/').then(function(publicRoot) {
+          var paths = [];
+          for(var key in root.data) {
+            paths.push('/' + key);
+          }
+          for(var publicKey in publicRoot.data) {
+            paths.push('/public/' + publicKey);
+          }
+          return util.asyncSelect(paths, function(path) {
+            return store.getNode(path).then(function(node) {
+              return !! node.startAccess;
+            });
+          });
+        });
       }
-    }
-    logger.info('syncNow '+path);
-    setBusy(true);
-    syncOkNow = false;
-    pullNode(path, false, false, startOne, finishOne);
+    }).then(function(roots) {
+      return roots;
+    });
   }
 
-  sync = {
-    // Property: minPollInterval
-    // Minimal interval between syncNow calls.
-    // All calls that happen in between, immediately succeed
-    // (call their callbacks) without doing anything.
-    minPollInterval: 3000,
-    syncNow: syncNow,
-    fetchNow: fetchNow,
-    getState : getState,
-    on: events.on
-  };
-
-  return sync;
-
-});
-
-define('lib/widget',['./assets', './webfinger', './hardcoded', './wireClient', './sync', './store', './platform', './util'], function (assets, webfinger, hardcoded, wireClient, sync, store, platform, util) {
-
-  // Namespace: widget
-  //
-  // The remotestorage widget.
-  //
-  // See <remoteStorage.displayWidget>
-  //
-  //
-  // Event: state
-  //
-  // Fired when the widget state changes.
-  // See <remoteStorage.getWidgetState> for available states.
-
-  
-
-  var locale='en',
-    connectElement,
-    widgetState,
-    userAddress,
-    authDialogStrategy = 'redirect',
-    authPopupRef,
-    scopesObj = {};
-
-  var events = util.getEventEmitter('state');
-
-  var popupSettings = 'resizable,toolbar=yes,location=yes,scrollbars=yes,menubar=yes,width=820,height=800,top=0,left=0';
-
-  var logger = util.getLogger('widget');
-  function translate(text) {
-    return text;
-  }
-
-  function calcWidgetState() {
-    var wireClientState = wireClient.getState();
-    if(wireClientState == 'connected') {
-      return sync.getState();// 'connected', 'busy'
-    }
-    return wireClientState;//'connected', 'authing', 'anonymous'
-  }
-
-  function setWidgetStateOnLoad() {
-    setWidgetState(calcWidgetState());
-  }
-
-  function setWidgetState(state, updateView) {
-    widgetState = state;
-    if(updateView !== false) {
-      displayWidgetState(state, userAddress);
-    }
-    events.emit('state', state);
-  }
-
-  function getWidgetState() {
-    return widgetState;
-  }
-
-  function displayWidgetState(state, userAddress) {
-    if(state === 'authing') {
-      platform.alert("Authentication was aborted. Please try again.");
-      return setWidgetState('typing')
-    }
-
-    var userAddress = localStorage['remote_storage_widget_useraddress'] || '';
-    var html = 
-      '<style>'+assets.widgetCss+'</style>'
-      +'<div id="remotestorage-state" class="'+state+'">'
-      +'  <input id="remotestorage-connect-button" class="remotestorage-button" type="submit" value="'+translate('connect')+'"/>'//connect button
-      +'  <span id="remotestorage-register-button" class="remotestorage-button">'+translate('get remotestorage')+'</span>'//register
-      +'  <img id="remotestorage-cube" src="'+assets.remoteStorageCube+'"/>'//cube
-      +'  <span id="remotestorage-disconnect">Disconnect ' + (userAddress ? '<strong>'+userAddress+'</strong>' : '') + '</span>'//disconnect hover; should be immediately preceded by cube because of https://developer.mozilla.org/en/CSS/Adjacent_sibling_selectors:
-      +'  <a id="remotestorage-questionmark" href="http://unhosted.org/#remotestorage" target="_blank">?</a>'//question mark
-      +'  <span class="infotext" id="remotestorage-infotext">This app allows you to use your own data storage!<br/>Click for more info on the Unhosted movement.</span>'//info text
-      //+'  <input id="remotestorage-useraddress" type="text" placeholder="you@remotestorage" autofocus >'//text input
-      +'  <input id="remotestorage-useraddress" ' + (state == 'connecting' || state == 'authing' ? 'disabled="disabled" ' : '') + 'type="text" value="' + userAddress + '" placeholder="user@host" autofocus="" />'//text input
-      +'  <a class="infotext" href="http://remotestoragejs.com/" target="_blank" id="remotestorage-devsonly">RemoteStorageJs is still in developer preview!<br/>Click for more info.</a>'
-      +'</div>';
-    platform.setElementHTML(connectElement, html);
-    platform.eltOn('remotestorage-register-button', 'click', handleRegisterButtonClick);
-    platform.eltOn('remotestorage-connect-button', 'click', handleConnectButtonClick);
-    platform.eltOn('remotestorage-disconnect', 'click', handleDisconnectClick);
-    platform.eltOn('remotestorage-cube', 'click', handleCubeClick);
-    platform.eltOn('remotestorage-useraddress', 'type', handleWidgetTypeUserAddress);
-  }
-  function handleRegisterButtonClick() {
-    window.open(
-      'http://unhosted.org/en/a/register.html',
-      'Get your remote storage',
-      popupSettings
-    );
-  }
-  function redirectUriToClientId(loc) {
-    //TODO: add some serious unit testing to this function
-    if(loc.substring(0, 'http://'.length) == 'http://') {
-      loc = loc.substring('http://'.length);
-    } else if(loc.substring(0, 'https://'.length) == 'https://') {
-      loc = loc.substring('https://'.length);
+  function findAccess(path) {
+    if(! path) {
+      return null;
     } else {
-      return loc;//for all other schemes
+      return store.getNode(path).
+        then(function(node) {
+          if(node.startAccess) {
+            return node.startAccess;
+          } else {
+            return findAccess(util.containingDir(path));
+          }
+        });
     }
-    var hostParts = loc.split('/')[0].split('@');
-    if(hostParts.length > 2) {
-      return loc;//don't know how to simplify URLs with more than 1 @ before the third slash
-    }
-    if(hostParts.length == 2) {
-      hostParts.shift();
-    }
-    return hostParts[0];
   }
 
-  //
-  // //Section: Auth popup
-  //
-  //
-  // when remoteStorage.displayWidget is called with the authDialog option set to 'popup',
-  // the following happens:
-  //   * When clicking "connect", a window is opened and saved as authPopupRef (prepareAuthPopup)
-  //   * Once webfinger discovery is done, authPopupRef's location is set to the auth URL (setPopupLocation)
-  //   * In case webfinger discovery fails, the popup is closed (closeAuthPopup)
-  //   * As soon as the auth dialog redirects back with an access_token, the child popup calls
-  //     "remotestorageTokenReceived" on the opening window and closes itself.
-  //   * remotestorageTokenReceived recalculates the widget state -> we're connected!
-  // 
-
-  function prepareAuthPopup() { // in parent window
-    authPopupRef = window.open(
-      document.location,
-      'remotestorageAuthPopup',
-      popupSettings + ',dependent=yes'
+  function findNextForceRoots(path, cachedNode) {
+    logger.debug('findNextForceRoots', path);
+    var roots = [];
+    function checkChildren(node) {
+      return util.asyncEach(Object.keys(node.data), function(key) {
+        return store.getNode(path + key).then(function(childNode) {
+          logger.debug('findNextForceRoots check', path + key, childNode);
+          if(childNode.startForce || childNode.startForceTree) {
+            roots.push(path + key);
+          } else if(util.isDir(key)) {
+            return findNextForceRoots(path + key, childNode).
+              then(function(innerRoots) {
+                innerRoots.forEach(function(innerRoot) {
+                  roots.push(innerRoot);
+                });
+              });
+          }
+        });
+      }).then(function() {
+        logger.debug('findNextForceRoots return', roots);
+        return roots;
+      });
+    }
+    return (
+      cachedNode ? checkChildren(cachedNode) :
+        store.getNode(path).then(checkChildren)
     );
-    window.remotestorageTokenReceived = function() {
-      delete window.remotestorageTokenReceived;
-      setWidgetStateOnLoad();
+  }
+
+  // Function: traverseTree
+  //
+  // Traverse the full tree of nodes, passing each visited data node to the callback for processing.
+  //
+  // Parameters:
+  //   root     - Path to the root to start traversal at.
+  //   callback - callback called for each node. see below.
+  //   options  - (optional) Object with options. see below.
+  //
+  // Callback parameters:
+  //   The callback is called for each node, that is present either
+  //   locally or remote (or both).
+  //
+  //   path       - path to current node
+  //   localNode  - local node at current path. See <fetchLocalNode> for a description.
+  //   remoteNode - remote node at current path. See <fetchRemoteNode> for a description.
+  //
+  // Options:
+  //   depth - When given, a positive number, setting the maximum depth of traversal.
+  //           Depth will be decremented in each recursion
+  function traverseTree(root, callback, opts) {
+    logger.info('traverse', root, opts, 'callback?', !!callback);
+
+    if(! util.isDir(root)) {
+      throw "Can't traverse data node: " + root;
+    }
+
+    if(! opts) { opts = {}; }
+
+    if(opts.depth || opts.depth === 0) {
+      logger.debug("traverse depth", opts.depth, root);
+    }
+
+    //BEGIN-DEBUG
+    function debugEvent(path, message) {
+      events.emit('debug', {
+        path: path,
+        method: 'traverseTree',
+        message: message,
+        timestamp: new Date()
+      });
+    }
+    //END-DEBUG
+
+    function determineLocalInterest(node, options) {
+      logger.debug('traverseNode.determineLocalInterest', node, options);
+      return util.makePromise(function(promise) {
+        options.access = util.highestAccess(options.access, node.startAccess);
+        options.force = opts.force || node.startForce;
+        options.forceTree = opts.forceTree || node.startForceTree;
+
+        function determineForce() {
+          logger.debug('determineForce', options);
+          var force = (options.force || options.forceTree);
+          if((! force) && (options.path == '/' || options.path == '/public/')) {
+            findNextForceRoots(options.path).
+              then(function(roots) {
+                logger.debug('local interest', options.path, node, false, 'next: ', roots);
+                promise.fulfill(node, false, roots);
+              });
+          } else {
+            logger.debug('local interest', options.path, node, force);
+            promise.fulfill(node, force);
+          }
+        }
+
+        if(! options.access) {
+          // in case of a partial sync, we have not been informed about
+          // access inherited from the parent.
+          findAccess(util.containingDir(root)).
+            then(function(access) {
+              options.access = access;
+            }).then(determineForce);
+        } else {
+          determineForce();
+        }
+      });
+    }
+
+    function mergeDataNode(path, localNode, remoteNode, options) {
+      //BEGIN-DEBUG
+      debugEvent(path, 'mergeDataNode');
+      //END-DEBUG
+      logger.debug("traverseTree.mergeDataNode", path);
+      if(util.isDir(path)) {
+        throw new Error("Not a data node: " + path);
+      }
+      return callback(path, localNode, remoteNode);
+    }
+
+    function mergeDirectory(path, localNode, remoteNode, options) {
+      //BEGIN-DEBUG
+      debugEvent(path, 'mergeDirectory');
+      //END-DEBUG
+      logger.debug("traverseTree.mergeDirectory", path, localNode, options);
+
+      var fullListing = makeSet(
+        Object.keys(localNode.data),
+        Object.keys(remoteNode.data)
+      );
+      return util.asyncEach(fullListing, function(key) {
+        var childPath = path + key;
+        var remoteVersion = remoteNode.data[key];
+        var localVersion = localNode.data[key];
+        logger.debug("traverseTree.mergeDirectory[" + childPath + "]", remoteVersion, 'vs', localVersion);
+        if(remoteVersion !== localVersion) {
+          if(util.isDir(childPath)) {
+            if(options.forceTree && options.depth !== 0) {
+              var childOptions = util.extend({}, options);
+              if(childOptions.depth) {
+                childOptions.depth--;
+              }
+              return mergeTree(childPath, childOptions);
+            }
+          } else if(options.force) {
+            return util.asyncGroup(
+              util.curry(fetchLocalNode, childPath),
+              util.curry(fetchRemoteNode, childPath)
+            ).then(function(nodes, errors) {
+              if(errors.length > 0) {
+                logger.error("Failed to sync node", childPath, errors);
+                return store.setNodeError(childPath, errors);
+              } else {
+                return mergeDataNode(childPath, nodes[0], nodes[1], options);
+              }
+            });
+          } else {
+            store.touchNode(childPath);
+          }
+        }
+      });
+    }
+
+    function mergeTree(path, options) {
+      //BEGIN-DEBUG
+      debugEvent(path, 'mergeTree');
+      //END-DEBUG
+      logger.debug("traverseTree.mergeTree", path);
+      options.path = path;
+      return fetchLocalNode(path).
+        then(util.rcurry(determineLocalInterest, options)).
+        then(function(localNode, localInterest, nextRoots) {
+          if(localInterest) {
+            return fetchRemoteNode(path).
+              then(function(remoteNode) {
+                return mergeDirectory(path, localNode, remoteNode, options).
+                  then(function() {
+                    logger.debug('mergeDirectory done');
+                    return store.setLastSynced(path, remoteNode.timestamp);
+                  });
+              });
+          } else if(nextRoots) {
+            for(var key in nextRoots) {
+              return util.asyncEach(nextRoots, function(root) {
+                return mergeTree(root, options);
+              });
+            }
+          } else {
+            logger.debug("NO INTEREST & NO NEXT ROOTS", path);
+          }
+        });
+    }
+
+    return mergeTree(root, opts);
+  }
+
+  // Section: Meta helpers
+
+  // Function: makeConflictResolver
+  // returns a function that can be called to resolve the conflict
+  // at the given path.
+  function makeConflictResolver(path, local, remote) {
+    return function(solution, newData) {
+      if(solution == 'local') {
+        // outgoing update!
+        if(newData) {
+          local.data = newData;
+          // a hack to also update local data, when the resolution specifies new data
+          updateLocal(path, local, local);
+        }
+        updateRemote(path, local, remote);
+      } else if(solution == 'remote') {
+        // incoming update!
+        updateLocal(path, local, remote);
+      } else {
+        throw "Invalid conflict resolution: " + solution;
+      }
     };
   }
 
-  function closeAuthPopup() { // in parent window
-    authPopupRef.close();
-  }
 
-  function setAuthPopupLocation(location) { // in parent window
-    authPopupRef.document.location = location;
-  }
+  events.on('error', function(error) {
+    logger.error("Sync Error: ", error);
+  });
 
-  function finalizeAuthPopup() { // in child window
-    if(! frames.opener) {
-      // not in child window (probably due to storage-first)
-      return;
-    }
-    frames.opener.remotestorageTokenReceived();
-    window.close();
-  }
 
-  function dance(endpoint) {
-    var endPointParts = endpoint.split('?');
-    var queryParams = [];
-    if(endPointParts.length == 2) {
-      queryParams=endPointParts[1].split('&');
-    } else if(endPointParts.length>2) {
-      errorHandler('more than one questionmark in auth-endpoint - ignoring');
-    }
-    var loc = platform.getLocation();
-    var scopesArr = [];
-    for(var i in scopesObj) {
-      scopesArr.push(i+':'+scopesObj[i]);
-    }
-    queryParams.push('response_type=token');
-    queryParams.push('scope='+encodeURIComponent(scopesArr.join(' ')));
-    queryParams.push('redirect_uri='+encodeURIComponent(loc));
-    queryParams.push('client_id='+encodeURIComponent(redirectUriToClientId(loc)));
+  var sync = util.extend(events, {
 
-    var authLocation = endPointParts[0]+'?'+queryParams.join('&');
+    enable: enable,
+    disable: disable,
 
-    if(typeof(authDialogStrategy) == 'function') {
-      authDialogStrategy(authLocation);
-    } else {
-      switch(authDialogStrategy) {
-      case 'redirect':
-        platform.setLocation(authLocation);
-        break;
-      case 'popup':
-        setAuthPopupLocation(authLocation);
-        break;
-      default:
-        throw "Invalid strategy for auth dialog: " + authDialogStrategy;
-      }
-    }
-  }
+    getQueue: function() { return taskQueue; },
 
-  function discoverStorageInfo(userAddress, cb) {
-    webfinger.getStorageInfo(userAddress, {timeout: 3000}, function(err, data) {
-      if(err) {
-        hardcoded.guessStorageInfo(userAddress, {timeout: 3000}, function(err2, data2) {
-          if(err2) {
-            cb(err2);
-          } else {
-            if(data2.type && data2.href && data.properties && data.properties['auth-endpoint']) {
-              wireClient.setStorageInfo(data2.type, data2.href);
-              cb(null, data2.properties['auth-endpoint']);
-            } else {
-              cb('cannot make sense of storageInfo from webfinger');
-            }
-          }
-        });
-      } else {
-        if(data.type && data.href && data.properties && data.properties['auth-endpoint']) {
-          wireClient.setStorageInfo(data.type, data.href);
-          cb(null, data.properties['auth-endpoint']);
-        } else {
-          cb('cannot make sense of storageInfo from hardcoded');
-        }
-      }
-    });
-  }
-  function handleConnectButtonClick() {
-    if(widgetState == 'typing') {
-      userAddress = platform.getElementValue('remotestorage-useraddress');
-      localStorage['remote_storage_widget_useraddress']=userAddress;
-      setWidgetState('connecting');
-      if(authDialogStrategy == 'popup') {
-        prepareAuthPopup();
-      }
-      discoverStorageInfo(userAddress, function(err, auth) {
-        if(err) {
-          platform.alert('webfinger discovery failed! Please check if your user address is correct. If the problem persists, contact your storage provider for support. (Error is: ' + err);
-          if(authDialogStrategy == 'popup') {
-            closeAuthPopup();
-          }
-          setWidgetState('failed');
-        } else {
-          dance(auth);
-        }
-      });
-    } else {
-      setWidgetState('typing');
-    }
-  }
-  function handleDisconnectClick() {
-    sync.syncNow('/', function() {
-      wireClient.disconnectRemote();
-      store.forgetAll();
-      // trigger 'disconnected' once, so the app can clear it's views.
-      setWidgetState('disconnected', true);
-      setWidgetState('anonymous');
-    }, true);
-  }
-  function handleCubeClick() {
-    if(widgetState == 'connected') {
-     handleDisconnectClick();
-    }
-  }
-  function handleWidgetTypeUserAddress(event) {
-    if(event.keyCode === 13) {
-      document.getElementById('remotestorage-connect-button').click();
-    }
-  }
-  function handleWidgetHover() {
-    logger.debug('handleWidgetHover');
-  }
+    updateDataNode: updateDataNode,
 
-  function nowConnected() {
-    setWidgetState('connected');
-    sync.syncNow('/', function(err) {
-      if(err) {
-        logger.error("Initial sync failed: ", err)
-      }
-    });
-  }
+    lastSyncAt: null,
 
-  function display(setConnectElement, options) {
-    var tokenHarvested = platform.harvestParam('access_token');
-    var storageRootHarvested = platform.harvestParam('storage_root');
-    var storageApiHarvested = platform.harvestParam('storage_api');
-    var authorizeEndpointHarvested = platform.harvestParam('authorize_endpoint');
-    if(! options) {
-      options = {};
+    // Section: exported functions
+
+    // Method: on
+    // Install an event handler.
+
+    // Method: fullSync
+    // <fullSync>
+    fullSync: fullSync,
+
+    forceSync: fullSync,
+    // Method: fullPush
+    // <fullPush>
+    fullPush: fullPush,
+    // Method: partialSync
+    // <partialSync>
+    partialSync: partialSync,
+
+    // Method: needsSync
+    // Returns true, if there are local changes that have not been synced.
+    needsSync: needsSync,
+
+    // Method: getState
+    // <getState>
+    getState: getState,
+
+    // Method: clearSettings
+    // Clear all data from localStorage that this file put there.
+    clearSettings: settings.clear,
+
+    // FOR TESTING INTERNALS ONLY!!!
+    getInternal: function(symbol) {
+      return eval(symbol);
+    },
+
+    setRemoteAdapter: function(adapter) {
+      remoteAdapter = adapter;
     }
 
-    connectElement = setConnectElement;
+  });
 
-    if(wireClient.getState() == 'connected') {
-      nowConnected();
-    } else {
-      wireClient.on('connected', nowConnected);
-    }
+  return sync;
 
-    wireClient.on('error', function(err) {
-      platform.alert(translate(err));
-    });
+  /*
+    Section: Notes
 
-    sync.on('state', setWidgetState);
+    Some example I made up to visualize some of the situations that can happen.
 
-    if(typeof(options.authDialog) !== 'undefined') {
-      authDialogStrategy = options.authDialog;
-    }
+    Legend:
+      L - has local modifications
+      R - has remote modifications
+      D - modification is a delete
 
-    locale = options.locale;
+    Suppose a tree like this:
 
-    if(tokenHarvested) {
-      wireClient.setBearerToken(tokenHarvested);
+      >    /
+      >    /messages/
+      >    /messages/pool/
+      >    /messages/pool/1
+      >    /messages/pool/2
+      > L  /messages/pool/3
+      > R  /messages/pool/4
+      >    /messages/index/read/true/1
+      > L  /messages/index/read/true/3
+      >    /messages/index/read/false/2
+      > LD /messages/index/read/false/3
+      > R  /messages/index/read/false/4
 
-      if(authDialogStrategy === 'popup') {
-        finalizeAuthPopup();
-      }
-    }
-    if(storageRootHarvested) {
-      wireClient.setStorageInfo((storageApiHarvested ? storageApiHarvested : '2012.04'), storageRootHarvested);
-    }
-    if(authorizeEndpointHarvested) {
-      dance(authorizeEndpointHarvested);
-    }
 
-    setWidgetStateOnLoad();
+    Now a sync cycle for /messages/ begins:
 
-    if(options.syncShortcut !== false) {
-      window.onkeydown = function(evt) {
-        if(evt.ctrlKey && evt.which == 83) {
-          evt.preventDefault();
-          logger.info("CTRL+S - SYNCING");
-          sync.syncNow('/', function(errors) {});
-          return false;
-        }
-      }
-    }
-    
-  }
+      > GET /messages/
+      >   -> mark remote diff for pool/ and index/
+      > GET /messages/index/
+      >   -> mark local and remote diff for read/
+      > GET /messages/index/read/
+      >   -> mark remote diff for false/
+      > GET /messages/index/read/false/
+      >   -> mark remote diff for 4
+      > DELETE /messages/index/read/false/3
+      >   -> clear local diff for 3
+      > GET /messages/index/read/false/4
+      >   -> update local node 4
+      >   -> clear remote diff for 4
+      >   (pop back to /messages/index/read/)
+      >   -> clear remote and local diff for false/
+      > GET /messages/index/read/true/
+      > PUT /messages/index/read/true/3
+      >   -> clear local diff for 3
+      >   (pop back to /messages/index/read/)
+      >   -> clear local diff for true/)
+      >   (pop back to /messages/index/)
+      >   -> clear local and remote diff for read/
+      >   (pop back to /messages/)
+      > GET /messages/pool/
+      >   -> mark remote diff for 4
+      > PUT /messages/pool/3
+      >   -> clear local diff for 3
+      > GET /messages/pool/4
+      >   -> update local node 4
+      >   -> clear remote diff for 4
+      >   (pop back to /messages/)
+      >   -> clear local and remote diff for pool/
+      >   (pop back to /)
+      >   -> clear local and remote diff for messages/
 
-  function addScope(module, mode) {
-    if(!scopesObj[module] || mode == 'rw') {
-      scopesObj[module] = mode;
-    }
-  }
-  
-  return {
-    display : display,
-    addScope: addScope,
-    getState: getWidgetState,
-    on: events.on
-  };
+    Sync cycle all done.
+
+   */
+
 });
 
-/* -*- js-indent-level:2 -*- */
+define('lib/schedule',['./util', './sync'], function(util, sync) {
 
-define('lib/baseClient',['./sync', './store', './util'], function (sync, store, util) {
+  var logger = util.getLogger('schedule');
+
+  var watchedPaths = {};
+  var lastPathSync = {};
+  var runInterval = 5000;
+  var enabled = false;
+  var timer = null;
+
+  function scheduleNextRun() {
+    timer = setTimeout(run, runInterval);
+  }
+
+  function run() {
+    if(! enabled) {
+      return;
+    }
+    if(timer) {
+      clearTimeout(timer);
+    }
+
+    logger.info('check');
+
+    var syncNow = [];
+    var syncedCount = 0;
+
+    var now = new Date().getTime();
+
+    // assemble list of paths that need action
+    for(var p in watchedPaths) {
+      var lastSync = lastPathSync[p];
+      if((! lastSync) || (lastSync + watchedPaths[p]) <= now) {
+        syncNow.push(p);
+      }
+    }
+
+    if(syncNow.length === 0) {
+      scheduleNextRun();
+      return;
+    }
+
+    logger.info("Paths to refresh: ", syncNow);
+
+    // request a sync for each path
+    var numSyncNow = syncNow.length;
+    for(var i=0;i<numSyncNow;i++) {
+      var path = syncNow[i];
+      var syncer = path === '/' ? sync.fullSync : sync.partialSync;
+      syncer(path).then(function() {
+        lastPathSync[path] = new Date().getTime();
+
+        syncedCount++;
+
+        logger.debug('now synced', syncedCount, 'of', numSyncNow);
+
+        if(syncedCount == numSyncNow) {
+          scheduleNextRun();
+        }
+      });
+    }
+  }
+
+  return {
+
+    get: function(path) {
+      if(path) {
+        return watchedPaths[path];
+      } else {
+        return watchedPaths;
+      }
+    },
+
+    enable: function() {
+      enabled = true;
+      logger.info('enabled');
+      scheduleNextRun();
+    },
+
+    disable: function() {
+      enabled = false;
+      logger.info('disabled');
+    },
+
+    isEnabled: function() {
+      return enabled;
+    },
+
+    watch: function(path, interval) {
+      logger.info("Schedule sync of", path, "every", interval / 1000.0, "seconds");
+      watchedPaths[path] = interval;
+      if(! lastPathSync[path]) {
+        // mark path as synced now, so it won't get synced on the next scheduler
+        // cycle, but instead when it's interval has passed.
+        lastPathSync[path] = new Date().getTime();
+      }
+    },
+
+    unwatch: function(path) {
+      delete watchedPaths[path];
+      delete lastPathSync[path];
+    },
+
+    reset: function() {
+      watchedPaths = {};
+      lastPathSync = {};
+      if(timer) {
+        clearTimeout(timer);
+        timer = null;
+      }
+    }
+
+  };
+
+});
+
+/**
+ * JSONSchema Validator - Validates JavaScript objects using JSON Schemas
+ *	(http://www.json.com/json-schema-proposal/)
+ *
+ * Copyright (c) 2007 Kris Zyp SitePen (www.sitepen.com)
+ * Licensed under the MIT (MIT-LICENSE.txt) license.
+To use the validator call the validate function with an instance object and an optional schema object.
+If a schema is provided, it will be used to validate. If the instance object refers to a schema (self-validating),
+that schema will be used to validate and the schema parameter is not necessary (if both exist,
+both validations will occur).
+The validate method will return an array of validation errors. If there are no errors, then an
+empty list will be returned. A validation error will have two properties:
+"property" which indicates which property had the error
+"message" which indicates what the error was
+ */
+//({define:typeof define!="undefined"?define:function(deps, factory){module.exports = factory();}}).
+define('vendor/validate',[], function(){
+var exports = validate;
+// setup primitive classes to be JSON Schema types
+exports.Integer = {type:"integer"};
+var primitiveConstructors = {
+	String: String,
+	Boolean: Boolean,
+	Number: Number,
+	Object: Object,
+	Array: Array,
+	Date: Date
+}
+exports.validate = validate;
+function validate(/*Any*/instance,/*Object*/schema) {
+		// Summary:
+		//  	To use the validator call JSONSchema.validate with an instance object and an optional schema object.
+		// 		If a schema is provided, it will be used to validate. If the instance object refers to a schema (self-validating),
+		// 		that schema will be used to validate and the schema parameter is not necessary (if both exist,
+		// 		both validations will occur).
+		// 		The validate method will return an object with two properties:
+		// 			valid: A boolean indicating if the instance is valid by the schema
+		// 			errors: An array of validation errors. If there are no errors, then an
+		// 					empty list will be returned. A validation error will have two properties:
+		// 						property: which indicates which property had the error
+		// 						message: which indicates what the error was
+		//
+		return validate(instance, schema, {changing: false});//, coerce: false, existingOnly: false});
+	};
+exports.checkPropertyChange = function(/*Any*/value,/*Object*/schema, /*String*/property) {
+		// Summary:
+		// 		The checkPropertyChange method will check to see if an value can legally be in property with the given schema
+		// 		This is slightly different than the validate method in that it will fail if the schema is readonly and it will
+		// 		not check for self-validation, it is assumed that the passed in value is already internally valid.
+		// 		The checkPropertyChange method will return the same object type as validate, see JSONSchema.validate for
+		// 		information.
+		//
+		return validate(value, schema, {changing: property || "property"});
+	};
+var validate = exports._validate = function(/*Any*/instance,/*Object*/schema,/*Object*/options) {
+
+	if (!options) options = {};
+	var _changing = options.changing;
+
+	function getType(schema){
+		return schema.type || (primitiveConstructors[schema.name] == schema && schema.name.toLowerCase());
+	}
+	var errors = [];
+	// validate a value against a property definition
+	function checkProp(value, schema, path,i){
+
+		var l;
+		path += path ? typeof i == 'number' ? '[' + i + ']' : typeof i == 'undefined' ? '' : '.' + i : i;
+		function addError(message){
+			errors.push({property:path,message:message});
+		}
+
+		if((typeof schema != 'object' || schema instanceof Array) && (path || typeof schema != 'function') && !(schema && getType(schema))){
+			if(typeof schema == 'function'){
+				if(!(value instanceof schema)){
+					addError("is not an instance of the class/constructor " + schema.name);
+				}
+			}else if(schema){
+				addError("Invalid schema/property definition " + schema);
+			}
+			return null;
+		}
+		if(_changing && schema.readonly){
+			addError("is a readonly field, it can not be changed");
+		}
+		if(schema['extends']){ // if it extends another schema, it must pass that schema as well
+			checkProp(value,schema['extends'],path,i);
+		}
+		// validate a value against a type definition
+		function checkType(type,value){
+			if(type){
+				if(typeof type == 'string' && type != 'any' &&
+						(type == 'null' ? value !== null : typeof value != type) &&
+						!(value instanceof Array && type == 'array') &&
+						!(value instanceof Date && type == 'date') &&
+						!(type == 'integer' && value%1===0)){
+					return [{property:path,message:(typeof value) + " value found, but a " + type + " is required"}];
+				}
+				if(type instanceof Array){
+					var unionErrors=[];
+					for(var j = 0; j < type.length; j++){ // a union type
+						if(!(unionErrors=checkType(type[j],value)).length){
+							break;
+						}
+					}
+					if(unionErrors.length){
+						return unionErrors;
+					}
+				}else if(typeof type == 'object'){
+					var priorErrors = errors;
+					errors = [];
+					checkProp(value,type,path);
+					var theseErrors = errors;
+					errors = priorErrors;
+					return theseErrors;
+				}
+			}
+			return [];
+		}
+		if(value === undefined){
+			if(schema.required){
+				addError("is missing and it is required");
+			}
+		}else{
+			errors = errors.concat(checkType(getType(schema),value));
+			if(schema.disallow && !checkType(schema.disallow,value).length){
+				addError(" disallowed value was matched");
+			}
+			if(value !== null){
+				if(value instanceof Array){
+					if(schema.items){
+						var itemsIsArray = schema.items instanceof Array;
+						var propDef = schema.items;
+						for (i = 0, l = value.length; i < l; i += 1) {
+							if (itemsIsArray)
+								propDef = schema.items[i];
+							if (options.coerce)
+								value[i] = options.coerce(value[i], propDef);
+							errors.concat(checkProp(value[i],propDef,path,i));
+						}
+					}
+					if(schema.minItems && value.length < schema.minItems){
+						addError("There must be a minimum of " + schema.minItems + " in the array");
+					}
+					if(schema.maxItems && value.length > schema.maxItems){
+						addError("There must be a maximum of " + schema.maxItems + " in the array");
+					}
+				}else if(schema.properties || schema.additionalProperties){
+					errors.concat(checkObj(value, schema.properties, path, schema.additionalProperties));
+				}
+				if(schema.pattern && typeof value == 'string' && !value.match(schema.pattern)){
+					addError("does not match the regex pattern " + schema.pattern);
+				}
+				if(schema.maxLength && typeof value == 'string' && value.length > schema.maxLength){
+					addError("may only be " + schema.maxLength + " characters long");
+				}
+				if(schema.minLength && typeof value == 'string' && value.length < schema.minLength){
+					addError("must be at least " + schema.minLength + " characters long");
+				}
+				if(typeof schema.minimum !== undefined && typeof value == typeof schema.minimum &&
+						schema.minimum > value){
+					addError("must have a minimum value of " + schema.minimum);
+				}
+				if(typeof schema.maximum !== undefined && typeof value == typeof schema.maximum &&
+						schema.maximum < value){
+					addError("must have a maximum value of " + schema.maximum);
+				}
+				if(schema['enum']){
+					var enumer = schema['enum'];
+					l = enumer.length;
+					var found;
+					for(var j = 0; j < l; j++){
+						if(enumer[j]===value){
+							found=1;
+							break;
+						}
+					}
+					if(!found){
+						addError("does not have a value in the enumeration " + enumer.join(", "));
+					}
+				}
+				if(typeof schema.maxDecimal == 'number' &&
+					(value.toString().match(new RegExp("\\.[0-9]{" + (schema.maxDecimal + 1) + ",}")))){
+					addError("may only have " + schema.maxDecimal + " digits of decimal places");
+				}
+			}
+		}
+		return null;
+	}
+	// validate an object against a schema
+	function checkObj(instance,objTypeDef,path,additionalProp){
+
+		if(typeof objTypeDef =='object'){
+			if(typeof instance != 'object' || instance instanceof Array){
+				errors.push({property:path,message:"an object is required"});
+			}
+			
+			for(var i in objTypeDef){ 
+				if(objTypeDef.hasOwnProperty(i)){
+					var value = instance[i];
+					// skip _not_ specified properties
+					if (value === undefined && options.existingOnly) continue;
+					var propDef = objTypeDef[i];
+					// set default
+					if(value === undefined && propDef["default"]){
+						value = instance[i] = propDef["default"];
+					}
+					if(options.coerce && i in instance){
+						value = instance[i] = options.coerce(value, propDef);
+					}
+					checkProp(value,propDef,path,i);
+				}
+			}
+		}
+		for(i in instance){
+			if(instance.hasOwnProperty(i) && !(i.charAt(0) == '_' && i.charAt(1) == '_') && objTypeDef && !objTypeDef[i] && additionalProp===false){
+				if (options.filter) {
+					delete instance[i];
+					continue;
+				} else {
+					errors.push({property:path,message:(typeof value) + "The property " + i +
+						" is not defined in the schema and the schema does not allow additional properties"});
+				}
+			}
+			var requires = objTypeDef && objTypeDef[i] && objTypeDef[i].requires;
+			if(requires && !(requires in instance)){
+				errors.push({property:path,message:"the presence of the property " + i + " requires that " + requires + " also be present"});
+			}
+			value = instance[i];
+			if(additionalProp && (!(objTypeDef && typeof objTypeDef == 'object') || !(i in objTypeDef))){
+				if(options.coerce){
+					value = instance[i] = options.coerce(value, additionalProp);
+				}
+				checkProp(value,additionalProp,path,i);
+			}
+			if(!_changing && value && value.$schema){
+				errors = errors.concat(checkProp(value,value.$schema,path,i));
+			}
+		}
+		return errors;
+	}
+	if(schema){
+		checkProp(instance,schema,'',_changing || '');
+	}
+	if(!_changing && instance && instance.$schema){
+		checkProp(instance,instance.$schema,'','');
+	}
+	return {valid:!errors.length,errors:errors};
+};
+exports.mustBeValid = function(result){
+	//	summary:
+	//		This checks to ensure that the result is valid and will throw an appropriate error message if it is not
+	// result: the result returned from checkPropertyChange or validate
+	if(!result.valid){
+		throw new TypeError(result.errors.map(function(error){return "for property " + error.property + ': ' + error.message;}).join(", \n"));
+	}
+}
+
+return exports;
+});
+
+/*!
+  Math.uuid.js (v1.4)
+  http://www.broofa.com
+  mailto:robert@broofa.com
+
+  Copyright (c) 2010 Robert Kieffer
+  Dual licensed under the MIT and GPL licenses.
+
+  ********
+
+  Changes within remoteStorage.js:
+  2012-10-31:
+  - added AMD wrapper <niklas@unhosted.org>
+  - moved extensions for Math object into exported object.
+*/
+
+/*
+ * Generate a random uuid.
+ *
+ * USAGE: Math.uuid(length, radix)
+ *   length - the desired number of characters
+ *   radix  - the number of allowable values for each character.
+ *
+ * EXAMPLES:
+ *   // No arguments  - returns RFC4122, version 4 ID
+ *   >>> Math.uuid()
+ *   "92329D39-6F5C-4520-ABFC-AAB64544E172"
+ *
+ *   // One argument - returns ID of the specified length
+ *   >>> Math.uuid(15)     // 15 character ID (default base=62)
+ *   "VcydxgltxrVZSTV"
+ *
+ *   // Two arguments - returns ID of the specified length, and radix. (Radix must be <= 62)
+ *   >>> Math.uuid(8, 2)  // 8 character ID (base=2)
+ *   "01001010"
+ *   >>> Math.uuid(8, 10) // 8 character ID (base=10)
+ *   "47473046"
+ *   >>> Math.uuid(8, 16) // 8 character ID (base=16)
+ *   "098F4D35"
+ */
+define('vendor/Math.uuid',[], function() {
+  // Private array of chars to use
+  var CHARS = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+
+  return {
+    uuid: function (len, radix) {
+      var chars = CHARS, uuid = [], i;
+      radix = radix || chars.length;
+
+      if (len) {
+        // Compact form
+        for (i = 0; i < len; i++) uuid[i] = chars[0 | Math.random()*radix];
+      } else {
+        // rfc4122, version 4 form
+        var r;
+
+        // rfc4122 requires these characters
+        uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
+        uuid[14] = '4';
+
+        // Fill in random data.  At i==19 set the high bits of clock sequence as
+        // per rfc4122, sec. 4.1.5
+        for (i = 0; i < 36; i++) {
+          if (!uuid[i]) {
+            r = 0 | Math.random()*16;
+            uuid[i] = chars[(i == 19) ? (r & 0x3) | 0x8 : r];
+          }
+        }
+      }
+
+      return uuid.join('');
+    },
+
+    // A more performant, but slightly bulkier, RFC4122v4 solution.  We boost performance
+    // by minimizing calls to random()
+    uuidFast: function() {
+      var chars = CHARS, uuid = new Array(36), rnd=0, r;
+      for (var i = 0; i < 36; i++) {
+        if (i==8 || i==13 ||  i==18 || i==23) {
+          uuid[i] = '-';
+        } else if (i==14) {
+          uuid[i] = '4';
+        } else {
+          if (rnd <= 0x02) rnd = 0x2000000 + (Math.random()*0x1000000)|0;
+          r = rnd & 0xf;
+          rnd = rnd >> 4;
+          uuid[i] = chars[(i == 19) ? (r & 0x3) | 0x8 : r];
+        }
+      }
+      return uuid.join('');
+    },
+
+    // A more compact, but less performant, RFC4122v4 solution:
+    uuidCompact: function() {
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+        return v.toString(16);
+      });
+    }
+  };
+
+});
+
+define('lib/baseClient',[
+  './util',
+  './store',
+  './wireClient',
+  './sync',
+  '../vendor/validate',
+  '../vendor/Math.uuid'
+], function(util, store, wireClient, sync, validate, MathUUID) {
 
   
 
   var logger = util.getLogger('baseClient');
+  var globalEvents = util.getEventEmitter('error');
   var moduleEvents = {};
 
   function extractModuleName(path) {
@@ -2609,50 +5076,114 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
         return parts[2];
       } else if(parts.length > 2){
         return parts[1];
+      } else if(parts.length == 2) {
+        return 'root';
       }
     }
   }
 
-  function fireChange(moduleName, eventObj) {
-    if(moduleEvents[moduleName]) {
+  var isPublicRE = /^\/public\//;
 
-      if(moduleName !== 'root') {
-        eventObj.relativePath = eventObj.path.replace(new RegExp('^/(?:public/|)' + moduleName + '/'), '');
+  function fireModuleEvent(eventName, moduleName, eventObj) {
+    var isPublic = isPublicRE.test(eventObj.path);
+    var events;
+    if(moduleEvents[moduleName] &&
+       (events = moduleEvents[moduleName][isPublic])) {
+
+      if(moduleName !== 'root' && eventObj.path) {
+        eventObj.relativePath = eventObj.path.replace(
+          (isPublic ? '/public/' : '/') + moduleName + '/', ''
+        );
       }
 
-      moduleEvents[moduleName].emit('change', eventObj);
+      events.emit(eventName, eventObj);
     }
   }
 
-  store.on('change', function(e) {
-    var moduleName = extractModuleName(e.path);
-    fireChange(moduleName, e);//remote-based changes get fired from the store.
-    fireChange('root', e);//root module gets everything
+  function fireError(absPath, error) {
+    var isPublic = isPublicRE.test(absPath);
+    var moduleName = extractModuleName(absPath);
+    var modEvents = moduleEvents[moduleName];
+    if(! (modEvents && modEvents[isPublic])) {
+      moduleEvents.root[isPublic].emit('error', error);
+    } else {
+      modEvents[isPublic].emit('error', error);
+    }
+
+    globalEvents.emit('error', error);
+  }
+
+  store.on('change', function(event) {
+    var moduleName = extractModuleName(event.path);
+    // remote-based changes get fired from the store.
+    fireModuleEvent('change', moduleName, event);
+    if(moduleName !== 'root') {
+      // root module gets everything
+      fireModuleEvent('change', 'root', event);
+    }
   });
 
-  function set(path, absPath, valueStr) {
-    var moduleName = extractModuleName(absPath);
-    if(util.isDir(absPath)) {
-      moduleEvents[moduleName].emit('error', 'attempt to set a value to a directory '+absPath);
-      return;
+  sync.on('conflict', function(event) {
+    var moduleName = extractModuleName(event.path);
+    var isPublic = isPublicRE.test(event.path);
+    var eventEmitter = moduleEvents[moduleName] && moduleEvents[moduleName][isPublic];
+    var rootEmitter = moduleEvents.root && moduleEvents.root[isPublic];
+    if(eventEmitter && eventEmitter.hasHandler('conflict')) {
+      fireModuleEvent('conflict', moduleName, event);
+      fireModuleEvent('conflict', 'root', event);
+    } else if(rootEmitter && rootEmitter.hasHandler('conflict')) {
+      fireModuleEvent('conflict', 'root', event);
+    } else {
+      event.resolve('remote');
     }
-    var node = store.getNode(absPath);
-    var changeEvent = {
-      origin: 'window',
-      oldValue: store.getNodeData(absPath),
-      newValue: valueStr,
-      path: path
-    };
-    store.setNodeData(absPath, valueStr, true);
-    fireChange(moduleName, changeEvent);
-    fireChange('root', changeEvent);
+  });
+
+  function failedPromise(error) {
+    return util.getPromise().failLater(error);
   }
 
-  var BaseClient = function(moduleName, isPublic) {
-    this.moduleName = moduleName, this.isPublic = isPublic;
-    moduleEvents[moduleName] = util.getEventEmitter('change');
-    util.bindAll(this);
+  function set(moduleName, path, absPath, value, mimeType) {
+    if(util.isDir(absPath)) {
+      return failedPromise(new Error('attempt to set a value to a directory ' + absPath));
+    }
+    var changeEvent;
+    return store.getNode(absPath).
+      then(function(node) {
+        changeEvent = {
+          origin: 'window',
+          oldValue: node.data,
+          newValue: value,
+          path: absPath
+        };
+        return store.setNodeData(absPath, value, true, undefined, mimeType);
+      }).then(function() {
+        fireModuleEvent('change', moduleName, changeEvent);
+        if(moduleName !== 'root') {
+          fireModuleEvent('change', 'root', changeEvent);
+        }
+      });
   }
+
+  var ValidationError = function(object, errors) {
+    Error.call(this, "Validation failed!");
+    this.object = object;
+    this.errors = errors;
+  };
+
+  /** FROM HERE ON PUBLIC INTERFACE **/
+
+  var BaseClient = function(moduleName, isPublic) {
+    if(! moduleName) {
+      throw new Error("moduleName is required");
+    }
+    this.moduleName = moduleName, this.isPublic = isPublic;
+    if(! moduleEvents[moduleName]) {
+      moduleEvents[moduleName] = {};
+    }
+    this.events = util.getEventEmitter('change', 'conflict', 'error');
+    moduleEvents[moduleName][isPublic] = this.events;
+    util.bindAll(this);
+  };
 
   // Class: BaseClient
   //
@@ -2660,6 +5191,9 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
   // interface for building "modules".
   //
   // See <remoteStorage.defineModule> for details.
+  //
+  //
+  // Most methods here return promises. See the guide for and introduction: <Promises>
   //
   BaseClient.prototype = {
 
@@ -2692,61 +5226,91 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //
     //   The following origins are defined,
     //
-    //   window - this event was generated from the same *browser tab* or window that received the event
+    //   tab - this event was generated from the same *browser tab* or window that received the event
     //   device - this event was generated from the same *app*, but a differnent tab or window
     //   remote - this event came from the *remotestorage server*. that means another app or the same app on another device caused the event.
     //
     // Example:
-    //   > client.on('change', function(event) {
-    //   >   if(event.newValue && event.oldValue) {
-    //   >     console.log(event.origin + ' updated ' + event.path + ':', event.oldValue, '->', event.newValue);
-    //   >   } else if(event.newValue) {
-    //   >     console.log(event.origin + ' created ' + event.path + ':', undefined, '->', event.newValue);
-    //   >   } else {
-    //   >     console.log(event.origin + ' removed ' + event.path + ':', event.oldValue, '->', undefined);
-    //   >   }
-    //   > });
-    //   
+    //   (start code)
+    //   client.on('change', function(event) {
+    //     if(event.newValue && event.oldValue) {
+    //       console.log(event.origin + ' updated ' + event.path + ':', event.oldValue, '->', event.newValue);
+    //     } else if(event.newValue) {
+    //       console.log(event.origin + ' created ' + event.path + ':', undefined, '->', event.newValue);
+    //     } else {
+    //       console.log(event.origin + ' removed ' + event.path + ':', event.oldValue, '->', undefined);
+    //     }
+    //   });
+    //   (end code)
+    //
 
     makePath: function(path) {
-      if(this.moduleName == 'root') {
-        return path;
-      }
-      return (this.isPublic?'/public/':'/')+this.moduleName+'/'+path;
+      var base = (this.moduleName == 'root' ?
+                  (path[0] === '/' ? '' : '/') :
+                  '/' + this.moduleName + '/');
+      return (this.isPublic ? '/public' + base : base) + path;
     },
 
     nodeGivesAccess: function(path, mode) {
-      var node = store.getNode(path);
-      logger.debug("check node access", path, mode, node);
-      var access = (new RegExp(mode)).test(node.startAccess);
-      if(access) {
-        return true
-      } else if(path.length > 0) {
-        return this.nodeGivesAccess(path.replace(/[^\/]+\/?$/, ''))
-      }
+      return store.getNode(path).then(function(node) {
+        var access = (new RegExp(mode)).test(node.startAccess);
+        if(access) {
+          return true;
+        } else if(path.length > 0) {
+          return this.nodeGivesAccess(path.replace(/[^\/]+\/?$/, ''));
+        }
+      }.bind(this));
     },
 
     ensureAccess: function(mode) {
       var path = this.makePath(this.moduleName == 'root' ? '/' : '');
 
-      if(! this.nodeGivesAccess(path, mode)) {
-        throw "Not sufficient access claimed for node at " + path;
-      }
+      return this.nodeGivesAccess(path, mode).then(function(access) {
+        if(! access) {
+          throw "Not sufficient access claimed for node at " + path;
+        }
+      });
     },
 
+    // Method: lastUpdateOf
+    // Get the time a node was last updated.
+    //
+    // Parameters:
+    //   path - Relative path from the module root
+    //
+    // Returns:
+    //   a promise for a timestamp, which is either
+    //   a Number - when the node exists OR
+    //   null - when the node doesn't exist
+    //
+    // The timestamp is represented as Number of milliseconds.
+    // Use this snippet to get a Date object from it
+    //   (start code)
+    //   client.lastUpdateOf('path/to/node').
+    //     then(function(timestamp) {
+    //       // (normally you should check that 'timestamp' isn't null now)
+    //       console.log('last update: ', new Date(timestamp));
+    //     });
+    //   (end code)
+    //
+    lastUpdateOf: function(path) {
+      var absPath = this.makePath(path);
+      var node = store.getNode(absPath);
+      return node ? node.timestamp : null;
+    },
 
-    //  
+    //
     // Method: on
-    //  
+    //
     // Install an event handler for the given type.
-    // 
+    //
     // Parameters:
     //   eventType - type of event, either "change" or "error"
     //   handler   - event handler function
     //   context   - (optional) context to bind handler to
-    //  
+    //
     on: function(eventType, handler, context) {
-      moduleEvents[this.moduleName].on(eventType, util.bindContext(handler, context));
+      this.events.on(eventType, util.bind(handler, context));
     },
 
     //
@@ -2756,55 +5320,35 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //
     // Parameters:
     //   path     - relative path from the module root (without leading slash)
-    //   callback - (optional) callback, see below
-    //   context  - context for callback.
-    //
-    // Sync vs. async:
-    //
-    //   getObject can be called with or without a callback. When the callback is
-    //   omitted, an object is returned immediately, from local cache.
-    //   If on the other hand a callback is given, this forces a synchronization
-    //   with remotestorage and calls the callback once that synchronization has
-    //   happened.
-    //
-    // When do I use what?:
-    //
-    //   It very much depends on your circumstances, but roughly put,
-    //   * if you are interested in a whole *branch* of objects, then force
-    //     synchronization on the root of that branch using <BaseClient.use>,
-    //     and after that use getObject *without* a callback to get your data from
-    //     local cache.
-    //   * if you only want to access a *single object* without syncing an entire
-    //     branch, use the *asynchronous* variant. That way you only cause that
-    //     particular object to be synchronized.
-    //   * another reason to use the *asynchronous* call sequence would be, if you
-    //     want to be very sure, that the local version of a certain object is
-    //     *up-to-date*, when you retrieve it, without triggering a full-blown sync
-    //     cycle.
     //
     // Returns:
-    //   undefined              - When called with a callback
-    //   an object or undefined - when called without a callback
+    //   A promise for the object.
     //
-    getObject: function(path, callback, context) {
-      this.ensureAccess('r');
-      var absPath = this.makePath(path);
-      if(callback) {
-        sync.fetchNow(absPath, function(err, node) {
-          var data = store.getNodeData(absPath);
-          if(data && (typeof(data) == 'object')) {
-            delete data['@type'];
+    // Example:
+    //   (start code)
+    //   client.getObject('/path/to/object').
+    //     then(function(object) {
+    //       // object is either an object or null
+    //     });
+    //   (end code)
+    //
+    getObject: function(path) {
+      var fullPath = this.makePath(path);
+      return this.ensureAccess('r').
+        then(util.curry(store.getNode, fullPath)).
+        then(function(node) {
+          if(node.pending) {
+            return sync.updateDataNode(fullPath);
+          } else {
+            return node;
           }
-          util.bindContext(callback, context)(data);
+        }).
+        then(function(node) {
+          if(node.mimeType !== 'application/json') {
+            logger.error("WARNING: getObject got called, but retrieved a non-json node at '" + fullPath + "'!");
+          }
+          return node.data;
         });
-      } else {
-        var node = store.getNode(absPath);
-        var data = store.getNodeData(absPath);
-        if(data && (typeof(data) == 'object')) {
-          delete data['@type'];
-        }
-        return data;
-      }
     },
 
     //
@@ -2816,35 +5360,47 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //
     // Parameters:
     //   path     - The path to query. It MUST end with a forward slash.
-    //   callback - see getObject
-    //   context  - see getObject
     //
     // Returns:
-    //   An Array of keys, representing child nodes.
+    //   A promise for an Array of keys, representing child nodes.
     //   Those keys ending in a forward slash, represent *directory nodes*, all
     //   other keys represent *data nodes*.
     //
-    getListing: function(path, callback, context) {
-      this.ensureAccess('r');
-      var absPath = this.makePath(path);
-      if(callback) {
-        sync.fetchNow(absPath, function(err, node) {
-          var data = store.getNodeData(absPath);
-          var arr = [];
-          for(var i in data) {
-            arr.push(i);
-          }
-          util.bindContext(callback, context)(arr);
-        });
-      } else {
-        var node = store.getNode(absPath);
-        var data = store.getNodeData(absPath);
-        var arr = [];
-        for(var i in data) {
-          arr.push(i);
-        }
-        return arr;
+    // Example:
+    //   (start code)
+    //   client.getListing('').then(function(listing) {
+    //     listing.forEach(function(item) {
+    //       console.log('- ' + item);
+    //     });
+    //   });
+    //   (end code)
+    //
+    getListing: function(path) {
+      if(! (util.isDir(path) || path === '')) {
+        return util.getPromise().failLater(
+          new Error("Not a directory: " + path)
+        );
       }
+      var fullPath = this.makePath(path);
+      return this.ensureAccess('r').
+        then(util.curry(store.getNode, fullPath)).
+        then(function(node) {
+          if((!node) || Object.keys(node.data).length === 0) {
+            return store.isForced(fullPath).
+              then(function(isForced) {
+                if(isForced) {
+                  return node;
+                } else {
+                  return sync.updateDataNode(fullPath);
+                }
+              });
+          } else {
+            return node;
+          }
+        }).
+        get('data').then(function(listing) {
+          return listing ? Object.keys(listing) : [];
+        });
     },
 
     //
@@ -2852,59 +5408,110 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //
     // Get all objects directly below a given path.
     //
-    // Receives the same parameters as <getListing>
+    // Parameters:
+    //   path      - path to the direcotry
+    //   typeAlias - (optional) local type-alias to filter for
     //
-    getAll: function(path, callback, context) {
-      var getOne = function(item) {
-        return this.getObject(path + item);
+    // Returns:
+    //   a promise for an object in the form { path : object, ... }
+    //
+    // Example:
+    //   (start code)
+    //   client.getAll('').then(function(objects) {
+    //     for(var key in objects) {
+    //       console.log('- ' + key + ': ', objects[key]);
+    //     }
+    //   });
+    //   (end code)
+    //
+    getAll: function(path, typeAlias) {
+
+      function filterByType(objectMap) {
+        if(typeAlias) {
+          var type = this.resolveTypeAlias(typeAlias);
+          for(var key in objectMap) {
+            if(objectMap[key]['@type'] !== type) {
+              delete objectMap[key];
+            }
+          }
+        } else {
+          return objectMap;
+        }
       }
-      if(callback) {
-        this.getListing(path, function(listing) {
-          util.bindContext(callback, context)(listing.map(getOne, this));
-        }, this);
-      } else {
-        return this.getListing(path).map(getOne, this);
+
+      function retrieveObjects(listing) {
+        var _this = this;
+        var objectMap = {};
+        return util.asyncEach(listing, function(key) {
+          if(! util.isDir(key)) {
+            return _this.getObject(path + key).
+              then(function(object) {
+                objectMap[key] = object;
+              });
+          }
+        }).then(function() {
+          return objectMap;
+        });
       }
+
+      return this.getListing(path).
+        then(retrieveObjects.bind(this)).
+        then(filterByType.bind(this));
     },
 
     //
-    // Method: getDocument
+    // Method: getFile
     //
-    // Get the document at the given path. A Document is raw data, as opposed to
+    // Get the file at the given path. A file is raw data, as opposed to
     // a JSON object (use <getObject> for that).
     //
-    // Except for the return value structure, getDocument works exactly like
+    // Except for the return value structure, getFile works exactly like
     // getObject.
     //
     // Parameters:
     //   path     - see getObject
-    //   callback - see getObject
-    //   context  - see getObject
     //
     // Returns:
-    //   An object,
-    //   mimeType - String representing the MIME Type of the document.
-    //   data     - Raw data of the document.
+    //   A promise for an object:
     //
-    getDocument: function(path, callback, context) {
-      this.ensureAccess('r');
-      var absPath = this.makePath(path);
-      if(callback) {
-        sync.fetchNow(absPath, function(err, node) {
-          util.bindContext(callback, context)({
+    //   mimeType - String representing the MIME Type of the document.
+    //   data     - Raw data of the document (either a string or an ArrayBuffer)
+    //
+    // Example:
+    //   (start code)
+    //   // Display an image:
+    //   client.getFile('path/to/some/image').then(function(file) {
+    //     var blob = new Blob([file.data], { type: file.mimeType });
+    //     var targetElement = document.findElementById('my-image-element');
+    //     targetElement.src = window.URL.createObjectURL(blob);
+    //   });
+    //   (end code)
+    getFile: function(path) {
+      var fullPath = this.makePath(path);
+      return this.ensureAccess('r').
+        then(util.curry(store.getNode, fullPath)).
+        then(function(node) {
+          if(node.pending) {
+            return sync.updateDataNode(fullPath);
+          } else {
+            return node;
+          }
+        }).
+        then(function(node) {
+          return {
             mimeType: node.mimeType,
-            data: store.getNodeData(absPath)
-          });
+            data: node.data
+          };
         });
-      } else {
-        var node = store.getNode(absPath);
-        return {
-          mimeType: node.mimeType,
-          data: store.getNodeData(absPath)
-        };
-      }
     },
 
+    // Method: getDocument
+    //
+    // DEPRECATED in favor of <getFile>
+    getDocument: function() {
+      util.deprecate('getDocument', 'getFile');
+      return this.getFile.apply(this, arguments);
+    },
 
     //
     // Method: remove
@@ -2913,13 +5520,39 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //
     // Parameters:
     //   path     - Path relative to the module root.
-    //   callback - (optional) passed on to <syncNow>
-    //   context  - (optional) passed on to <syncNow>
     //
-    remove: function(path, callback, context) {
-      this.ensureAccess('w');
-      set(path, this.makePath(path), undefined);
-      this.syncNow(util.containingDir(path), callback, context);
+    remove: function(path) {
+      var absPath = this.makePath(path);
+      return this.ensureAccess('w').
+        then(util.curry(set, this.moduleName, path, absPath, undefined)).
+        then(util.curry(sync.partialSync, util.containingDir(absPath), 1));
+    },
+
+    // Method: saveObject
+    //
+    // Save a typed JSON object.
+    // This only works for objects with a @type attribute corresponding to a schema
+    // that has been declared via <declareType> and a ID attribute declared within
+    // that schema.
+    //
+    // For details on using saveObject and typed JSON objects,
+    // see <Working with schemas>.
+    //
+    // Parameters:
+    //   object - a typed JSON object
+    //
+    //
+    saveObject: function(object) {
+      var type = object['@type'];
+      var alias = this.resolveTypeAlias(type);
+      var idKey = this.resolveIdKey(type);
+      if(! idKey) {
+        return failedPromise("Invalid typed JSON object! ID attribute could not be resolved.");
+      }
+      if(! object[idKey]) {
+        object[idKey] = this.uuid();
+      }
+      return this.storeObject(alias, object[idKey], object);
     },
 
     //
@@ -2932,8 +5565,10 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //   type     - unique type of this object within this module. See description below.
     //   path     - path relative to the module root.
     //   object   - an object to be saved to the given node. It must be serializable as JSON.
-    //   callback - (optional) passed on to <syncNow>
-    //   context  - (optional) passed on to <syncNow>
+    //
+    // Returns:
+    //   A promise to store the object. The promise fails with a ValidationError, when validations fail.
+    //
     //
     // What about the type?:
     //
@@ -2946,8 +5581,8 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //   aims to use <JSON-LD at http://json-ld.org/>.
     //   A first step in that direction, is to add a *@type attribute* to all
     //   JSON data put into remotestorage.
-    //   Now that is what the *type* is for. 
-    //   
+    //   Now that is what the *type* is for.
+    //
     //   Within remoteStorage.js, @type values are built using three components:
     //     https://remotestoragejs.com/spec/modules/ - A prefix to guarantee unqiueness
     //     the module name     - module names should be unique as well
@@ -2957,38 +5592,112 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //   storeObject, you should make sure that once your code is in the wild, future
     //   versions of the code are compatible with the same JSON structure.
     //
-    // 
-    storeObject: function(type, path, obj, callback, context) {
-      this.ensureAccess('w');
-      if(typeof(obj) !== 'object') {
-        throw "storeObject needs to get an object as value!"
+    // How to define types?:
+    //
+    //   See <declareType> or the calendar module (src/modules/calendar.js) for examples.
+    //
+    storeObject: function(typeAlias, path, obj) {
+      if(typeof(path) !== 'string') {
+        return failedPromise(new Error("given path must be a string (got: " + typeof(path) + ")"));
       }
-      obj['@type'] = 'https://remotestoragejs.com/spec/modules/'+this.moduleName+'/'+type;
-      set(path, this.makePath(path), obj, 'application/json');
-      var parentPath = util.containingDir(path);
-      this.sync(parentPath);
-      this.syncNow(parentPath, callback, context);
+      if(typeof(obj) !== 'object') {
+        return failedPromise(new Error("given object must be an object (got: " + typeof(obj) + ")"));
+      }
+      if(util.isDir(path)) {
+        return failedPromise(new Error("Can't store directory node"));
+      }
+
+      var absPath = this.makePath(path);
+
+      return this.ensureAccess('w').
+        then(function() {
+          if(! (obj instanceof Array)) {
+            obj['@type'] = this.resolveType(typeAlias);
+            var errors = this.validateObject(obj);
+            if(errors) {
+              throw new ValidationError(obj, errors);
+            }
+          }
+          return set(this.moduleName, path, absPath, obj, 'application/json')
+        }.bind(this)).
+        then(util.curry(sync.partialSync, util.containingDir(absPath), 1));
     },
 
     //
-    // Method: storeDocument
+    // Method: storeFile
     //
     // Store raw data at a given path. Triggers synchronization.
     //
     // Parameters:
     //   mimeType - MIME media type of the data being stored
     //   path     - path relative to the module root. MAY NOT end in a forward slash.
-    //   data     - string of raw data to store
-    //   callback - (optional) passed to <syncNow>
-    //   context  - (optional) passed to <syncNow>
+    //   data     - string or ArrayBuffer of raw data to store
     //
     // The given mimeType will later be returned, when retrieving the data
-    // using getDocument.
+    // using <getFile>.
     //
-    storeDocument: function(mimeType, path, data, callback, context) {
-      this.ensureAccess('w');
-      set(path, this.makePath(path), data, mimeType);
-      this.syncNow(path, callback, context);
+    // Example (UTF-8 data):
+    //   (start code)
+    //   client.storeFile('text/html', 'index.html', '<h1>Hello World!</h1>');
+    //   (end code)
+    //
+    // Example (Binary data):
+    //   (start code)
+    //   // MARKUP:
+    //   <input type="file" id="file-input">
+    //   // CODE:
+    //   var input = document.getElementById('file-input');
+    //   var file = input.files[0];
+    //   var fileReader = new FileReader();
+    //
+    //   fileReader.onload = function() {
+    //     client.storeFile(file.type, file.name, fileReader.result);
+    //   };
+    //
+    //   fileReader.readAsArrayBuffer(file);
+    //   (end code)
+    //
+    //
+    // Please keep in mind that the storage adapter used may limit the size of
+    // files that can be stored in cache. The current default is localStorage,
+    // which places a very tight limit due to constraints enforced by browsers
+    // and the necessity of base64 encoding binary data.
+    //
+    storeFile: function(mimeType, path, data, cache) {
+      cache = (cache !== false);
+      if(util.isDir(path)) {
+        return failedPromise(new Error("Can't store directory node"));
+      }
+      if(typeof(data) !== 'string' && !(data instanceof ArrayBuffer)) {
+        return failedPromise(new Error("storeFile received " + typeof(data) + ", but expected a string or an ArrayBuffer!"));
+      }
+      var absPath = this.makePath(path);
+      return this.ensureAccess('w').
+        then(function() {
+          if(cache) {
+            return set(this.moduleName, path, absPath, data, mimeType).
+              then(util.curry(sync.partialSync, util.containingDir(absPath), 1));
+          } else {
+            return sync.updateDataNode(path, {
+              mimeType: mimeType,
+              data: data
+            }).then(function() {
+              store.setNodePending(path);
+            });
+          }
+        });
+    },
+
+    // Method: storeDocument
+    //
+    // DEPRECATED in favor of <storeFile>
+    storeDocument: function() {
+      util.deprecate('storeDocument', 'storeFile');
+      return this.storeFile.apply(this, arguments);
+    },
+
+    getStorageHref: function() {
+      return wireClient.getStorageHref();
     },
 
     //
@@ -3004,72 +5713,1306 @@ define('lib/baseClient',['./sync', './store', './util'], function (sync, store, 
     //   a String - when currently connected
     //   null - when currently disconnected
     getItemURL: function(path) {
-      var base = remoteStorage.getStorageHref();
+      var base = this.getStorageHref();
       if(! base) {
         return null;
       }
-      if(base.substr(-1) != '/') {
-        base = base + '/';
-      }
       return base + this.makePath(path);
+    },
+
+    syncOnce: function(path, callback) {
+      var previousTreeForce = store.getNode(path).startForceTree;
+      this.use(path, false);
+      return sync.partialSync(path, 1).
+        then(function() {
+          if(previousTreeForce) {
+            this.use(path, true);
+          } else {
+            this.release(path);
+          }
+          if(callback) {
+            callback();
+          }
+        }.bind(this));
+
     },
 
     //
     // Method: use
     //
-    // Force given path to be synchronized in the future.
+    // Set force flags on given path.
     //
-    // In order for a given path to be synchronized with remotestorage by
-    // <syncNow>, it has to be marked as "interesting". This is done via the
-    // *force* flag. Forcing sync on a directory causes the entire branch
-    // to be considered "forced".
+    // See <sync> for details.
     //
     // Parameters:
     //   path      - path relative to the module root
-    //   switchVal - optional boolean flag to set force value. Use "false" to remove the force flag.
+    //   treeOnly  - boolean value, whether only the tree should be synced.
     //
-    use: function(path, switchVal) {
+    use: function(path, treeOnly) {
       var absPath = this.makePath(path);
-      store.setNodeForce(absPath, (switchVal != false));
+      return store.setNodeForce(absPath, !treeOnly, true);
     },
 
-    sync: function() {
-      util.deprecate('BaseClient.sync', 'BaseClient.use');
-      this.use.apply(this, arguments);
+    // Method: release
+    //
+    // Remove force flags from given node.
+    //
+    // See <sync> for details.
+    //
+    release: function(path) {
+      var absPath = this.makePath(path);
+      return store.setNodeForce(absPath, false, false);
     },
 
+    // Method: hasDiff
     //
-    // Method: syncNow
+    // Yields true if the node at the given path has a diff set.
+    // Having a "diff" means, that the node or one of it's descendants
+    // has been updated since it was last pulled from remotestorage.
+    hasDiff: function(path) {
+      var absPath = this.makePath(path);
+      var item = null;
+      if(! util.isDir(absPath)) {
+        item = util.baseName(absPath);
+        absPath = util.containingDir(absPath);
+      }
+      return store.getNode(absPath).get('diff').
+        then(function(diff) {
+          if(item) {
+            return !! diff[item];
+          } else {
+            return Object.keys(diff).length > 0;
+          }
+        });
+    },
+
+    /**** TYPE HANDLING ****/
+
+    types: {},
+    typeAliases: {},
+    schemas: {},
+    typeIdKeys: {},
+
+    resolveType: function(alias) {
+      var type = this.types[alias];
+      if(! type) {
+        // FIXME: support custom namespace. don't fall back to remotestoragejs.com.
+        type = 'https://remotestoragejs.com/spec/modules/' + this.moduleName + '/' + alias;
+        logger.error("WARNING: type alias not declared: " + alias, '(have:', this.types, this.schemas, ')');
+      }
+      return type;
+    },
+
+    resolveTypeAlias: function(type) {
+      return this.typeAliases[type];
+    },
+
+    resolveSchema: function(type) {
+      var schema = this.schemas[type];
+      if(! schema) {
+        schema = {};
+        logger.error("WARNING: can't find schema for type: ", type);
+      }
+      return schema;
+    },
+
+    resolveIdKey: function(type) {
+      return this.typeIdKeys[type];
+    },
+
+    // Method: buildObject
     //
-    // Start synchronization at given path.
-    //
-    // Note that only those nodes will be synchronized, that have a *force* flag
-    // set. Use <BaseClient.sync> to set the force flag on a node.
+    // Build an object of the designated type.
     //
     // Parameters:
-    //   path     - relative path from the module root. 
-    //   callback - (optional) callback to call once synchronization finishes.
-    //   context  - (optional) context to bind callback to.
+    //   alias - a type alias, registered via <declareType>
     //
-    syncNow: function(path, callback, context) {
-      sync.syncNow(
-        this.makePath(path),
-        ( callback ?
-          util.bindContext(callback, context) :
-          util.bindContext(function(errors) {
-            if(errors && errors.length > 0) {
-              logger.error("Error syncing: ", errors);
-              moduleEvents[this.moduleName].emit('error', errors);
-            }
-          }, this) )
-      );
+    // If the associated schema specifies a top-level attribute with "format":"id",
+    // and the given attributes don't contain that key, a UUID is generated for
+    // that column.
+    //
+    // Example:
+    //   (start code)
+    //   var drink = client.buildObject('drink');
+    //   client.validateObject(drink); // validates against schema declared for "drink"
+    //   (end code)
+    //
+    buildObject: function(alias, attributes) {
+      var object = {};
+      var type = this.resolveType(alias);
+      var idKey = this.resolveIdKey(type);
+      if(! attributes) {
+        attributes = {};
+      }
+
+      object['@type'] = type;
+      if(idKey && ! attributes[idKey]) {
+        object[idKey] = this.uuid();
+      }
+      return util.extend(object, attributes || {});
+    },
+
+    // Method: declareType
+    //
+    // Declare a type and assign it a schema.
+    // Once a type has a schema set, all data that is stored with that type will be validated before saving it.
+    //
+    // Parameters:
+    //   alias  - an alias to refer to the type. Must be unique within one scope / module.
+    //   type   - (optional) full type-identifier to identify the type. used as @type attribute.
+    //   schema - an object containing the schema for this new type.
+    //
+    // if "type" is ommitted, it will be generated based on the module name.
+    //
+    // Example:
+    //   (start code)
+    //   client.declareType('drink', {
+    //     "description": "A representation of a drink",
+    //     "type": "object",
+    //     "properties": {
+    //       "name": {
+    //         "type": "string",
+    //         "description": "Human readable name of the drink",
+    //         "required": true
+    //       }
+    //     }
+    //   });
+    //
+    //   client.storeObject('drink', 'foo', {}).
+    //     then(function() {
+    //       // object saved
+    //     }, function(error) {
+    //       // error.errors holds validation errors:
+    //       // [{ "property": "name",
+    //       //    "message": "is missing and it is required" }]
+    //       //
+    //       // error.object holds a copy of the object
+    //     });
+    //   (end code)
+    //
+    declareType: function(alias, type, schema) {
+      if(this.types[alias]) {
+        logger.error("WARNING: re-declaring already declared alias " + alias);
+      }
+      if(! schema) {
+        schema = type;
+        type = 'https://remotestoragejs.com/spec/modules/' + this.moduleName + '/' + alias;
+      }
+      if(schema['extends']) {
+        var extendedType = this.types[ schema['extends'] ];
+        if(! extendedType) {
+          logger.error("Type '" + alias + "' tries to extend unknown schema '" + schema['extends'] + "'");
+          return;
+        }
+        schema['extends'] = this.schemas[extendedType];
+      }
+
+      if(schema.properties) {
+        for(var key in schema.properties) {
+          if(schema.properties[key].format == 'id') {
+            this.typeIdKeys[type] = key;
+            break;
+          }
+        }
+      }
+
+      this.types[alias] = type;
+      this.typeAliases[type] = alias;
+      this.schemas[type] = schema;
+    },
+
+    // Method: validateObject
+    //
+    // Validate an object with it's schema.
+    //
+    // Parameters:
+    //   object - the object to validate
+    //   alias  - (optional) the type-alias to use, in case the object doesn't have a @type attribute.
+    //
+    // Returns:
+    //   null   - when the object is valid
+    //   array of errors - when validation fails.
+    //
+    // The errors are objects of the form:
+    // (start code)
+    // { "property": "foo", "message": "is named badly" }
+    // (end code)
+    //
+    validateObject: function(object, alias) {
+      var type = object['@type'];
+      if(! type) {
+        if(alias) {
+          type = this.resolveType(alias);
+        } else {
+          return [{"property":"@type","message":"missing"}];
+        }
+      }
+      var schema = this.resolveSchema(type);
+      var result = validate(object, schema);
+
+      return result.valid ? null : result.errors;
+    },
+
+    // Method: uuid
+    //
+    // Generates a Universally Unique IDentifuer and returns it.
+    //
+    // The UUID is prefixed with the string 'uuid:', to become a valid URI.
+    uuid: function() {
+      return 'uuid:' + MathUUID.uuid();
     }
+
   };
+
+  util.extend(BaseClient, globalEvents);
 
   return BaseClient;
 
 });
 
+/** THIS FILE WAS GENERATED BY build/compile-assets.js. DO NOT CHANGE IT MANUALLY, BUT INSTEAD CHANGE THE ASSETS IN assets/. **/
+define('lib/assets',[], function() {
+  return {
+    remotestorageIcon: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgd2lkdGg9IjMyIgogICBoZWlnaHQ9IjMyIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjIgcjk4MTkiCiAgIHNvZGlwb2RpOmRvY25hbWU9InJlbW90ZVN0b3JhZ2UtaWNvbi5zdmciCiAgIGlua3NjYXBlOmV4cG9ydC1maWxlbmFtZT0iL2hvbWUvdXNlci93ZWJzaXRlL2ltZy9yZW1vdGVTdG9yYWdlLWljb24ucG5nIgogICBpbmtzY2FwZTpleHBvcnQteGRwaT0iOTAiCiAgIGlua3NjYXBlOmV4cG9ydC15ZHBpPSI5MCI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDMzIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2UyMjFiNztzdG9wLW9wYWNpdHk6MC43NDYxNTM4MzsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDM1IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZTIyMWI3O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwMzciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTc1Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc3IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjAuNzM4NDYxNTU7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzkiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMDtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTEwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojYzQ2ZjAwO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGlua3NjYXBlOnBlcnNwZWN0aXZlCiAgICAgICBzb2RpcG9kaTp0eXBlPSJpbmtzY2FwZTpwZXJzcDNkIgogICAgICAgaW5rc2NhcGU6dnBfeD0iMCA6IDUyNi4xODEwOSA6IDEiCiAgICAgICBpbmtzY2FwZTp2cF95PSIwIDogMTAwMCA6IDAiCiAgICAgICBpbmtzY2FwZTp2cF96PSI3NDQuMDk0NDggOiA1MjYuMTgxMDkgOiAxIgogICAgICAgaW5rc2NhcGU6cGVyc3AzZC1vcmlnaW49IjM3Mi4wNDcyNCA6IDM1MC43ODczOSA6IDEiCiAgICAgICBpZD0icGVyc3BlY3RpdmUyOTg1IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY5MTAwO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2M0NmYwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iMCIKICAgICAgIHgyPSIxMjgiCiAgICAgICB5MT0iMTI4IgogICAgICAgeDE9IjEyOCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50Mzg5MCIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODM5LTAtMiIKICAgICAgIHgxPSIxMjgiCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEyOCIKICAgICAgIHkyPSIwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC43NjE1Mzg0NTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS03IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzOS0wLTgiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjExMiIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMzIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDMyLDc5Ni4zNjIxOCkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS03Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTEwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctMyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2M0NmYwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTIiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODM5LTAtMyIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwzMiw3OTYuMzYyMTgpIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC0yIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTMwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC0xIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY5MzA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDY1LjE0ODc0OCwxMDcxLjUwMDYpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDI1LTUiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTMiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni00IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwNDhiZmY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDQ4YmZmO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODM5LTAtODkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMzIsNzk2LjM2MjE4KSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtMiIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC0yIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA0NC05Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTMiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC04IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC03Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC01IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNTkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsMjI0LDEwMjAuMzYyMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC05IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE2MSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LDAuNTk1MzkyNDcsLTAuODY2MDI1NCwwLjUsMTkwLjg1MTI1LDc0NS4yMjM3NikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNjMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsMC41OTUzOTI0NywwLjg2NjAyNTQsMC41LDY1LjE0ODc1LDc0NS4yMjM3NikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE3MCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMzIsNzk2LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE3MiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSw2NS4xNDg3NDgsMTA3MS41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNzQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMTkwLjg1MTI1LDEwNzEuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMiI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni03IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNzQtMiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LC0wLjU5NTM5MjQ3LC0wLjg2NjAyNTQsLTAuNSwxOTAuODUxMjUsMTA3MS41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC02Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTAiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1My05IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUtMiIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC03LTQiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTUtNyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSwyMDkuMTQ4NzUsMTEwMy41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA0NC0yLTkiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNy03IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNC01IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjU3LTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNi01Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTAtOSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A0MDg4LTktMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzMTciCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNTgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDE3Niw4MjguMzYyMTgpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNjIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNTgtNyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMTc2LDgyOC4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC02Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC01LTkiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy0wIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTgiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzYwLTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi04Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTctMyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTQtNiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNi02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM2Mi00IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0wLTAiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05LTgiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTMtOS02IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS0yLTciIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00LTMiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOS0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1NS03LTEiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi05LTMiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNy03LTUiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC00LTUtMyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzMTctOCIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNi01LTUiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNi01LTUiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDQwODYtMC05LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05LTMtMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ0MzQiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS01IgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MDgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsNzAyLjg1MTI1LDEwNzEuNTAwNSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi04IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUxMSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSw1NzcuMTQ4NzUsMTA3MS41MDA1KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUxNCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsNTQ0LC02ZS01KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTYiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTE3IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSw1ODQsNzk2LjM2MjEyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUyMCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwwLjU5NTM5MjQ3LDAuODY2MDI1NCwwLjUsNTc3LjE0ODc1LDc3Ny4yMjM4KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTktMyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MjMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwwLjU5NTM5MjQ3LC0wLjg2NjAyNTQsMC41LDcwMi44NTEyNSw3NzcuMjIzOCkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUyNiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSw3MzYsMjU2LjAwMDAyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MjkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsNzc2LDEwNTIuMzYyMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUzMiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsNTY0LDc5Ni4zNjIxMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTM0IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjY4NzUsMCwwLC0xLDc1NiwyNTYuMDAwMDIpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05IgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUzOSIKICAgICAgIGN4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGZ5PSIxMjgiCiAgICAgICByPSIxMTIiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEuMTQyODU3MSw2MCw3MTAuMDc2NTIpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05LTgiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTM5LTciCiAgICAgICBjeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBmeT0iMTI4IgogICAgICAgcj0iMTEyIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLjE0Mjg1NzEsLTIwLDc3OC4wNzY0NykiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTktOCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS0yLTctOSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC03LTQtMy04IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgcj0iMTEyIgogICAgICAgZnk9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgY3g9IjY2MCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMS4xNDI4NTcxLDE2LDMzMC4wNzY1MikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1NTYiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0NTc1IgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOS0xIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUzOS0wIgogICAgICAgY3g9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgZnk9IjEyOCIKICAgICAgIHI9IjExMiIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMS4xNDI4NTcxLC0yMCw3NzguMDc2NDcpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05LTEiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUtMi03LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00LTMtMCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTI0OTk5OTksMCwwLDAuMTQyODU3MTMsNzk3LjUsNjc4LjA3NjUyKSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDU1Ni0zIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDU3NS0yIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTc1LTIiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzctNiIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojODE4MTgxO3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc5LTQiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzcwNzA3MDtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICByPSIxMTIiCiAgICAgICBmeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBjeD0iNjYwIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjEyNDk5OTk5LDAsMCwwLjE0Mjg1NzEzLDczMy41MDAwMSw2NzguMDc2NTIpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NjAxIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTktMSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgcj0iMTEyIgogICAgICAgZnk9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgY3g9IjY2MCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMS4xNDI4NTcxLDIzNiw3NzguMDc2NDcpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTU2LTUiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0NTc1LTMiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1NzUtMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDU3Ny05IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM4MTgxODE7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzktOCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzA3MDcwO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTI0OTk5OTksMCwwLDAuMTQyODU3MTMsODI5LjUwMDAxLDY3OC4wNzY1MikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ2NDUiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0NTc1LTMiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEuMTQyODU3MSwyMzYsNzc4LjA3NjQ3KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDU1Ni04IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDU3NS0xIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTc1LTEiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzctMiIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwO3N0b3Atb3BhY2l0eTowLjczODQ2MTU1OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc5LTIiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMDtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwMTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDMyLDc5Ni4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwMTkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsNjUuMTQ4NzQ4LDEwNzEuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDIxIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDE5MC44NTEyNSwxMDcxLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTU5IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM1OC0zIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTU5Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC01LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy01IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzYwLTYiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi0zIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTctMCIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTQtMiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNi03IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM2Mi0wIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0wLTQiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05LTciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtMCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTMtOS0zIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtMCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS0yLTEiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00LTYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOS01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1NS03LTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi05LTUiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNy03LTciCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC00LTUtOCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzMTctODkiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS0wIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNS0wIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTAtOS03IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtOS0zLTgiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC0zIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC43NDUwOTgwNTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC0xMCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC0zIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA0NC03Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTMyIgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtMiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0zIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTUtMiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM1OTA0ZmY7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtMi04IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNTkwNGZmO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTItNSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtOS0wIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTMtOCIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTgtNiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNy0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE2My05IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LDAuNTk1MzkyNDcsMC44NjYwMjU0LDAuNSw2NS4xNDg3NSw3NDUuMjIzNzYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTctMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNkMmRkMjY7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni02LTMiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNkMmRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC01LTciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyMzUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsNTI2Ljg1MTI1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDIzOCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSw0MDEuMTQ4NzUsMTI5MS41MDA3KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01OSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNDEiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDM1Miw0MDMuOTk5OTkpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjQ0IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSw0NjgsMTAxNi4zNjIyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS0wIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI0NyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwwLjU5NTM5MjQ3LDAuODY2MDI1NCwwLjUsNDAxLjE0ODc1LDk5Ny4yMjM5KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTktNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwwLjU5NTM5MjQ3LC0wLjg2NjAyNTQsMC41LDUyNi44NTEyNSw5OTcuMjIzOSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS0wIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1MyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSw1NDQsNjYwLjAwMDA5KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsMC41OTUzOTI0NywwLjg2NjAyNTQsMC41LDQwMS4xNDg3NSw3MDkuMjIzOSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi05IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI2MCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LDAuNTk1MzkyNDcsLTAuODY2MDI1NCwwLjUsNTI2Ljg1MTI1LDcwOS4yMjM5KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI2MyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSw1NjAsOTg0LjM2MjMyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC01MiIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQzODctNyIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NjY2OSwwLDAsMS4zNDcyNTAxLC0yNDQuOTUzMzksODYuNTA1MDM1KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC01MiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuNzYxNTM4NDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC00IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtMzMiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjc2MTUzODQ1OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTQiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00IgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUyMCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwtMjQ0Ljk1MzM5LDg2LjUwNTAzNSkiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0zMyIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MjIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsMTM5LjA0NjYsLTM2MC4xNDk5NykiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC01MiIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MjQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4xNDQzMjY3MywwLDAsMC4xNjY2NjY0Miw5MDcuMTAyMjMsODk3LjEyNjU2KSIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTMzIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUzMiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwxMzkuMDQ2NiwtMzYwLjE0OTk3KSIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNy0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzI1NyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwwLjU5NTM5MjQ3LDAuODY2MDI1NCwwLjUsMTQ1LjE0ODc1LDk5Ny4yMjM4MSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwMzMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzMjYwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsMC41OTUzOTI0NywtMC44NjYwMjU0LDAuNSwyNzAuODUxMjUsOTk3LjIyMzgxKSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNS0yIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzI2MyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSwzMDQsMTI3Mi4zNjIzKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA1OCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsLTEwOCwxMDE2LjM2MjIpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsLTc0Ljg1MTI1MiwxMjkxLjUwMDcpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDYyIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDUwLjg1MTI1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNjUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMjcwLjg1MTI1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNjgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMTQ1LjE0ODc1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDcxIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxMTIsMTAxNi4zNjIyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0yMCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MjAtNCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwtMjQ0Ljk1MzM5LDg2LjUwNTAzNSkiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC0yMCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuNzYxNTM4NDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtOSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC03NyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9Ijk1Ljk5OTk3NyIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICBmeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NjY2OSwwLDAsMS4zNDcyNTAxLC0yNDQuOTUzMzksODYuNTA1MDM1KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDIwOCIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTIwIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDM2MTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsMjE5LjA0NjYxLDg5LjE2Nzc1NykiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDM2MjUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsMjE5LjA0NjYxLDg5LjE2Nzc1NykiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDMyMDkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4xNDQzMjY5OSwwLDAsMC4xNjY2NjY3MywxMjAxLjUzNTgsODc3LjExNDg4KSIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciIC8+CiAgPC9kZWZzPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIxNiIKICAgICBpbmtzY2FwZTpjeD0iMTYuMzA2MTY1IgogICAgIGlua3NjYXBlOmN5PSIxNi4yMzcyMjUiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9InB4IgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9ImxheWVyMSIKICAgICBzaG93Z3JpZD0idHJ1ZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEyODAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzk5IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIxIgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgZml0LW1hcmdpbi10b3A9IjAiCiAgICAgZml0LW1hcmdpbi1sZWZ0PSIwIgogICAgIGZpdC1tYXJnaW4tcmlnaHQ9IjAiCiAgICAgZml0LW1hcmdpbi1ib3R0b209IjAiCiAgICAgaW5rc2NhcGU6c25hcC1wYWdlPSJ0cnVlIgogICAgIGlua3NjYXBlOnNuYXAtbm9kZXM9InRydWUiCiAgICAgZ3JpZHRvbGVyYW5jZT0iMTAiCiAgICAgc2hvd2JvcmRlcj0idHJ1ZSIKICAgICBzaG93Z3VpZGVzPSJ0cnVlIgogICAgIGlua3NjYXBlOmd1aWRlLWJib3g9InRydWUiPgogICAgPGlua3NjYXBlOmdyaWQKICAgICAgIHR5cGU9Inh5Z3JpZCIKICAgICAgIGlkPSJncmlkMzAyMSIKICAgICAgIGVtcHNwYWNpbmc9IjQiCiAgICAgICB2aXNpYmxlPSJ0cnVlIgogICAgICAgZW5hYmxlZD0idHJ1ZSIKICAgICAgIHNuYXB2aXNpYmxlZ3JpZGxpbmVzb25seT0idHJ1ZSIKICAgICAgIHNwYWNpbmd4PSIxNnB4IgogICAgICAgc3BhY2luZ3k9IjE2cHgiCiAgICAgICBkb3R0ZWQ9InRydWUiIC8+CiAgPC9zb2RpcG9kaTpuYW1lZHZpZXc+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMzYuNTc4NSwtOTU2LjM1MTg5KSI+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImNvbG9yOiMwMDAwMDA7ZmlsbDp1cmwoI3JhZGlhbEdyYWRpZW50MzIwOSk7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7bWFya2VyOm5vbmU7dmlzaWJpbGl0eTp2aXNpYmxlO2Rpc3BsYXk6aW5saW5lO292ZXJmbG93OnZpc2libGU7ZW5hYmxlLWJhY2tncm91bmQ6YWNjdW11bGF0ZSIKICAgICAgIGQ9Im0gMTM1Mi41Nzg1LDk1Ni4zNTE4OSAwLjI4ODYsMTUuMTM2MjkgMTMuNTY2OCwtNy4xMzUxNiAtMTMuODU1NCwtOC4wMDExMyB6IG0gMCwwIC0xMy44NTU0LDguMDAxMTMgMTMuNTY2Nyw3LjEzNTE2IDAuMjg4NywtMTUuMTM2MjkgeiBtIC0xMy44NTU0LDguMDAxMTMgMCwxNS45OTc3NCAxMi45NTc5LC03LjgxNjIxIC0xMi45NTc5LC04LjE4MTUzIHogbSAwLDE1Ljk5Nzc0IDEzLjg1NTQsOC4wMDExMyAtMC42MDg5LC0xNS4zMTY3IC0xMy4yNDY1LDcuMzE1NTcgeiBtIDEzLjg1NTQsOC4wMDExMyAxMy44NTU0LC04LjAwMTEzIC0xMy4yNTEsLTcuMzE1NTcgLTAuNjA0NCwxNS4zMTY3IHogbSAxMy44NTU0LC04LjAwMTEzIDAsLTE1Ljk5Nzc0IC0xMi45NjI0LDguMTgxNTMgMTIuOTYyNCw3LjgxNjIxIHoiCiAgICAgICBpZD0icGF0aDQwMTYtMy04LTYiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPgogIDwvZz4KPC9zdmc+Cg==',
+    remotestorageIconError: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgd2lkdGg9IjMyIgogICBoZWlnaHQ9IjMyIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjMuMSByOTg4NiIKICAgc29kaXBvZGk6ZG9jbmFtZT0icmVtb3Rlc3RvcmFnZUljb25FcnJvcjIuc3ZnIgogICBpbmtzY2FwZTpleHBvcnQtZmlsZW5hbWU9Ii9ob21lL3VzZXIvcmVtb3Rlc3RvcmFnZS1pY29uLWVycm9yLnBuZyIKICAgaW5rc2NhcGU6ZXhwb3J0LXhkcGk9IjkwIgogICBpbmtzY2FwZTpleHBvcnQteWRwaT0iOTAiPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDAzMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNlMjIxYjc7c3RvcC1vcGFjaXR5OjAuNzQ2MTUzODM7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDAzNSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2UyMjFiNztzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A0MDM3IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDU3NSI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDU3NyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwO3N0b3Atb3BhY2l0eTowLjczODQ2MTU1OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc5IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4NiIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A0MDg4IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA0NCI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0NiIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjkxMDA7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2M0NmYwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxpbmtzY2FwZTpwZXJzcGVjdGl2ZQogICAgICAgc29kaXBvZGk6dHlwZT0iaW5rc2NhcGU6cGVyc3AzZCIKICAgICAgIGlua3NjYXBlOnZwX3g9IjAgOiA1MjYuMTgxMDkgOiAxIgogICAgICAgaW5rc2NhcGU6dnBfeT0iMCA6IDEwMDAgOiAwIgogICAgICAgaW5rc2NhcGU6dnBfej0iNzQ0LjA5NDQ4IDogNTI2LjE4MTA5IDogMSIKICAgICAgIGlua3NjYXBlOnBlcnNwM2Qtb3JpZ2luPSIzNzIuMDQ3MjQgOiAzNTAuNzg3MzkgOiAxIgogICAgICAgaWQ9InBlcnNwZWN0aXZlMjk4NSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTEwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTciIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNjNDZmMDA7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgeTI9IjAiCiAgICAgICB4Mj0iMTI4IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgxPSIxMjgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4OTAiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzOS0wLTIiCiAgICAgICB4MT0iMTI4IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMjgiCiAgICAgICB5Mj0iMCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNlOTAwMDA7c3RvcC1vcGFjaXR5OjAuNzYwNzg0MzM7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNlOTAwMDA7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzktMC04IgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMTIiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjMyIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwzMiw3OTYuMzYyMTgpIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjkxMDA7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTMiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNjNDZmMDA7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTIiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0yIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzOS0wLTMiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMzIsNzk2LjM2MjE4KSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtMiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjkzMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtMSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTMwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC0wIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgeTI9Ii0wLjk5NDg1NDY5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSw2NS4xNDg3NDgsMTA3MS41MDA2KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDAyNS01IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0zIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0LTMiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNCIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDQ4YmZmO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTciCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzA0OGJmZjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzOS0wLTg5IgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDMyLDc5Ni4zNjIxOCkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTUiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTIiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtMiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtOSI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni0zIgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtOCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni02IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtNSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MTU5IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjY4NzUsMCwwLC0xLDIyNCwxMDIwLjM2MjIpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNjEiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwwLjU5NTM5MjQ3LC0wLjg2NjAyNTQsMC41LDE5MC44NTEyNSw3NDUuMjIzNzYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTciCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MTYzIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LDAuNTk1MzkyNDcsMC44NjYwMjU0LDAuNSw2NS4xNDg3NSw3NDUuMjIzNzYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNzAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDMyLDc5Ni4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNzIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsNjUuMTQ4NzQ4LDEwNzEuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MTc0IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDE5MC44NTEyNSwxMDcxLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC01IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0LTIiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTQiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MTc0LTIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMTkwLjg1MTI1LDEwNzEuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0wIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtOSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTMtOSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMTc2LDgyOC4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC01LTIiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjU1LTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi05Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTctNyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTQtNSIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNi01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1Ny00IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0wLTkiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05LTMiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzE3IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzU4IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTIiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzYwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDIwOS4xNDg3NSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzYyIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTYiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzU4LTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDE3Niw4MjguMzYyMTgpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS05IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTctMCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi04IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM2MC00IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDIwOS4xNDg3NSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0LTItOCI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni03LTMiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC00LTYiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNjItNCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LC0wLjU5NTM5MjQ3LC0wLjg2NjAyNTQsLTAuNSwzMzQuODUxMjUsMTEwMy41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC02LTYiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDQwODYtMC0wIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtOS04IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjUzLTktNiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMTc2LDgyOC4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTkiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUtMi03IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTctNC0zIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTktMyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTUtNy0xIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDIwOS4xNDg3NSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0LTItOS0zIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTctNy01IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNC01LTMiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzE3LTgiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS01IgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNS01Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTAtOS02IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtOS0zLTMiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NDM0IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUtNSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTYiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTA4IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDcwMi44NTEyNSwxMDcxLjUwMDUpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MTEiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsNTc3LjE0ODc1LDEwNzEuNTAwNSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDU0NCwtNmUtNSkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUxNyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsNTg0LDc5Ni4zNjIxMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsMC41OTUzOTI0NywwLjg2NjAyNTQsMC41LDU3Ny4xNDg3NSw3NzcuMjIzOCkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi05LTMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTIzIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsMC41OTUzOTI0NywtMC44NjYwMjU0LDAuNSw3MDIuODUxMjUsNzc3LjIyMzgpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MjYiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsNzM2LDI1Ni4wMDAwMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTI5IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjY4NzUsMCwwLC0xLDc3NiwxMDUyLjM2MjIpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MzIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDU2NCw3OTYuMzYyMTIpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUzNCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSw3NTYsMjU2LjAwMDAyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MzkiCiAgICAgICBjeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBmeT0iMTI4IgogICAgICAgcj0iMTEyIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLjE0Mjg1NzEsNjAsNzEwLjA3NjUyKSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOS04IgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUzOS03IgogICAgICAgY3g9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgZnk9IjEyOCIKICAgICAgIHI9IjExMiIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMS4xNDI4NTcxLC0yMCw3NzguMDc2NDcpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05LTgiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUtMi03LTkiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00LTMtOCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEuMTQyODU3MSwxNiwzMzAuMDc2NTIpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTU2IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDU3NSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTktMSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MzktMCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGZ5PSIxMjgiCiAgICAgICByPSIxMTIiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEuMTQyODU3MSwtMjAsNzc4LjA3NjQ3KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOS0xIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC01LTItNy02IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTctNC0zLTAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICByPSIxMTIiCiAgICAgICBmeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBjeD0iNjYwIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjEyNDk5OTk5LDAsMCwwLjE0Mjg1NzEzLDc5Ny41LDY3OC4wNzY1MikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1NTYtMyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQ1NzUtMiIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDU3NS0yIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc3LTYiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzgxODE4MTtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDU3OS00IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3MDcwNzA7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgcj0iMTEyIgogICAgICAgZnk9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgY3g9IjY2MCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4xMjQ5OTk5OSwwLDAsMC4xNDI4NTcxMyw3MzMuNTAwMDEsNjc4LjA3NjUyKSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDYwMSIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05LTEiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEuMTQyODU3MSwyMzYsNzc4LjA3NjQ3KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDU1Ni01IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDU3NS0zIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTc1LTMiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzctOSIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojODE4MTgxO3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc5LTgiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzcwNzA3MDtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICByPSIxMTIiCiAgICAgICBmeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBjeD0iNjYwIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjEyNDk5OTk5LDAsMCwwLjE0Mjg1NzEzLDgyOS41MDAwMSw2NzguMDc2NTIpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NjQ1IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDU3NS0zIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICByPSIxMTIiCiAgICAgICBmeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBjeD0iNjYwIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLjE0Mjg1NzEsMjM2LDc3OC4wNzY0NykiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1NTYtOCIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQ1NzUtMSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDU3NS0xIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc3LTIiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMDtzdG9wLW9wYWNpdHk6MC43Mzg0NjE1NTsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDU3OS0yIgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDE3IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwzMiw3OTYuMzYyMTgpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDE5IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDY1LjE0ODc0OCwxMDcxLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDAyMSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LC0wLjU5NTM5MjQ3LC0wLjg2NjAyNTQsLTAuNSwxOTAuODUxMjUsMTA3MS41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01OSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNTgtMyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMTc2LDgyOC4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01OSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS02IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTctNSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM2MC02IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDIwOS4xNDg3NSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0LTItMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni03LTAiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC00LTIiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNjItMCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LC0wLjU5NTM5MjQ3LC0wLjg2NjAyNTQsLTAuNSwzMzQuODUxMjUsMTEwMy41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC02LTciPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDQwODYtMC00IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtOS03IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTAiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjUzLTktMyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMTc2LDgyOC4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTAiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUtMi0xIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTctNC02IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTktNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTUtNy03IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDIwOS4xNDg3NSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0LTItOS01Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTctNy03IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNC01LTgiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzE3LTg5IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUtMCIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC02LTUtMCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0wLTktNyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A0MDg4LTktMy04IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtMTAiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtNyI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni0zMiIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjc0NTA5ODA1OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTIiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTUiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eTowLjc0NTA5ODA1OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDQwODYtMyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A0MDg4LTMiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC01LTIiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNTkwNGZmO3N0b3Atb3BhY2l0eTowLjc0NTA5ODA1OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTItOCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzU5MDRmZjtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC0yLTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0LTktMCI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni0zLTgiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC04LTYiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTctMyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNjMtOSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwwLjU5NTM5MjQ3LDAuODY2MDI1NCwwLjUsNjUuMTQ4NzUsNzQ1LjIyMzc2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC03LTMiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZDJkZDI2O3N0b3Atb3BhY2l0eTowLjc0NTA5ODA1OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDQwODYtNi0zIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZDJkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtNS03IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTciCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjM1IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDUyNi44NTEyNSwxMjkxLjUwMDcpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItMyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyMzgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsNDAxLjE0ODc1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjQxIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwzNTIsNDAzLjk5OTk5KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTU5IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI0NCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsNDY4LDEwMTYuMzYyMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUtMCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNDciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsMC41OTUzOTI0NywwLjg2NjAyNTQsMC41LDQwMS4xNDg3NSw5OTcuMjIzOSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi05LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjUwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsMC41OTUzOTI0NywtMC44NjYwMjU0LDAuNSw1MjYuODUxMjUsOTk3LjIyMzkpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtMCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsNTQ0LDY2MC4wMDAwOSkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjU3IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LDAuNTk1MzkyNDcsMC44NjYwMjU0LDAuNSw0MDEuMTQ4NzUsNzA5LjIyMzkpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwwLjU5NTM5MjQ3LC0wLjg2NjAyNTQsMC41LDUyNi44NTEyNSw3MDkuMjIzOSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNjMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsNTYwLDk4NC4zNjIzMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNTIiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0Mzg3LTciCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwtMjQ0Ljk1MzM5LDg2LjUwNTAzNSkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNTIiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjc2MTUzODQ1OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTciIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTMzIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC43NjE1Mzg0NTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC00IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsLTI0NC45NTMzOSw4Ni41MDUwMzUpIgogICAgICAgY3g9IjEwNDYuNTMxMiIKICAgICAgIGN5PSI1NzEuNDIxODgiCiAgICAgICBmeD0iMTA0Ni41MzEyIgogICAgICAgZnk9IjU3MS40MjE4OCIKICAgICAgIHI9Ijk1Ljk5OTk3NyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtMzMiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTIyIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NjY2OSwwLDAsMS4zNDcyNTAxLDEzOS4wNDY2LC0zNjAuMTQ5OTcpIgogICAgICAgY3g9IjEwNDYuNTMxMiIKICAgICAgIGN5PSI1NzEuNDIxODgiCiAgICAgICBmeD0iMTA0Ni41MzEyIgogICAgICAgZnk9IjU3MS40MjE4OCIKICAgICAgIHI9Ijk1Ljk5OTk3NyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNTIiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTI0IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTQ0MzI2NzMsMCwwLDAuMTY2NjY2NDIsOTA3LjEwMjIzLDg5Ny4xMjY1NikiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0zMyIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MzIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsMTM5LjA0NjYsLTM2MC4xNDk5NykiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTctMyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDMyNTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsMC41OTUzOTI0NywwLjg2NjAyNTQsMC41LDE0NS4xNDg3NSw5OTcuMjIzODEpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDMzIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzI2MCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LDAuNTk1MzkyNDcsLTAuODY2MDI1NCwwLjUsMjcwLjg1MTI1LDk5Ny4yMjM4MSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTUtMiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDMyNjMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsMzA0LDEyNzIuMzYyMykiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtMyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNTgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLC0xMDgsMTAxNi4zNjIyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTciCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDYwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LC03NC44NTEyNTIsMTI5MS41MDA3KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA2MiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LC0wLjU5NTM5MjQ3LC0wLjg2NjAyNTQsLTAuNSw1MC44NTEyNSwxMjkxLjUwMDcpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDY1IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDI3MC44NTEyNSwxMjkxLjUwMDcpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTciCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDY4IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDE0NS4xNDg3NSwxMjkxLjUwMDcpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA3MSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMTEyLDEwMTYuMzYyMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtMjAiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTIwLTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsLTI0NC45NTMzOSw4Ni41MDUwMzUpIgogICAgICAgY3g9IjEwNDYuNTMxMiIKICAgICAgIGN5PSI1NzEuNDIxODgiCiAgICAgICBmeD0iMTA0Ni41MzEyIgogICAgICAgZnk9IjU3MS40MjE4OCIKICAgICAgIHI9Ijk1Ljk5OTk3NyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtMjAiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjc2MTUzODQ1OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTkiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNzciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICByPSI5NS45OTk5NzciCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGN5PSI1NzEuNDIxODgiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwtMjQ0Ljk1MzM5LDg2LjUwNTAzNSkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQyMDgiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0yMCIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQzNjE0IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NjY2OSwwLDAsMS4zNDcyNTAxLDIxOS4wNDY2MSw4OS4xNjc3NTcpIgogICAgICAgY3g9IjEwNDYuNTMxMiIKICAgICAgIGN5PSI1NzEuNDIxODgiCiAgICAgICBmeD0iMTA0Ni41MzEyIgogICAgICAgZnk9IjU3MS40MjE4OCIKICAgICAgIHI9Ijk1Ljk5OTk3NyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQzNjI1IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NjY2OSwwLDAsMS4zNDcyNTAxLDIxOS4wNDY2MSw4OS4xNjc3NTcpIgogICAgICAgY3g9IjEwNDYuNTMxMiIKICAgICAgIGN5PSI1NzEuNDIxODgiCiAgICAgICBmeD0iMTA0Ni41MzEyIgogICAgICAgZnk9IjU3MS40MjE4OCIKICAgICAgIHI9Ijk1Ljk5OTk3NyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQzMjA5IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTQ0MzI2OTksMCwwLDAuMTY2NjY2NzMsMTIwMS41MzU4LDg3Ny4xMTQ4OCkiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogIDwvZGVmcz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9ImJhc2UiCiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEuMCIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6em9vbT0iMTEuMzEzNzA4IgogICAgIGlua3NjYXBlOmN4PSIxNS4yOTc1MjUiCiAgICAgaW5rc2NhcGU6Y3k9IjEwLjkzMzE1MiIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJ0cnVlIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTIxNSIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI3NzYiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjY1IgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGZpdC1tYXJnaW4tdG9wPSIwIgogICAgIGZpdC1tYXJnaW4tbGVmdD0iMCIKICAgICBmaXQtbWFyZ2luLXJpZ2h0PSIwIgogICAgIGZpdC1tYXJnaW4tYm90dG9tPSIwIgogICAgIGlua3NjYXBlOnNuYXAtcGFnZT0idHJ1ZSIKICAgICBpbmtzY2FwZTpzbmFwLW5vZGVzPSJ0cnVlIgogICAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICAgIHNob3dib3JkZXI9InRydWUiCiAgICAgc2hvd2d1aWRlcz0idHJ1ZSIKICAgICBpbmtzY2FwZTpndWlkZS1iYm94PSJ0cnVlIj4KICAgIDxpbmtzY2FwZTpncmlkCiAgICAgICB0eXBlPSJ4eWdyaWQiCiAgICAgICBpZD0iZ3JpZDMwMjEiCiAgICAgICBlbXBzcGFjaW5nPSI0IgogICAgICAgdmlzaWJsZT0idHJ1ZSIKICAgICAgIGVuYWJsZWQ9InRydWUiCiAgICAgICBzbmFwdmlzaWJsZWdyaWRsaW5lc29ubHk9InRydWUiCiAgICAgICBzcGFjaW5neD0iMTZweCIKICAgICAgIHNwYWNpbmd5PSIxNnB4IgogICAgICAgZG90dGVkPSJ0cnVlIiAvPgogIDwvc29kaXBvZGk6bmFtZWR2aWV3PgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzM2LjU3ODUsLTk1Ni4zNTE4OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJjb2xvcjojMDAwMDAwO2ZpbGw6dXJsKCNyYWRpYWxHcmFkaWVudDMyMDkpO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO21hcmtlcjpub25lO3Zpc2liaWxpdHk6dmlzaWJsZTtkaXNwbGF5OmlubGluZTtvdmVyZmxvdzp2aXNpYmxlO2VuYWJsZS1iYWNrZ3JvdW5kOmFjY3VtdWxhdGUiCiAgICAgICBkPSJtIDEzNTIuNTc4NSw5NTYuMzUxODkgMC4yODg2LDE1LjEzNjI5IDEzLjU2NjgsLTcuMTM1MTYgLTEzLjg1NTQsLTguMDAxMTMgeiBtIDAsMCAtMTMuODU1NCw4LjAwMTEzIDEzLjU2NjcsNy4xMzUxNiAwLjI4ODcsLTE1LjEzNjI5IHogbSAtMTMuODU1NCw4LjAwMTEzIDAsMTUuOTk3NzQgMTIuOTU3OSwtNy44MTYyMSAtMTIuOTU3OSwtOC4xODE1MyB6IG0gMCwxNS45OTc3NCAxMy44NTU0LDguMDAxMTMgLTAuNjA4OSwtMTUuMzE2NyAtMTMuMjQ2NSw3LjMxNTU3IHogbSAxMy44NTU0LDguMDAxMTMgMTMuODU1NCwtOC4wMDExMyAtMTMuMjUxLC03LjMxNTU3IC0wLjYwNDQsMTUuMzE2NyB6IG0gMTMuODU1NCwtOC4wMDExMyAwLC0xNS45OTc3NCAtMTIuOTYyNCw4LjE4MTUzIDEyLjk2MjQsNy44MTYyMSB6IgogICAgICAgaWQ9InBhdGg0MDE2LTMtOC02IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICA8L2c+Cjwvc3ZnPgo=',
+    remotestorageIconOffline: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgd2lkdGg9IjMyIgogICBoZWlnaHQ9IjMyIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjEgcjk3NjAiCiAgIHNvZGlwb2RpOmRvY25hbWU9InJlbW90ZXN0b3JhZ2VJY29uT2ZmbGluZS5zdmciCiAgIGlua3NjYXBlOmV4cG9ydC1maWxlbmFtZT0iL2hvbWUvdXNlci93ZWJzaXRlL2ltZy9yZW1vdGVTdG9yYWdlLWljb24ucG5nIgogICBpbmtzY2FwZTpleHBvcnQteGRwaT0iOTAiCiAgIGlua3NjYXBlOmV4cG9ydC15ZHBpPSI5MCI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDMzIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2UyMjFiNztzdG9wLW9wYWNpdHk6MC43NDYxNTM4MzsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDM1IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZTIyMWI3O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwMzciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTc1Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc3IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjAuNzM4NDYxNTU7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzkiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMDtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDQ0Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTEwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojYzQ2ZjAwO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGlua3NjYXBlOnBlcnNwZWN0aXZlCiAgICAgICBzb2RpcG9kaTp0eXBlPSJpbmtzY2FwZTpwZXJzcDNkIgogICAgICAgaW5rc2NhcGU6dnBfeD0iMCA6IDUyNi4xODEwOSA6IDEiCiAgICAgICBpbmtzY2FwZTp2cF95PSIwIDogMTAwMCA6IDAiCiAgICAgICBpbmtzY2FwZTp2cF96PSI3NDQuMDk0NDggOiA1MjYuMTgxMDkgOiAxIgogICAgICAgaW5rc2NhcGU6cGVyc3AzZC1vcmlnaW49IjM3Mi4wNDcyNCA6IDM1MC43ODczOSA6IDEiCiAgICAgICBpZD0icGVyc3BlY3RpdmUyOTg1IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY5MTAwO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2M0NmYwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iMCIKICAgICAgIHgyPSIxMjgiCiAgICAgICB5MT0iMTI4IgogICAgICAgeDE9IjEyOCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50Mzg5MCIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODM5LTAtMiIKICAgICAgIHgxPSIxMjgiCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEyOCIKICAgICAgIHkyPSIwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzY5Njk2OTtzdG9wLW9wYWNpdHk6MC43NjE1Mzg0NTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzY3Njc2NztzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS03IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzOS0wLTgiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjExMiIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMzIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDMyLDc5Ni4zNjIxOCkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS03Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTEwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctMyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2M0NmYwMDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTIiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODM5LTAtMyIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwzMiw3OTYuMzYyMTgpIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC0yIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmOTMwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC0xIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY5MzA0O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LC0wLjU5NTM5MjQ3LDAuODY2MDI1NCwtMC41LDY1LjE0ODc0OCwxMDcxLjUwMDYpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDI1LTUiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTMiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni00IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwNDhiZmY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDQ4YmZmO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODM5LTAtODkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMzIsNzk2LjM2MjE4KSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtMiIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC0yIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA0NC05Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTMiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC04IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC03Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC01IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNTkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsMjI0LDEwMjAuMzYyMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC05IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE2MSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LDAuNTk1MzkyNDcsLTAuODY2MDI1NCwwLjUsMTkwLjg1MTI1LDc0NS4yMjM3NikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNjMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsMC41OTUzOTI0NywwLjg2NjAyNTQsMC41LDY1LjE0ODc1LDc0NS4yMjM3NikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE3MCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMzIsNzk2LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE3MiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSw2NS4xNDg3NDgsMTA3MS41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNzQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMTkwLjg1MTI1LDEwNzEuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMiI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0Ni03IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQxNzQtMiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LC0wLjU5NTM5MjQ3LC0wLjg2NjAyNTQsLTAuNSwxOTAuODUxMjUsMTA3MS41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA4NC02Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTAiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1My05IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUtMiIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC03LTQiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTUtNyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSwyMDkuMTQ4NzUsMTEwMy41MDA2KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA0NC0yLTkiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNy03IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtNC01IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjE7IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA4NC02LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjU3LTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNi01Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTAtOSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3A0MDg4LTktMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzMTciCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNTgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDE3Niw4MjguMzYyMTgpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNjIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzNTgtNyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsMTc2LDgyOC4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC02Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC01LTkiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy0wIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTgiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzYwLTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi04Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTctMyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTQtNiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNi02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM2Mi00IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0wLTAiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05LTgiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTMtOS02IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS0yLTciIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00LTMiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOS0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1NS03LTEiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi05LTMiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNy03LTUiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC00LTUtMyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzMTctOCIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNi01LTUiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNi01LTUiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDQwODYtMC05LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05LTMtMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ0MzQiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS01IgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNiIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MDgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsNzAyLjg1MTI1LDEwNzEuNTAwNSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi04IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUxMSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSw1NzcuMTQ4NzUsMTA3MS41MDA1KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUxNCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsNTQ0LC02ZS01KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTYiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTE3IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSw1ODQsNzk2LjM2MjEyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUyMCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwwLjU5NTM5MjQ3LDAuODY2MDI1NCwwLjUsNTc3LjE0ODc1LDc3Ny4yMjM4KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTktMyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MjMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwwLjU5NTM5MjQ3LC0wLjg2NjAyNTQsMC41LDcwMi44NTEyNSw3NzcuMjIzOCkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUyNiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSw3MzYsMjU2LjAwMDAyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1MjkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuNjg3NSwwLDAsLTEsNzc2LDEwNTIuMzYyMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDUzMiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsNTY0LDc5Ni4zNjIxMikiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTM0IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjY4NzUsMCwwLC0xLDc1NiwyNTYuMDAwMDIpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05IgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUzOSIKICAgICAgIGN4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGZ5PSIxMjgiCiAgICAgICByPSIxMTIiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEuMTQyODU3MSw2MCw3MTAuMDc2NTIpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05LTgiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTM5LTciCiAgICAgICBjeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBmeT0iMTI4IgogICAgICAgcj0iMTEyIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLjE0Mjg1NzEsLTIwLDc3OC4wNzY0NykiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTktOCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS0yLTctOSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC03LTQtMy04IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgcj0iMTEyIgogICAgICAgZnk9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgY3g9IjY2MCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMS4xNDI4NTcxLDE2LDMzMC4wNzY1MikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1NTYiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0NTc1IgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtOS0xIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUzOS0wIgogICAgICAgY3g9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgZnk9IjEyOCIKICAgICAgIHI9IjExMiIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMS4xNDI4NTcxLC0yMCw3NzguMDc2NDcpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS05LTEiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTUtMi03LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00LTMtMCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTI0OTk5OTksMCwwLDAuMTQyODU3MTMsNzk3LjUsNjc4LjA3NjUyKSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDU1Ni0zIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDU3NS0yIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTc1LTIiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzctNiIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojODE4MTgxO3N0b3Atb3BhY2l0eTowLjgzMDc2OTI0OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc5LTQiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzcwNzA3MDtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICByPSIxMTIiCiAgICAgICBmeT0iMTI4IgogICAgICAgZng9IjY2MCIKICAgICAgIGN5PSIxMjgiCiAgICAgICBjeD0iNjYwIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjEyNDk5OTk5LDAsMCwwLjE0Mjg1NzEzLDczMy41MDAwMSw2NzguMDc2NTIpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NjAxIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01LTktMSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIgLz4KICAgIDxyYWRpYWxHcmFkaWVudAogICAgICAgcj0iMTEyIgogICAgICAgZnk9IjEyOCIKICAgICAgIGZ4PSI2NjAiCiAgICAgICBjeT0iMTI4IgogICAgICAgY3g9IjY2MCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMS4xNDI4NTcxLDIzNiw3NzguMDc2NDcpIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBpZD0icmFkaWFsR3JhZGllbnQ0NTU2LTUiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0NTc1LTMiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQ1NzUtMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDU3Ny05IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM4MTgxODE7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzktOCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzA3MDcwO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMTI0OTk5OTksMCwwLDAuMTQyODU3MTMsODI5LjUwMDAxLDY3OC4wNzY1MikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ2NDUiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0NTc1LTMiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9IjExMiIKICAgICAgIGZ5PSIxMjgiCiAgICAgICBmeD0iNjYwIgogICAgICAgY3k9IjEyOCIKICAgICAgIGN4PSI2NjAiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEuMTQyODU3MSwyMzYsNzc4LjA3NjQ3KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDU1Ni04IgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDU3NS0xIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0NTc1LTEiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQ1NzctMiIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwO3N0b3Atb3BhY2l0eTowLjczODQ2MTU1OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0NTc5LTIiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMDtzdG9wLW9wYWNpdHk6MTsiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwMTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDMyLDc5Ni4zNjIxOCkiCiAgICAgICB4MT0iMTM5LjYzNjM3IgogICAgICAgeTE9IjEyOCIKICAgICAgIHgyPSIxMzkuNjM2MzciCiAgICAgICB5Mj0iMS4xMzY4Njg0ZS0xMyIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwMTkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsNjUuMTQ4NzQ4LDEwNzEuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDIxIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDE5MC44NTEyNSwxMDcxLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTU5IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM1OC0zIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTU5Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC44MzA3NjkyNDsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC01LTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy01IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MzYwLTYiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi0zIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTctMCIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTQtMiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNi03IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDM2Mi0wIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDMzNC44NTEyNSwxMTAzLjUwMDYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuODMxMzcyNTY7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0wLTQiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC05LTciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtMCIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTMtOS0zIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxNzYsODI4LjM2MjE4KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC00LTUtMCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuODMwNzY5MjQ7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNS0yLTEiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNy00LTYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDQ0LTItOS01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1NS03LTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMjA5LjE0ODc1LDExMDMuNTAwNikiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtMi05LTUiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDYtNy03LTciCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzIxOWJlMjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wNDA0OC00LTUtOCIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIHkyPSItMC45OTQ4NTY0MiIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMzM0Ljg1MTI1LDExMDMuNTAwNikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQzMTctODkiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS0wIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTYtNS0wIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc1ZGQyNjtzdG9wLW9wYWNpdHk6MC44MzEzNzI1NjsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3A0MDg2LTAtOS03IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtOS0zLTgiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC0zIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MC43NDUwOTgwNTsiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgaWQ9InN0b3AzODM1LTctOC0xMCIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC0zIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA0NC03Ij4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTMyIgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMyMTliZTI7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDQwNDgtMiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwODQtNSI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM3NWRkMjY7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni0zIiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNzVkZDI2O3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDQwODgtMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDM4MzMtMS00LTUtMiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM1OTA0ZmY7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtMi04IiAvPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNTkwNGZmO3N0b3Atb3BhY2l0eToxOyIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBpZD0ic3RvcDM4MzctNy0wLTItNSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNDQtOS0wIj4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ2LTMtOCIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eTowLjgzMTM3MjU2OyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3A0MDQ4LTgtNiIKICAgICAgICAgb2Zmc2V0PSIxIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMjE5YmUyO3N0b3Atb3BhY2l0eToxOyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNy0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDE2My05IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0Mzc1LDAuNTk1MzkyNDcsMC44NjYwMjU0LDAuNSw2NS4xNDg3NSw3NDUuMjIzNzYpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NjQyIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDg0LTctMyI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNkMmRkMjY7c3RvcC1vcGFjaXR5OjAuNzQ1MDk4MDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wNDA4Ni02LTMiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNkMmRkMjY7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wNDA4OC01LTciIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyMzUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsNTI2Ljg1MTI1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDIzOCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwtMC41OTUzOTI0NywwLjg2NjAyNTQsLTAuNSw0MDEuMTQ4NzUsMTI5MS41MDA3KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01OSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNDEiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC42ODc1LDAsMCwxLDM1Miw0MDMuOTk5OTkpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNTkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MjQ0IgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSw0NjgsMTAxNi4zNjIyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNS0wIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI0NyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwwLjU5NTM5MjQ3LDAuODY2MDI1NCwwLjUsNDAxLjE0ODc1LDk5Ny4yMjM5KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTY0MiIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50NDA0NC0yLTktNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwwLjU5NTM5MjQ3LC0wLjg2NjAyNTQsMC41LDUyNi44NTEyNSw5OTcuMjIzOSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTQtNS0wIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI1MyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSw1NDQsNjYwLjAwMDA5KSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTYtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQyNTciCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsMC41OTUzOTI0NywwLjg2NjAyNTQsMC41LDQwMS4xNDg3NSw3MDkuMjIzOSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtMi05IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI2MCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjM0Mzc1LDAuNTk1MzkyNDcsLTAuODY2MDI1NCwwLjUsNTI2Ljg1MTI1LDcwOS4yMjM5KSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNC01IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDI2MyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSw1NjAsOTg0LjM2MjMyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC01MiIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQzODctNyIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NjY2OSwwLDAsMS4zNDcyNTAxLC0yNDQuOTUzMzksODYuNTA1MDM1KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC01MiI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuNzYxNTM4NDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtNyIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC00IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzgzMy0xLTQtMzMiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojZmY0YTA0O3N0b3Atb3BhY2l0eTowLjc2MTUzODQ1OyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDM4MzUtNy04LTQiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjE7IgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIGlkPSJzdG9wMzgzNy03LTAtNiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00IgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUyMCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwtMjQ0Ljk1MzM5LDg2LjUwNTAzNSkiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0zMyIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MjIiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsMTM5LjA0NjYsLTM2MC4xNDk5NykiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC01MiIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MjQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4xNDQzMjY3MywwLDAsMC4xNjY2NjY0Miw5MDcuMTAyMjMsODk3LjEyNjU2KSIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciIC8+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTMzIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDUzMiIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwxMzkuMDQ2NiwtMzYwLjE0OTk3KSIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNy0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzI1NyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC4zNDM3NSwwLjU5NTM5MjQ3LDAuODY2MDI1NCwwLjUsMTQ1LjE0ODc1LDk5Ny4yMjM4MSkiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwMzMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzMjYwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsMC41OTUzOTI0NywtMC44NjYwMjU0LDAuNSwyNzAuODUxMjUsOTk3LjIyMzgxKSIKICAgICAgIHgxPSIxMzkuNjM2MzQiCiAgICAgICB5MT0iMTI3Ljk5OTk5IgogICAgICAgeDI9IjE0MC40NzE3OSIKICAgICAgIHkyPSItMC45OTQ4NTQ2OSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MzgzMy0xLTQtNS0yIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MzI2MyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC42ODc1LDAsMCwtMSwzMDQsMTI3Mi4zNjIzKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0zIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50NDA1OCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwLjY4NzUsMCwwLDEsLTEwOCwxMDE2LjM2MjIpIgogICAgICAgeDE9IjEzOS42MzYzNyIKICAgICAgIHkxPSIxMjgiCiAgICAgICB4Mj0iMTM5LjYzNjM3IgogICAgICAgeTI9IjEuMTM2ODY4NGUtMTMiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsLTc0Ljg1MTI1MiwxMjkxLjUwMDcpIgogICAgICAgeDE9IjEzOS42MzYzNCIKICAgICAgIHkxPSIxMjcuOTk5OTkiCiAgICAgICB4Mj0iMTQwLjQ3MTc5IgogICAgICAgeTI9Ii0wLjk5NDg1NDY5IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQ0MDg0LTUiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDYyIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMzQzNzUsLTAuNTk1MzkyNDcsLTAuODY2MDI1NCwtMC41LDUwLjg1MTI1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwODQtNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNjUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4zNDM3NSwtMC41OTUzOTI0NywtMC44NjYwMjU0LC0wLjUsMjcwLjg1MTI1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU2NDIiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDQwNDQtNyIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDQwNjgiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuMzQzNzUsLTAuNTk1MzkyNDcsMC44NjYwMjU0LC0wLjUsMTQ1LjE0ODc1LDEyOTEuNTAwNykiCiAgICAgICB4MT0iMTM5LjYzNjM0IgogICAgICAgeTE9IjEyNy45OTk5OSIKICAgICAgIHgyPSIxNDAuNDcxNzkiCiAgICAgICB5Mj0iLTAuOTk0ODU0NjkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQ0MDcxIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjg3NSwwLDAsMSwxMTIsMTAxNi4zNjIyKSIKICAgICAgIHgxPSIxMzkuNjM2MzciCiAgICAgICB5MT0iMTI4IgogICAgICAgeDI9IjEzOS42MzYzNyIKICAgICAgIHkyPSIxLjEzNjg2ODRlLTEzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNC0yMCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDQ1MjAtNCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjE2NjY2NjksMCwwLDEuMzQ3MjUwMSwtMjQ0Ljk1MzM5LDg2LjUwNTAzNSkiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQzODMzLTEtNC0yMCI+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmZjRhMDQ7c3RvcC1vcGFjaXR5OjAuNzYxNTM4NDU7IgogICAgICAgICBvZmZzZXQ9IjAiCiAgICAgICAgIGlkPSJzdG9wMzgzNS03LTgtOSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNGEwNDtzdG9wLW9wYWNpdHk6MTsiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AzODM3LTctMC03NyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQKICAgICAgIHI9Ijk1Ljk5OTk3NyIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICBmeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NjY2OSwwLDAsMS4zNDcyNTAxLC0yNDQuOTUzMzksODYuNTA1MDM1KSIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9InJhZGlhbEdyYWRpZW50NDIwOCIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDM4MzMtMS00LTIwIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDM2MTQiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsMjE5LjA0NjYxLDg5LjE2Nzc1NykiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDM2MjUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNjY2NjY5LDAsMCwxLjM0NzI1MDEsMjE5LjA0NjYxLDg5LjE2Nzc1NykiCiAgICAgICBjeD0iMTA0Ni41MzEyIgogICAgICAgY3k9IjU3MS40MjE4OCIKICAgICAgIGZ4PSIxMDQ2LjUzMTIiCiAgICAgICBmeT0iNTcxLjQyMTg4IgogICAgICAgcj0iOTUuOTk5OTc3IiAvPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQzODMzLTEtNCIKICAgICAgIGlkPSJyYWRpYWxHcmFkaWVudDMyMDkiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC4xNDQzMjY5OSwwLDAsMC4xNjY2NjY3MywxMjAxLjUzNTgsODc3LjExNDg4KSIKICAgICAgIGN4PSIxMDQ2LjUzMTIiCiAgICAgICBjeT0iNTcxLjQyMTg4IgogICAgICAgZng9IjEwNDYuNTMxMiIKICAgICAgIGZ5PSI1NzEuNDIxODgiCiAgICAgICByPSI5NS45OTk5NzciIC8+CiAgPC9kZWZzPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIxNiIKICAgICBpbmtzY2FwZTpjeD0iLTUuMTAwMDg1IgogICAgIGlua3NjYXBlOmN5PSIxNi4yMzcyMjUiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9InB4IgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9ImxheWVyMSIKICAgICBzaG93Z3JpZD0idHJ1ZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzOTYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTAyNyIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMTkiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBmaXQtbWFyZ2luLXRvcD0iMCIKICAgICBmaXQtbWFyZ2luLWxlZnQ9IjAiCiAgICAgZml0LW1hcmdpbi1yaWdodD0iMCIKICAgICBmaXQtbWFyZ2luLWJvdHRvbT0iMCIKICAgICBpbmtzY2FwZTpzbmFwLXBhZ2U9InRydWUiCiAgICAgaW5rc2NhcGU6c25hcC1ub2Rlcz0idHJ1ZSIKICAgICBncmlkdG9sZXJhbmNlPSIxMCIKICAgICBzaG93Ym9yZGVyPSJ0cnVlIgogICAgIHNob3dndWlkZXM9InRydWUiCiAgICAgaW5rc2NhcGU6Z3VpZGUtYmJveD0idHJ1ZSI+CiAgICA8aW5rc2NhcGU6Z3JpZAogICAgICAgdHlwZT0ieHlncmlkIgogICAgICAgaWQ9ImdyaWQzMDIxIgogICAgICAgZW1wc3BhY2luZz0iNCIKICAgICAgIHZpc2libGU9InRydWUiCiAgICAgICBlbmFibGVkPSJ0cnVlIgogICAgICAgc25hcHZpc2libGVncmlkbGluZXNvbmx5PSJ0cnVlIgogICAgICAgc3BhY2luZ3g9IjE2cHgiCiAgICAgICBzcGFjaW5neT0iMTZweCIKICAgICAgIGRvdHRlZD0idHJ1ZSIgLz4KICA8L3NvZGlwb2RpOm5hbWVkdmlldz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlua3NjYXBlOmxhYmVsPSJMYXllciAxIgogICAgIGlua3NjYXBlOmdyb3VwbW9kZT0ibGF5ZXIiCiAgICAgaWQ9ImxheWVyMSIKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMzNi41Nzg1LC05NTYuMzUxODkpIj4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iY29sb3I6IzAwMDAwMDtmaWxsOnVybCgjcmFkaWFsR3JhZGllbnQzMjA5KTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlIgogICAgICAgZD0ibSAxMzUyLjU3ODUsOTU2LjM1MTg5IDAuMjg4NiwxNS4xMzYyOSAxMy41NjY4LC03LjEzNTE2IC0xMy44NTU0LC04LjAwMTEzIHogbSAwLDAgLTEzLjg1NTQsOC4wMDExMyAxMy41NjY3LDcuMTM1MTYgMC4yODg3LC0xNS4xMzYyOSB6IG0gLTEzLjg1NTQsOC4wMDExMyAwLDE1Ljk5Nzc0IDEyLjk1NzksLTcuODE2MjEgLTEyLjk1NzksLTguMTgxNTMgeiBtIDAsMTUuOTk3NzQgMTMuODU1NCw4LjAwMTEzIC0wLjYwODksLTE1LjMxNjcgLTEzLjI0NjUsNy4zMTU1NyB6IG0gMTMuODU1NCw4LjAwMTEzIDEzLjg1NTQsLTguMDAxMTMgLTEzLjI1MSwtNy4zMTU1NyAtMC42MDQ0LDE1LjMxNjcgeiBtIDEzLjg1NTQsLTguMDAxMTMgMCwtMTUuOTk3NzQgLTEyLjk2MjQsOC4xODE1MyAxMi45NjI0LDcuODE2MjEgeiIKICAgICAgIGlkPSJwYXRoNDAxNi0zLTgtNiIKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiIC8+CiAgPC9nPgo8L3N2Zz4K',
+    widgetCss: '/** encoding:utf-8 **/ /* RESET */ #remotestorage-widget{text-align:left;}#remotestorage-widget input, #remotestorage-widget button{font-size:11px;}#remotestorage-widget form input[type=email]{margin-bottom:0;/* HTML5 Boilerplate */}#remotestorage-widget form input[type=submit]{margin-top:0;/* HTML5 Boilerplate */}/* /RESET */ #remotestorage-widget, #remotestorage-widget *{-moz-box-sizing:border-box;box-sizing:border-box;}#remotestorage-widget{position:absolute;right:10px;top:10px;font:normal 16px/100% sans-serif;user-select:none;-webkit-user-select:none;-moz-user-select:-moz-none;cursor:default;z-index:10000;}#remotestorage-widget .bubble{background:rgba(80, 80, 80, .7);border-radius:5px 15px 5px 5px;color:white;font-size:0.8em;padding:5px;position:absolute;right:3px;top:9px;min-height:24px;white-space:nowrap;text-decoration:none;}#remotestorage-widget .bubble-text{padding-right:32px;}#remotestorage-widget .bubble.one-line{padding-bottom:2px;border-radius:5px 15px 15px 5px;}#remotestorage-widget .bubble.hidden{display:none;}#remotestorage-widget:hover .bubble.hidden{display:block;}#remotestorage-widget .action{cursor:pointer;}#remotestorage-widget .cube{position:relative;top:5px;right:0;}#remotestorage-widget .cube.spinning{-webkit-animation-name:remotestorage-loading;-webkit-animation-duration:2s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-name:remotestorage-loading;-moz-animation-duration:2s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear;-o-animation-name:remotestorage-loading;-o-animation-duration:2s;-o-animation-iteration-count:infinite;-o-animation-timing-function:linear;-ms-animation-name:remotestorage-loading;-ms-animation-duration:2s;-ms-animation-iteration-count:infinite;-ms-animation-timing-function:linear;}@-webkit-keyframes remotestorage-loading{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@-moz-keyframes remotestorage-loading{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(360deg)}}@-o-keyframes remotestorage-loading{from{-o-transform:rotate(0deg)}to{-o-transform:rotate(360deg)}}@-ms-keyframes remotestorage-loading{from{-ms-transform:rotate(0deg)}to{-ms-transform:rotate(360deg)}}#remotestorage-widget a{text-decoration:underline;color:inherit;}#remotestorage-widget form{margin-top:0.7em;}#remotestorage-widget form input{display:table-cell;vertical-align:top;border:none;border-radius:6px;font-weight:bold;color:white;outline:none;line-height:1.5em;height:2em;}#remotestorage-widget form input:disabled{color:#999;background:#444 !important;cursor:default !important;}#remotestorage-widget form input[type=email]{background:#000;width:16em;padding:0 5px;margin-right:5px;}#remotestorage-widget button:focus, #remotestorage-widget input:focus{box-shadow:0 0 4px #ccc;}#remotestorage-widget form input[type=email]::-webkit-input-placeholder{color:#999;}#remotestorage-widget form input[type=email]:-moz-placeholder{color:#999;}#remotestorage-widget form input[type=email]::-moz-placeholder{color:#999;}#remotestorage-widget form input[type=email]:-ms-input-placeholder{color:#999;}#remotestorage-widget form input[type=submit]{background:#000;cursor:pointer;padding:0 5px;}#remotestorage-widget form input[type=submit]:hover{background:#333;}#remotestorage-widget .info{font-size:10px;color:#eee;margin-top:0.7em;white-space:normal;}#remotestorage-widget .info.last-synced-message{white-space:nowrap;margin-bottom:.7em}#remotestorage-widget .info.error{font-weight:bold;color:#f92;}#remotestorage-widget .info a:hover, #remotestorage-widget .info a:active{color:#fff;}#remotestorage-widget .bubble button{border:none;border-radius:6px;font-weight:bold;color:white;outline:none;line-height:1.5em;height:2em;background:#000;cursor:pointer;margin:0;padding:0 5px;}#remotestorage-widget .bubble button:hover{background:#333;}#remotestorage-widget .bubble button.sync{margin-right:5px;}#remotestorage-widget .bubble button.disconnect{background:#721;position:absolute;right:5px;}#remotestorage-widget .bubble button.disconnect:hover{background:#921;}#remotestorage-widget pre{user-select:initial;-webkit-user-select:initial;-moz-user-select:text;max-width:27em;margin-top:1em;overflow:auto;}'
+}
+});
+
+define('lib/i18n/locales/en',[], function() {
+  return {
+    strings: {
+      widget: {
+        // Bubble text in initial state
+        'connect-remotestorage': 'Connect <strong>remotestorage</strong>',
+        // Connect button label
+        'connect': 'connect',
+        'sync': 'sync',
+        'disconnect': 'disconnect',
+        'permissions': 'Permissions',
+        'all-data': 'All data',
+        'synchronizing': 'Syncing <strong>{userAddress}</strong>',
+        'connecting': 'Connecting <strong>{userAddress}</strong>',
+        'offline': '<strong>{userAddress}</strong> (offline)',
+        'unauthorized': 'Unauthorized! Click to reconnect.',
+        'redirecting': 'Redirecting to <strong>{hostName}</strong>',
+        'typing-hint': 'This app allows you to use your own storage! Find more info on <a href="http://remotestorage.io/">remotestorage.io</a>',
+        'last-synced': 'Synced {t}',
+        'webfinger-failed': "{message}",
+        'webfinger-error-no-at': "There is no @-sign in the user address.",
+        'webfinger-error-multiple-at': "There is more than one @-sign in the user address.",
+        'webfinger-error-non-dotalphanum': "There are invalid characters in the user address.",
+        'webfinger-error-invalid-xml': "Server doesn't support remotestorage.",
+        'webfinger-error-invalid-jrd': "Server doesn't support remotestorage.",
+        'webfinger-error-requests-failed': "Failed to contact the storage server.",
+        'webfinger-error-not-supported': "Server doesn't support remotestorage.",
+        'error': 'Sorry! An error occurred.'
+      }
+    },
+
+    helpers: {
+      timeAgo: function(usec) {
+        function format(time, unit) {
+          time = Math.round(time);
+          if(time != 1) {
+            unit += 's';
+          }
+          return time + ' ' + unit + ' ago';
+        }
+        var sec = usec / 1000;
+        if(sec > 3600) {
+          return  format(sec / 3600, 'hour')
+        } else if(sec > 60) {
+          return format(sec / 60, 'minute');
+        } else if(sec < 5) {
+          return 'just now';
+        } else {
+          return format(sec, 'second');
+        }
+      }
+    }
+  };
+});
+
+define('lib/i18n/locales/de',[], function() {
+  return {
+    strings: {
+      widget: {
+        'connect-remotestorage': 'Verbinde <strong>remotestorage</strong>',
+        'connect': 'Verbinden',
+        'sync': 'Sync',
+        'disconnect': 'Verbindung trennen',
+        'permissions': "Zugriffsrechte",
+        'all-data': "Alle Daten",
+        'synchronizing': 'Synchronisiere <strong>{userAddress}</strong>',
+        'connecting': 'Verbinde <strong>{userAddress}</strong>...',
+        'offline': '<strong>{userAddress}</strong> (offline)',
+        'unauthorized': 'Zugriff fehlgeschlagen. Klicke um neu zu verbinden.',
+        'redirecting': 'Leite weiter zu <strong>{hostName}</strong>...',
+        'typing-hint': 'Du kannst diese App mit deinem eigenen Cloud-Storage verbinden! Mehr Infos auf <a href="http://remotestorage.io/">remotestorage.io</a>',
+        'last-synced': '<strong>Zuletzt synchronisiert:</strong> {t}',
+        'webfinger-failed': 'Konnte deinen storage nicht finden. Bist du sicher, dass die Adresse stimmt?'
+      }
+    },
+
+    helpers: {
+      timeAgo: function(usec) {
+        function format(time, unit) {
+          time = Math.round(time);
+          if(time != 1) {
+            unit += 'n';
+          }
+          return 'vor ' + time + ' ' + unit;
+        }
+        var sec = usec / 1000;
+        if(sec > 3600) {
+          return format(sec / 2600, 'Stunde'); 
+        } else if(sec > 60) {
+          return format(sec / 60, 'Minute');
+        } else {
+          return format(sec, 'Sekunde');
+        }
+      }
+    }
+  };
+});
+
+define('lib/i18n/locales',[
+  './locales/en',
+  './locales/de'
+], function(en, de) {
+  return {
+    translations: {
+      en: en.strings,
+      de: de.strings
+    },
+
+    helpers: {
+      en: en.helpers,
+      de: de.helpers
+    }
+  }
+});
+define('lib/i18n',[
+  './util',
+  './i18n/locales'
+], function(util, locales) {
+
+  // Namespace: i18n
+  //
+  // Internationalization & Localization for remoteStorage.js
+  //
+
+  var settings = util.getSettingStore('remotestorage_i18n');
+
+  var translations = locales.translations;
+  var helpers = locales.helpers;
+
+  var defaultLocale = 'en';
+  var storedLocale = settings.get('locale');
+
+  var currentTable = translations[storedLocale || defaultLocale];
+
+  var NotFound = function(keyPath) {
+    this.message = "Translation not found: " + keyPath.join(', ');
+  };
+
+  var UndefinedLocale = function(locale) {
+    Error.apply(this, ["Locale not defined: " + locale]);
+  };
+  UndefinedLocale.prototype = Error.prototype;
+
+  return {
+
+    // Property: helpers
+    // Object of helpers for i18n/l10n.
+    // Do not cache or extend this property, it gets replaced when the locale
+    // changes.
+    //
+    // Methods:
+    //   timeAgo(usec) - Example: timeAgo(3000); // -> "3 seconds ago"
+    //
+    helpers: helpers[storedLocale || defaultLocale],
+
+    // Property: defaultLocale
+    // Default locale to use when detection fails.
+    // Initially set to 'en'.
+    defaultLocale: defaultLocale,
+
+    // Property: locales
+    // Array of available locales.
+    locales: Object.keys(translations),
+
+    // Method: getLocale
+    // Get currently used locale.
+    getLocale: function() {
+      return settings.get('locale') || this.defaultLocale;
+    },
+
+    // Method: setLocale
+    // Set locale.
+    //
+    // Parameters:
+    //   locale - A string. Must be included in <locales>.
+    //
+    // Throws <UndefinedLocale> when the locale is unknown.
+    setLocale: function(locale) {
+      if(! (locale in translations)) {
+        throw new Error("Locale not found: " + locale);
+      }
+      currentTable = translations[locale];
+      this.helpers = helpers[locale];
+      settings.set('locale', locale);
+    },
+
+    // Method: autoDetect
+    // Automatically determines and sets locale.
+    // This won't overwrite a stored locale.
+    autoDetect: function() {
+      var locale;
+      ( storedLocale || (
+        (locale = this.detectLocale()) &&
+          (locale in translations) &&
+          this.setLocale(locale) ) );
+    },
+
+    // Method: detectLocale
+    //
+    // Detects current locale from environment.
+    //
+    // Sources:
+    //   (nodejs)  - process.env.LANG
+    //   (browser) - navigator.language
+    //
+    // Returns:
+    //   a locale string or undefined.
+    detectLocale: function() {
+      var key;
+      if(typeof(navigator) !== 'undefined') {
+        key = navigator.language.split('-')[0];
+      } else if(typeof(process) !== 'undefined') {
+        var lang = process.env.LANG;
+        if(lang) {
+          key = lang.split('_')[0];
+        }
+      }
+      return key;
+    },
+
+    // Method: t
+    // Look up a translation.
+    //
+    // Parameters:
+    //   (any number of strings) - list of keys to follow in translation tree
+    //   variables - (optional) Object, containing variables to replae.
+    //
+    // Example:
+    //   (start code)
+    //   // given the translations are as follows:
+    //   {
+    //     "a": {
+    //       "b": {
+    //         "c": "Hello {who}!"
+    //       }
+    //     }
+    //   }
+    //
+    //   // Then the following call:
+    //   i18n.t('a', 'b', 'c', { who: 'World' });
+    //
+    //   // returns:
+    //   "Hello World!"
+    //
+    //
+    t: function() {
+      try {
+        var keys = util.toArray(arguments);
+        var last = keys.slice(-1)[0];
+        var replacements;
+        if(typeof(last) === 'object') {
+          replacements = last;
+          keys = keys.slice(0, -1);
+        }
+        var result = currentTable;
+        keys.forEach(function(key, index) {
+          result = result[key];
+          if(! result) {
+            console.log("Translation not found in ", result, '(', currentTable, ')', keys, key, index);
+            throw new NotFound(keys.slice(0, index + 1));
+          }
+        });
+        if(replacements) {
+          for(var k in replacements) {
+            var re = new RegExp('\\{' + k + '\\}');
+            result = result.replace(re, replacements[k]);
+          }
+        }
+        return result;
+      } catch(exception) {
+        if(exception instanceof NotFound) {
+          return exception.message;
+        } else {
+          throw exception;
+        }
+      }
+    },
+
+    // Method: clearSettings
+    // Clear cached locale settings.
+    // Doesn't reset the current in-memory state
+    // (i.e. current locale and default locale)
+    clearSettings: settings.clear,
+
+    // Exception: UndefinedLocale
+    // Thrown when trying to set a locale that isn't defined.
+    //
+    // Own properties:
+    //   locale - the locale string as passed to <setLocale>
+    UndefinedLocale: UndefinedLocale
+  };
+});
+
+define('lib/widget/default',['../util', '../assets', '../i18n'], function(util, assets, i18n) {
+
+  if(typeof(document) === 'undefined') {
+    return { display: function() { throw "Widget not supported"; } };
+  }
+
+  /*
+
+    Interface: WidgetView
+
+      A stateful view providing interaction with remotestorage.
+
+    States:
+      initial      - not connected
+      authing      - in auth flow
+      connected    - connected to remotestorage, not syncing at the moment
+      busy         - connected, syncing at the moment
+      offline      - connected, but no network connectivity
+      error        - connected, but sync error happened
+      unauthorized - connected, but request returned 401
+
+
+    Event: connect
+      Fired when the "connect" action is caused by the user.
+    
+    Parameters:
+      userAddress - The user address to connect to
+
+
+    Event: disconnect
+      Fired when "disconnect" action is requested.
+
+
+    Event: sync
+      Fired when "sync" action is requested
+
+
+    Event: reconnect
+      Fired when reconnect is requested in 'unauthorized' state.
+
+
+    Method: display
+      Display the widget in "initial" state
+    
+    Parameters:
+      domId   - String, id attribute of element to place the widget in (FIXME: put this in the options)
+      options - Object, see below.
+
+    Options:
+      locale - locale to use. only present when provided by app.
+
+
+    Method: setState
+      Set widget state to given value.
+
+    Parameters:
+      state - a string. one of the states listed above.
+
+    Method: redirectTo
+      Navigate to given url.
+
+    Parameters:
+      url - a string representing https URL to redirect to.
+
+   */
+
+  var gEl = util.bind(document.getElementById, document);
+  var cEl = util.bind(document.createElement, document);
+
+  var t = util.curry(i18n.t, 'widget');
+
+  var events = util.getEventEmitter('connect', 'disconnect', 'sync', 'reconnect');
+
+  var browserEvents = [];
+
+  var widgetOptions = {};
+
+  function escape(s) {
+    return s.replace(/>/, '&gt;').replace(/</, '&lt;');
+  }
+
+  function addEvent(element, eventName, handler) {
+    browserEvents.push([element, eventName, handler]);
+    element.addEventListener(eventName, handler);
+  }
+
+  function clearEvents() {
+    browserEvents.forEach(function(event) {
+      event[0].removeEventListener(event[1], event[2]);
+    });
+    browserEvents = [];
+  }
+
+  var userAddress = '';
+
+  var currentState = 'initial';
+
+  var elements = {};
+
+  var cubeStateIcons = {
+    connected: assets.remotestorageIcon,
+    error: assets.remotestorageIconError,
+    offline: assets.remotestorageIconOffline
+  };
+
+  var stateViews = {
+
+    initial: function() {
+      userAddress = '';
+
+      addClass(elements.bubble, 'one-line');
+
+      setBubbleText(t('connect-remotestorage'));
+      setBubbleAction(jumpAction('typing'));
+
+      setCubeState('connected');
+      setCubeAction(jumpAction('typing'));
+    },
+
+    typing: function(connectionError) {
+      elements.connectForm.userAddress.setAttribute('value', userAddress);
+      setBubbleText(t('connect-remotestorage'));
+      elements.bubble.appendChild(elements.connectForm);
+      addEvent(elements.connectForm, 'submit', function(event) {
+        event.preventDefault();
+        userAddress = elements.connectForm.userAddress.value;
+        events.emit('connect', userAddress);
+      });
+
+      if(connectionError) {
+        // error bubbled from webfinger
+        setCubeState('error');
+        addClass(
+          addBubbleHint(t('webfinger-failed', { message: t('webfinger-error-' + connectionError) })),
+          'error'
+        );
+      } else {
+        setCubeState('connected');
+        addBubbleHint(t('typing-hint'));
+      }
+
+      setCubeAction(jumpAction('initial'));
+
+      elements.connectForm.userAddress.focus();
+    },
+
+    authing: function() {
+      setBubbleText(t('connecting', { userAddress: userAddress }));
+      elements.bubble.appendChild(elements.connectForm);
+      elements.connectForm.userAddress.setAttribute('disabled', 'disabled');
+      elements.connectForm.connect.setAttribute('disabled', 'disabled');
+      elements.connectForm.userAddress.setAttribute('value', userAddress);
+      setCubeState('connected');
+      addClass(elements.cube, 'spinning');
+    },
+
+    connected: function() {
+      if(widgetOptions.syncShortcut !== false) {
+        addEvent(window, 'keydown', function(evt) {
+          if(evt.ctrlKey && evt.which == 83) {
+            evt.preventDefault();
+            events.emit('sync');
+            return false;
+          }
+        });
+      }
+      addClass(elements.bubble, 'hidden');
+
+      setCubeState('connected');
+
+      setBubbleText('<strong class="userAddress">' + userAddress + '</strong>');
+
+      var content = cEl('div');
+      addClass(content, 'content');
+
+      var hint = cEl('div');
+      addClass(hint, 'info last-synced-message');
+
+      function updateLastSynced() {
+        hint.innerHTML = t('last-synced', { t: i18n.helpers.timeAgo(
+          new Date().getTime() - widgetOptions.getLastSyncAt()
+        ) });
+      }
+      addEvent(elements.bubble, 'mouseover', updateLastSynced);
+
+      updateLastSynced();
+
+      content.appendChild(hint);
+
+      content.appendChild(elements.syncButton);
+      content.appendChild(elements.disconnectButton);
+      addEvent(elements.syncButton, 'click', function() {
+        events.emit('sync');
+      });
+      addEvent(elements.disconnectButton, 'click', disconnectAction);
+
+      elements.bubble.appendChild(content);
+
+      var visible = false;
+      setCubeAction(function() {
+        if(visible) {
+          addClass(elements.bubble, 'hidden');
+        } else {
+          removeClass(elements.bubble, 'hidden');
+        }
+        visible = !visible;
+      });
+    },
+
+    busy: function(initialSync) {
+      setCubeState('connected');
+      addClass(elements.cube, 'spinning');
+      addClass(elements.bubble, 'one-line');
+      if(initialSync) {
+        setBubbleText(t('connecting', { userAddress: userAddress }));
+      } else {
+        addClass(elements.bubble, 'hidden');
+        setBubbleText(t('synchronizing', { userAddress: userAddress }));
+      }
+    },
+
+    error: function(error) {
+      setCubeState('error');
+      setBubbleText(t('error'));
+      var trace = cEl('pre');
+      elements.bubble.appendChild(trace);
+      if(error instanceof Error) {
+        trace.innerHTML = '<strong>' + escape(error.message) + '</strong>' +
+          "\n" + escape(error.stack);
+      } else if(typeof(error) === 'object') {
+        trace.innerHTML = JSON.stringify(error, null, 2);
+      } else {
+        trace.innerHTML = error;
+      }
+    },
+
+    offline: function(error) {
+      setCubeState('offline');
+      addClass(elements.bubble, 'one-line hidden');
+      var visible = false;
+      setCubeAction(function() {
+        if(visible) {
+          addClass(elements.bubble, 'hidden');
+        } else {
+          removeClass(elements.bubble, 'hidden');
+        }
+        visible = !visible;
+      });
+      setBubbleText(t('offline', { userAddress: userAddress }));
+    },
+
+    unauthorized: function() {
+      setCubeState('error');
+      setBubbleText('<strong>' + userAddress + '</strong><br>' + t('unauthorized') + '<br>');
+      setCubeAction(util.curry(events.emit, 'reconnect'));
+      setBubbleAction(util.curry(events.emit, 'reconnect'));
+      elements.bubble.appendChild(elements.disconnectButton);
+      addEvent(elements.disconnectButton, 'click', disconnectAction);
+    }
+
+  };
+
+  function disconnectAction(event) {
+    event.preventDefault();
+    events.emit('disconnect');
+    if(currentState === 'error') {
+      setState('initial');
+    }
+    return false;
+  }
+
+  function getClassNameMap(element) {
+    var classNames = (element.getAttribute('class') || '').split(/\s+/);
+    var nameMap = {};
+    classNames.forEach(function(name) {
+      nameMap[name] = true;
+    });    
+    return nameMap;
+  }
+
+  function setClassNameMap(element, nameMap) {
+    element.setAttribute('class', Object.keys(nameMap).join(' '));
+  }
+
+  function addClass(element, className) {
+    var nameMap = getClassNameMap(element);
+    nameMap[className] = true;
+    setClassNameMap(element, nameMap);
+  }
+
+  function removeClass(element, className) {
+    var nameMap = getClassNameMap(element);
+    delete nameMap[className];
+    setClassNameMap(element, nameMap);
+  }
+
+  function resetElementState() {
+    elements.cube.setAttribute('class', 'cube');
+    elements.bubble.setAttribute('class', 'bubble');
+    elements.connectForm.userAddress.setAttribute('value', '');
+
+    elements.connectForm.userAddress.removeAttribute('disabled');
+    elements.connectForm.connect.removeAttribute('disabled');
+
+    elements.connectForm.connect.value = t('connect');
+    elements.syncButton.innerHTML = t('sync');
+    elements.disconnectButton.innerHTML = t('disconnect');
+  }
+  
+  function prepareWidget() {
+    elements.style = cEl('style');
+    elements.style.innerHTML = assets.widgetCss;
+    // #remotestorage-widget
+    elements.widget = cEl('div');
+    elements.widget.setAttribute('id', 'remotestorage-widget');
+    // .cube
+    elements.cube = cEl('img');
+    // .bubble
+    elements.bubble = cEl('div');
+
+    elements.widget.appendChild(elements.bubble);
+    elements.widget.appendChild(elements.cube);
+
+    // form.connect
+    elements.connectForm = cEl('form');
+    elements.connectForm.setAttribute('novalidate', '');
+    elements.connectForm.innerHTML = [
+      '<input type="email" placeholder="user@host" name="userAddress" novalidate>',
+      '<input type="submit" value="" name="connect">'
+    ].join('');
+    // button.sync
+    elements.syncButton = cEl('button');
+    elements.syncButton.setAttribute('class', 'sync');
+    // button.disconnect
+    elements.disconnectButton = cEl('button');
+    elements.disconnectButton.setAttribute('class', 'disconnect');
+
+    resetElementState();
+  }
+
+  function clearWidget() {
+    Array.prototype.forEach.call(elements.bubble.children, function(child) {
+      elements.bubble.removeChild(child);
+    });
+    clearEvents();
+    resetElementState();
+  }
+
+  function updateWidget() {
+    var stateView = stateViews[currentState];
+    if(stateView) {
+      clearWidget();
+      stateView.apply(this, arguments);
+    }
+  }
+
+  function addBubbleHint(text) {
+    var hint = cEl('div');
+    addClass(hint, 'info');
+    hint.innerHTML = text;
+    elements.bubble.appendChild(hint);
+    return hint;
+  }
+
+  function setBubbleText(text) {
+    elements.bubble.innerHTML = '<div class="bubble-text">' + text + '</div>';
+  }
+
+  function setBubbleAction(action) {
+    addClass(elements.bubble, 'action');
+    addEvent(elements.bubble, 'click', action);
+  }
+
+  function setCubeAction(action) {
+    addClass(elements.cube, 'action');
+    addEvent(elements.cube, 'click', action);
+  }
+
+  function setCubeState(state) {
+    var icon = cubeStateIcons[state];
+    if(! icon) {
+      throw "Unknown cube state: " + state;
+    }
+    elements.cube.setAttribute('src', icon);
+  }
+
+  function jumpAction(state) {
+    return function(event) {
+      if(event) {
+        event.preventDefault();
+      }
+      setState(state);
+      return false;
+    };
+  }
+
+  // PUBLIC
+
+  function display(element, options) {
+    if(! options) {
+      options = {};
+    }
+    widgetOptions = options;
+
+    i18n.setLocale('en');
+
+    if(! element) {
+      element = document.body;
+    } else if(typeof(element) === 'string') {
+      element = gEl(element);
+    }
+
+    prepareWidget();
+    element.appendChild(elements.style);
+    element.appendChild(elements.widget);
+    updateWidget();
+  }
+
+  function setState(state) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    currentState = state;
+    util.nextTick(function() {
+      updateWidget.apply(undefined, args);
+    });
+  }
+
+  function redirectTo(url) {
+    setBubbleText(t('redirecting', { hostName: util.hostNameFromUri(url) }));
+    addClass(elements.bubble, 'one-line');
+    setTimeout(function() {
+      document.location = url;
+    }, 500);
+  }
+
+  function setUserAddress(addr) {
+    userAddress = addr;
+    elements.connectForm.userAddress.setAttribute('value', addr);
+  }
+
+  function getLocation() {
+    return document.location.href;
+  }
+
+  function setLocation(url) {
+    document.location = url;
+  }
+
+  return util.extend({
+
+    display: display,
+    setState: setState,
+    redirectTo: redirectTo,
+    setUserAddress: setUserAddress,
+    getLocation: getLocation,
+    setLocation: setLocation
+
+  }, events);
+
+});
+
+define('lib/widget',[
+  './util',
+  './webfinger',
+  './wireClient',
+  './sync',
+  './schedule',
+  './baseClient',
+  './platform',
+  './getputdelete',
+  './widget/default'
+], function(util, webfinger, wireClient, sync, schedule, BaseClient,
+            platform, getputdelete, defaultView) {
+
+  // Namespace: widget
+  //
+  // The remotestorage widget.
+  //
+  // See <remoteStorage.displayWidget>
+  //
+  //
+  // Event: ready
+  //   Fired when the user has connected and the initial synchronization
+  //   has been performed. After this has fired your app can query and
+  //   display data.
+  //
+  // Event: disconnect
+  //   Fired when the user has clicked the 'disconnect' button and all
+  //   locally cached data has been removed. At this point your app should
+  //   remove all visible user-owned data from the screen and return to
+  //   it's initial state.
+  //
+  // Event: state
+  //   Fired whenever the internal state of the widget changes.
+  //   Apps usually don't need to use this event, it is only included
+  //   for debugging purposes and legacy support.
+  //
+  //   Parameters:
+  //     state - A String. The new state the widget moved into.
+  //
+
+
+  
+
+  var settings = util.getSettingStore('remotestorage_widget');
+  var events = util.getEventEmitter('ready', 'disconnect', 'state');
+  var logger = util.getLogger('widget');
+
+  var maxTimeout = 45000;
+  var timeoutAdjustmentFactor = 1.5;
+
+  // the view.
+  var view = defaultView;
+  // options passed to displayWidget
+  var widgetOptions = {};
+  // passed to display() to avoid circular deps
+  var remoteStorage;
+
+  var reconnectInterval = 10000;
+
+  var offlineTimer = null;
+
+  var viewState;
+
+  var stateActions = {
+    offline: function() {
+      if(! offlineTimer) {
+        offlineTimer = setTimeout(function() {
+          offlineTimer = null;
+          sync.fullSync().
+            then(function() {
+              schedule.enable();
+            });
+        }, reconnectInterval);
+      }
+    },
+    connected: function() {
+      if(offlineTimer) {
+        clearTimeout(offlineTimer);
+        offlineTimer = null;
+      }
+    }
+  };
+  
+
+  function setState(state) {
+    if(state === viewState) {
+      return;
+    }
+    viewState = state;
+    var action = stateActions[state];
+    if(action) {
+      action.apply(null, arguments);
+    }
+    view.setState.apply(view, arguments);
+    events.emit('state', state);    
+  }
+
+  function buildScopeRequest() {
+    var scopes = remoteStorage.claimedModules;
+    return Object.keys(remoteStorage.claimedModules).map(function(module) {
+      return (module === 'root' ? '' : module) + ':' + scopes[module];
+    }).join(' ');
+  }
+
+  function requestToken(authEndpoint) {
+    logger.info('requestToken', authEndpoint);
+    var redirectUri = view.getLocation().split('#')[0];
+    var clientId = util.hostNameFromUri(redirectUri);
+    authEndpoint += authEndpoint.indexOf('?') > 0 ? '&' : '?';
+    authEndpoint += [
+      ['redirect_uri', redirectUri],
+      ['client_id', clientId],
+      ['scope', buildScopeRequest()],
+      ['response_type', 'token']
+    ].map(function(kv) {
+      return kv[0] + '=' + encodeURIComponent(kv[1]);
+    }).join('&');
+    return view.redirectTo(authEndpoint);
+  }
+
+  function connectStorage(userAddress) {
+    settings.set('userAddress', userAddress);
+    setState('authing');
+    return webfinger.getStorageInfo(userAddress).
+      then(wireClient.setStorageInfo, function(error) {
+        if(error === 'timeout') {
+          adjustTimeout();
+        }
+        setState((typeof(error) === 'string') ? 'typing' : 'error', error);
+      }).
+      get('properties').get('auth-endpoint').
+      then(requestToken).
+      then(schedule.enable, util.curry(setState, 'error'));
+  }
+
+  function reconnectStorage() {
+    connectStorage(settings.get('userAddress'));
+  }
+
+  function disconnectStorage() {
+    schedule.disable();
+    remoteStorage.flushLocal();
+    events.emit('state', 'disconnected');
+    events.emit('disconnect');
+  }
+
+  // destructively parse query string from URI fragment
+  function parseParams() {
+    var md = view.getLocation().match(/^(.*?)#(.*)$/);
+    var result = {};
+    if(md) {
+      var hash = md[2];
+      hash.split('&').forEach(function(param) {
+        var kv = param.split('=');
+        if(kv[1]) {
+          result[kv[0]] = decodeURIComponent(kv[1]);
+        }
+      });
+      if(Object.keys(result).length > 0) {
+        view.setLocation(md[1] + '#');
+      }
+    }
+    return result; 
+  }
+
+  function processParams() {
+    var params = parseParams();
+
+    // Query parameter: access_token
+    if(params.access_token) {
+      wireClient.setBearerToken(params.access_token);
+    }
+    // Query parameter: storage_root, storage_api
+    if(params.storage_root && params.storage_api) {
+      wireClient.setStorageInfo({
+        type: params.storage_api,
+        href: params.storage_root
+      });
+    }
+    // Query parameter: authorize_endpoint
+    if(params.authorize_endpoint) {
+      requestToken(params.authorize_endpoint);
+    }
+    // Query parameter: user_address
+    if(params.user_address) {
+      view.setUserAddress(params.user_address);
+    } else {
+      var userAddress = settings.get('userAddress');
+      if(userAddress) {
+        view.setUserAddress(userAddress);
+      }
+    }
+  }
+
+  function handleSyncError(error) {
+    if(error.message === 'unauthorized') {
+      setState('unauthorized');
+    } else if(error.message === 'network error') {
+      setState('offline', error);
+    } else {
+      setState('error', error);
+    }
+  }
+
+  function adjustTimeout() {
+    var t = getputdelete.getTimeout();
+    if(t < maxTimeout) {
+      t *= timeoutAdjustmentFactor;
+      webfinger.setTimeout(t);
+      getputdelete.setTimeout(t);
+    }
+  }
+
+  function handleSyncTimeout() {
+    adjustTimeout();
+    schedule.disable();
+    setState('offline');
+  }
+
+  function initialSync() {
+    setState('busy', true);
+    sync.fullSync().then(function() {
+      schedule.enable();
+      events.emit('ready');
+    }, handleSyncError);
+  }
+
+  function display(_remoteStorage, element, options) {
+    remoteStorage = _remoteStorage;
+    widgetOptions = options;
+    if(! options) {
+      options = {};
+    }
+
+    if(Object.keys(remoteStorage.claimedModules).length === 0) {
+      throw new Error("displayWidget called, but no access claimed! Make sure to call displayWidget after remoteStorage.claimAccess is done.");
+    }
+
+    options.getLastSyncAt = function() {
+      return sync.lastSyncAt && sync.lastSyncAt.getTime();
+    };
+
+    schedule.watch('/', 30000);
+
+    view.display(element, options);
+
+    view.on('sync', sync.forceSync);
+    view.on('connect', connectStorage);
+    view.on('disconnect', disconnectStorage);
+    view.on('reconnect', reconnectStorage);
+
+    sync.on('busy', util.curry(setState, 'busy'));
+    sync.on('ready', util.curry(setState, 'connected'));
+    wireClient.on('connected', function() {
+      setState('connected');
+      initialSync();
+    });
+    wireClient.on('disconnected', util.curry(setState, 'initial'));
+
+    BaseClient.on('error', util.curry(setState, 'error'));
+    sync.on('error', handleSyncError);
+    sync.on('timeout', handleSyncTimeout);
+
+    processParams();
+
+    wireClient.calcState();
+  }
+  
+  return util.extend({
+    display : display,
+
+    clearSettings: settings.clear,
+
+    setView: function(_view) {
+      view = _view;
+    }
+  }, events);
+});
+
+/*global console */
 
 define('lib/nodeConnect',['./wireClient', './webfinger'], function(wireClient, webfinger) {
 
@@ -3140,38 +7083,183 @@ define('lib/nodeConnect',['./wireClient', './webfinger'], function(wireClient, w
 
     // Method: setBearerToken
     //
-    // Set bearer token directly. This practice is currently heavily discussed and
-    // criticized on the mailinglist, as it apparently goes against the principles
-    // of oauth.
+    // Set bearer token directly.
     //
     setBearerToken: wireClient.setBearerToken
 
-  }
+  };
 
 });
+define('lib/foreignClient',['./util', './baseClient', './getputdelete', './store'], function(util, BaseClient, getputdelete, store) {
+
+  var logger = util.getLogger('foreignClient');
+
+  var knownClients = {};
+
+  store.on('foreign-change', function(event) {
+    var userAddress = event.path.split(':')[0];
+    var client = knownClients[userAddress];
+    if(client) {
+      client.events.emit('change', event);
+    }
+  });
+
+  /*
+    Class: ForeignClient
+    
+    A modified <BaseClient>, to query other people's storage.
+   */
+
+  // Constructor: ForeignClient
+  //
+  // Parameters:
+  //   userAddress - A userAddress string in the form user@host.
+  //
+  // The userAddress must be known to wireClient.
+  //
+  var ForeignClient = function(userAddress) {
+    this.userAddress = userAddress;
+    this.pathPrefix = userAddress + ':';
+
+    this.moduleName = 'root', this.isPublic = true;
+    this.events = util.getEventEmitter('change', 'error');
+    knownClients[userAddress] = this;
+    util.bindAll(this);
+  };
+  
+  ForeignClient.prototype = {
+
+    // Method: getPublished
+    //
+    // Get the 'publishedItems' object for the given module.
+    //
+    // publishedItems is an object of the form { path : timestamp, ... }.
+    //
+    // Parameters:
+    //   moduleName - (optional) module name to get the publishedItems object for
+    //   callback   - callback to call with the result
+    //
+    // Example:
+    //   (start code)
+    //   remoteStorage.getForeignClient('user@host', function(client) {
+    //     client.getPublished(object, function(publishedItems) {
+    //       for(var key in publishedItems) {
+    //         console.log("Item: ", key, " published at: ", publishedItems[key]);
+    //       }
+    //     });
+    //   });
+    //   (end code)
+    getPublished: function(moduleName, callback) {
+      var fullPath;
+      if(typeof(moduleName) == 'function') {
+        callback = moduleName;
+        fullPath = '/publishedItems';
+      } else {
+        fullPath = '/' + moduleName + '/publishedItems';
+      }
+      this.getObject(fullPath, function(data) {
+        if(data) { delete data['@type']; }
+        callback(data || {});
+      });
+    },
+
+    getPublishedObjects: function(moduleName, callback) {
+      this.getPublished(moduleName, function(list) {
+        var paths = Object.keys(list);
+        var i = 0;
+        var objects = {};
+        function loadOne() {
+          if(i < paths.length) {
+            var key = paths[i++];
+            var path = '/' + moduleName + '/' + key;
+            this.getObject(path, function(object) {
+              objects[path] = object;
+                
+              loadOne.call(this);
+            }.bind(this));
+          } else {
+            callback(objects);
+          }
+        }
+
+        loadOne.call(this);
+      }.bind(this));
+    },
+
+    makePath: function(path) {
+      return this.pathPrefix + BaseClient.prototype.makePath.call(this, path);
+    },
+
+    nodeGivesAccess: function(path, mode) {
+      return mode == 'r';
+    },
+
+    on: function(eventName, handler) {
+      this.events.on(eventName, handler);
+    }
+
+  };
+
+  var methodBlacklist = {
+    makePath: true,
+    getListing: true,
+    getAll: true,
+    storeDocument: true,
+    storeObject: true,
+    remove: true,
+    nodeGivesAccess: true,
+    fetchNow: true,
+    syncNow: true,
+    on: true
+  };
+
+  // inherit some stuff from BaseClient
+
+  for(var key in BaseClient.prototype) {
+    if(! methodBlacklist[key]) {
+      ForeignClient.prototype[key] = BaseClient.prototype[key];
+    }
+  }
+
+  return {
+    getClient: function(userAddress) {
+      var client = knownClients[userAddress];
+      return client || new ForeignClient(userAddress);
+    }
+  };
+
+});
+
 define('remoteStorage',[
   'require',
   './lib/widget',
-  './lib/baseClient',
   './lib/store',
   './lib/sync',
   './lib/wireClient',
   './lib/nodeConnect',
-  './lib/util'
-], function(require, widget, BaseClient, store, sync, wireClient, nodeConnect, util) {
+  './lib/util',
+  './lib/webfinger',
+  './lib/foreignClient',
+  './lib/baseClient',
+  './lib/schedule',
+  './lib/i18n'
+], function(require, widget, store, sync, wireClient, nodeConnect, util, webfinger, foreignClient, BaseClient, schedule, i18n) {
 
   
 
-  var claimedModules = {}, modules = {}, moduleNameRE = /^[a-z]+$/;
+  var claimedModules = {}, modules = {}, moduleNameRE = /^[a-z\-]+$/;
 
   var logger = util.getLogger('base');
 
+  util.silenceAllLoggers();
+  util.unsilenceLogger('base', 'getputdelete');
+
   // Namespace: remoteStorage
-  var remoteStorage =  { 
+  var remoteStorage =  {
 
     //
     // Method: defineModule
-    // 
+    //
     // Define a new module, with given name.
     // Module names MUST be unique. The given builder will be called
     // immediately, with two arguments, which are both instances of
@@ -3180,7 +7268,7 @@ define('remoteStorage',[
     // be read by any client (not just an authenticated one), while
     // it can only be written by an authenticated client with read-write
     // access claimed on it.
-    // 
+    //
     // The builder is expected to return an object, as described under
     // <getModuleInfo>.
     //
@@ -3199,7 +7287,7 @@ define('remoteStorage',[
     //
     //     return {
     //       exports: {
-    //   
+    //
     //         addBeer: function(name) {
     //           privateClient.storeObject('beer', nameToKey(name), {
     //             name: name,
@@ -3228,7 +7316,7 @@ define('remoteStorage',[
     //
     //   remoteStorage.claimAccess('beers', 'rw');
     //
-    //   remoteStorage.displayWidget(/* see documentation */);
+    //   remoteStorage.displayWidget(/* see documentation */)
     //
     //   remoteStorage.addBeer('<replace-with-favourite-beer-kind>');
     //
@@ -3240,10 +7328,9 @@ define('remoteStorage',[
     defineModule: function(moduleName, builder) {
 
       if(! moduleNameRE.test(moduleName)) {
-        throw 'Invalid moduleName: "'+moduleName+'", only a-z lowercase allowed.'
+        throw 'Invalid moduleName: "'+moduleName+'", only a-z lowercase allowed.';
       }
 
-      logger.debug('DEFINE MODULE', moduleName);
       var module = builder(
         // private client:
         new BaseClient(moduleName, false),
@@ -3251,9 +7338,13 @@ define('remoteStorage',[
         new BaseClient(moduleName, true)
       );
       modules[moduleName] = module;
+      if(typeof(module) !== 'object' || typeof(module.exports) !== 'object') {
+        throw new Error("Invalid module format for module '" + moduleName + "', no 'exports' object returned!");
+      }
       this[moduleName] = module.exports;
-      logger.debug('Module defined: ' + moduleName, module, this);
     },
+
+    claimedModules: claimedModules,
 
     //
     // Method: getModuleList
@@ -3297,25 +7388,25 @@ define('remoteStorage',[
     //
     //
     //   Some of the dataHints used are:
-    //  
+    //
     //     objectType <type> - description of an object
     //                         type implemented by the module
     //     "objectType message" - (example)
-    //  
+    //
     //     <attributeType> <objectType>#<attribute> - description of an attribute
-    //  
+    //
     //     "string message#subject" - (example)
-    //  
+    //
     //     directory <path> - description of a path's purpose
-    //  
+    //
     //     "directory documents/notes/" - (example)
-    //  
+    //
     //     item <path> - description of a specific item
-    //  
+    //
     //     "item documents/notes/calendar" - (example)
-    //  
+    //
     //   Hope this helps.
-    // 
+    //
     getModuleInfo: function(moduleName) {
       return modules[moduleName];
     },
@@ -3341,7 +7432,7 @@ define('remoteStorage',[
     // Parameters:
     //   moduleName - name of the module. For a list of defined modules, use <getModuleList>
     //   claim      - permission to claim, either *r* (read-only) or *rw* (read-write)
-    // 
+    //
     // Example:
     //   > remoteStorage.claimAccess('contacts', 'r');
     //
@@ -3362,27 +7453,28 @@ define('remoteStorage',[
     //   > });
     //
     claimAccess: function(moduleName, mode) {
-      
+
       var modeTestRegex = /^rw?$/;
       function testMode(moduleName, mode) {
         if(!modeTestRegex.test(mode)) {
           throw "Claimed access to module '" + moduleName + "' but mode not correctly specified ('" + mode + "').";
         }
       }
-      
+
       var moduleObj;
       if(typeof moduleName === 'object') {
         moduleObj = moduleName;
       } else {
         testMode(moduleName, mode);
         moduleObj = {};
-        moduleObj[moduleName] = mode
+        moduleObj[moduleName] = mode;
       }
-      for(var _moduleName in moduleObj) {
+
+      return util.asyncEach(Object.keys(moduleObj), function(_moduleName) {
         var _mode = moduleObj[_moduleName];
         testMode(_moduleName, _mode);
-        this.claimModuleAccess(_moduleName, _mode);
-      }
+        return this.claimModuleAccess(_moduleName, _mode);
+      }.bind(this));
     },
 
     // PRIVATE
@@ -3396,16 +7488,20 @@ define('remoteStorage',[
         return;
       }
 
-      if(moduleName == 'root') {
+      claimedModules[moduleName] = mode;
+
+      if(moduleName === 'root') {
         moduleName = '';
-        widget.addScope('', mode);
-        store.setNodeAccess('/', mode);
+        return store.setNodeAccess('/', mode).
+          then(util.curry(store.setNodeForce, '/', true, true));
       } else {
-        widget.addScope(moduleName, mode);
-        store.setNodeAccess('/'+moduleName+'/', mode);
-        store.setNodeAccess('/public/'+moduleName+'/', mode);
+        var privPath = '/'+moduleName+'/';
+        var pubPath = '/public/'+moduleName+'/';
+        return store.setNodeAccess(privPath, mode).
+          then(util.curry(store.setNodeForce, privPath, true, true)).
+          then(util.curry(store.setNodeAccess, pubPath, mode)).
+          then(util.curry(store.setNodeForce, pubPath, true, true));
       }
-      claimedModules[moduleName] = true;
     },
 
     // PRIVATE
@@ -3413,69 +7509,87 @@ define('remoteStorage',[
       wireClient.setBearerToken(bearerToken);
     },
 
+    getBearerToken: function() {
+      return wireClient.getBearerToken();
+    },
+
     disconnectRemote : wireClient.disconnectRemote,
 
-    // 
+    //
     // Method: flushLocal()
-    // 
+    //
     // Forget this ever happened.
-    // 
+    //
     // Delete all locally stored data.
     // This doesn't clear localStorage, just removes everything
     // remoteStorage.js saved there. Other data your app might
     // have put into localStorage stays there.
-    // 
+    //
     // Call this method to implement "logout".
     //
     // If you are using the widget (which you should!), you don't need this.
-    // 
+    //
     // Example:
     //   > remoteStorage.flushLocal();
     //
-    flushLocal       : store.forgetAll,
+    flushLocal       : function() {
+      return util.makePromise(function(promise) {
+        logger.info('flushLocal');
+        store.forgetAll().then(promise.fulfill.bind(promise));
+        sync.clearSettings();
+        widget.clearSettings();
+        schedule.reset();
+        wireClient.disconnectRemote();
+        i18n.clearSettings();
+        claimedModules = {};
+      });
+    },
 
     //
-    // Method: syncNow(path, callback)
+    // Method: fullSync
     //
     // Synchronize local <-> remote storage.
     //
-    // Syncing starts at given path and bubbles down.
+    // Syncing starts at the access roots (the once you claimed using claimAccess)
+    // and moves down the directory tree.
+    // Only nodes with a 'force' flag on themselves or one of their ancestors will
+    // be synchronized. Use <BaseClient.use> and <BaseClient.release> to set / unset
+    // force flags.
     // The actual changes to either local or remote storage happen in the
     // future, so you should attach change handlers on the modules you're
     // interested in.
     //
     // Parameters:
-    //   path - relative path from the storage root.
     //   callback - (optional) callback to be notified when synchronization has finished or failed.
-    // 
+    //
     // Example:
+    //   >
+    //   > remoteStorage.claimAccess('money', 'rw');
+    //   >
     //   > remoteStorage.money.on('change', function(changeEvent) {
     //   >   // handle change event (update UI etc)
     //   > });
     //   >
-    //   > remoteStorage.syncNow('/money/', function(errors) {
+    //   > remoteStorage.fullSync(function(errors) {
     //   >   // handle errors, if any.
     //   > });
     //
-    // Modules may bring their own syncNow method, which should take preference
-    // over the one here.
-    //
     // Yields:
-    //   Array of error messages - when errors occured. When syncNow is called and the user is not connected, this is also considered an error.
+    //   Array of error messages - when errors occured. When fullSync is called and the user is not connected, this is also considered an error.
     //   null - no error occured, synchronization finished gracefully.
     //
-    syncNow          : sync.syncNow,
+    fullSync: sync.fullSync,
 
-    //  
+    setWidgetView: widget.setView,
+
+    //
     // Method: displayWidget
     //
     // Add the remotestorage widget to the page.
-    // 
+    //
     // Parameters:
     //   domID - DOM ID of element to attach widget elements to
     //   options - Options, as described below.
-    //   options.authDialog - Strategy to display OAuth dialog. Either 'redirect', 'popup' or a function. Defaults to 'redirect'. If this is a function, that function will receive the URL of the auth dialog. The OAuth dance will redirect back to the current location, with an access token, so that must be possible.
-    //   options.syncShortcut - Whether to setup CTRL+S as a shortcut for immediate sync. Default is true.
     //   options.locale - Locale to use for the widget. Currently ignored.
     //
     // Minimal Example:
@@ -3486,17 +7600,11 @@ define('remoteStorage',[
     //    *in the app's JS*
     //    > remoteStorage.displayWidget('remotestorage-connect');
     //
-    //    Once you're connected, press CTRL+S to observe the spinning cube :)
-    //
     //    *Note* that in real life you would have to call <claimAccess> before calling displayWidget. Otherwise you can't access any actual data.
     //
-    // Popup Example:
-    //
-    //    (using the same markup as above)
-    //
-    //    > remoteStorage.displayWidget('remotestorage-connect', { authDialog: 'popup' });
-    //    
-    displayWidget    : widget.display,
+    displayWidget: function(domId, options) {
+      widget.display(remoteStorage, domId, util.extend({}, options));
+    },
 
     //
     // Method: onWidget
@@ -3510,29 +7618,77 @@ define('remoteStorage',[
     //
     onWidget: widget.on,
 
-    // Method: getWidgetState
     //
-    // Get the widget state, reflecting the general connection state.
+    getSyncState: sync.getState,
     //
-    // Defined widget states are:
-    //   anonymous    - initial state
-    //   typing       - userAddress input visible, user typing her address.
-    //   connecting   - pre-authentication, webfinger discovery.
-    //   authing      - about to redirect to the auth endpoint (if authDialog=popup,
-    //                  means the popup is open)
-    //   connected    - Discovery & Auth done, connected to remotestorage.
-    //   busy         - Currently exchaning data. (spinning cube)
-    //   disconnected - fired, when user clicks 'disconnect'. use this to clear your
-    //                  app's views of the data. immediately transitions to 'anonymous'
-    //                  afterwards.
-    //
-    getWidgetState   : widget.getState,
-    setStorageInfo   : wireClient.setStorageInfo,
-    getStorageHref   : wireClient.getStorageHref,
+    setStorageInfo: wireClient.setStorageInfo,
+
+    getStorageHref: wireClient.getStorageHref,
+
+    getStorageInfo: wireClient.getStorageInfo,
+
+    disableSyncThrottling: sync.disableThrottling,
 
     nodeConnect: nodeConnect,
 
-    util: util
+    util: util,
+
+    // Method: getForeignClient
+    //
+    // Get a <ForeignClient> instance for a given user.
+    //
+    // Parameters:
+    //   userAddress - a user address in the form user@host
+    //   callback - a callback to receive the client
+    //
+    // If there is no storageInfo cached for this userAddress, this will trigger
+    // a webfinger discovery and when that succeeded, return the client through
+    // the callback.
+    //
+    // Example:
+    //   (start code)
+    //   var client = remoteStorage.getForeignClient('alice@wonderland.lit', function(error, client) {
+    //     if(error) {
+    //       console.error("Discovery failed: ", error);
+    //     } else {
+    //       client.getPublishedObjects(function(objects) {
+    //         console.log('public stuff', objects);
+    //       });
+    //     }
+    //   });
+    //   (end code)
+    getForeignClient: function(userAddress, callback) {
+      var client = foreignClient.getClient(userAddress);
+      if(wireClient.hasStorageInfo(userAddress)) {
+        callback(null, client);
+      } else {
+        webfinger.getStorageInfo(
+          userAddress, { timeout: 5000 }, function(err, storageInfo) {
+            if(err) {
+              callback(err);
+            } else {
+              wireClient.addStorageInfo(userAddress, storageInfo);
+              callback(null, client);
+            }
+          }
+        );
+      }
+    },
+
+    getClient: function(scope) {
+      return new BaseClient(scope);
+    },
+
+    // Property: store
+    // Public access to <store>
+    store: store,
+
+    sync: sync,
+    widget: widget,
+
+    i18n: i18n,
+
+    schedule: schedule
 
   };
 
