@@ -1,5 +1,5 @@
 function log(message) {
-    console.log(message);
+    console.log.apply(console,arguments);
 }
 
 function isNotNull(o) {
@@ -136,6 +136,7 @@ function TaskController($scope) {
     });
 
     rs.loadAll().then(function(tasks) {
+      log("Load All",tasks);
         $scope.tasks = tasks;
     });
 
@@ -211,7 +212,7 @@ function TaskController($scope) {
     function finishCurrentTracking() {
         $scope.tasks.filter(isTracking).forEach(finishTracking);
     }
-    
+
     $scope.onTrackButton = function (task) {
         if (isTracking(task)) {
             finishTracking(task);

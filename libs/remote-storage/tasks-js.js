@@ -84,9 +84,10 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
         }
 
         function setTimeTracking(id, timeTracking) {
-            var obj = myPrivateBaseClient.getObject(listName+'/'+id);
-            obj.timeTracking = timeTracking;
-            myPrivateBaseClient.storeObject('task', listName+'/'+id, obj);
+            myPrivateBaseClient.getObject(listName+'/'+id).then(function (obj) {
+              obj.timeTracking = timeTracking;
+              myPrivateBaseClient.storeObject('task', listName+'/'+id, obj);
+            });
         }
 
         function add(title) {
@@ -101,11 +102,12 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
             if(typeof(completedVal) == 'undefined') {
                 completedVal = true;
             }
-            var obj = myPrivateBaseClient.getObject(listName+'/'+id);
-            if(obj && obj.completed != completedVal) {
-                obj.completed = completedVal;
-                myPrivateBaseClient.storeObject('task', listName+'/'+id, obj);
-            }
+            myPrivateBaseClient.getObject(listName+'/'+id).then(function (obj) {
+              if(obj && obj.completed != completedVal) {
+                  obj.completed = completedVal;
+                  myPrivateBaseClient.storeObject('task', listName+'/'+id, obj);
+              }
+            });
         }
         function isCompleted(id) {
             var obj = get(id);
