@@ -11,21 +11,15 @@ var rs = {
     taskDao:null,
 
     init:function (connectedCallback) {
-        remoteStorage.util.silenceAllLoggers();
-        remoteStorage.claimAccess('tasks', 'rw').
-            then(function() {
-                remoteStorage.displayWidget('remotestorage-connect')
-                remoteStorage.onWidget('ready', function() {
-                    connectedCallback(true);
-                });
-                remoteStorage.onWidget('disconnect', function() {
-                    connectedCallback(false);
-                });
-                // 'ready' won't be fired until the next tick, so it's safe to
-                // default to 'false' at this point.
-                connectedCallback(false);
-            }.bind(this));
+        remoteStorage.claimAccess('tasks', 'rw');
+        remoteStorage.displayWidget();
         this.taskDao = remoteStorage.tasks.getPrivateList('todos');
+        remoteStorage.on('features-loaded', function () {
+          remoteStorage.on('disconnect', function () {
+            connectedCallback(false);
+          });
+        });
+        connectedCallback(false);
     },
 
     loadAll:function () {
@@ -34,8 +28,6 @@ var rs = {
 
     onChange:function (callback) {
         this.taskDao.on('change', function (event) {
-            log("Event:");
-            log(event);
             if (event.newValue) {
                 event.newValue.id = event.id;
             }
@@ -110,22 +102,19 @@ function saveTimeTracking(task) {
     rs.taskDao.setTimeTracking(task.id, task.timeTracking);
 }
 
-function isConnected(state) {
-    return  (state == 'connected') || (state == 'busy');
-}
-
 function isBlank(s) {
     return !s || s.isBlank();
 }
 
 function TaskController($scope) {
+    $scope.isConnected = false;
+    $scope.tasks = [];
+
     function refresh() {
         if (!$scope.$$phase) {
             $scope.$apply();
         }
     }
-
-    $scope.isConnected = false;
 
     rs.init(function (connected) {
         $scope.isConnected = connected;
