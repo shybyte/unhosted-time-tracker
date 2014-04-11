@@ -1,6 +1,6 @@
 var moduleName = "tasks";
 
-remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBaseClient) {
+RemoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBaseClient) {
 
     // Namespace: remoteStorage.tasks
     //
@@ -70,7 +70,7 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
         return uuid;
     }
     function getPrivateList(listName) {
-        myPrivateBaseClient.use(listName+'/');
+        myPrivateBaseClient.cache(listName+'/');
         function getIds() {
             return myPrivateBaseClient.getListing(listName+'/');
         }
@@ -151,13 +151,16 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
         }
 
         function getAll() {
-          return myPrivateBaseClient.getAll(listName + '/').
+          return myPrivateBaseClient.getAll(listName + '/', 0).
             then(function(map) {
               var listing = [];
-              for(var id in map) {
-                var task = map[id];
-                task.id = id;
-                listing.push(task);
+              if(typeof map !== 'undefined') {
+                console.log(map);
+                for(var id in map) {
+                  var task = map[id];
+                  task.id = id;
+                  listing.push(task);
+                }
               }
               return listing;
             });
@@ -263,4 +266,3 @@ remoteStorage.defineModule(moduleName, function(myPrivateBaseClient, myPublicBas
         }
     };
 });
-

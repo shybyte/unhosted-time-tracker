@@ -11,11 +11,11 @@ var rs = {
     taskDao:null,
 
     init:function (connectedCallback) {
-        remoteStorage.claimAccess('tasks', 'rw');
+        remoteStorage.access.claim('tasks', 'rw');
         remoteStorage.displayWidget();
         this.taskDao = remoteStorage.tasks.getPrivateList('todos');
         remoteStorage.on('features-loaded', function () {
-          remoteStorage.on('disconnect', function () {
+          remoteStorage.on('disconnected', function () {
             connectedCallback(false);
           });
         });
@@ -28,6 +28,9 @@ var rs = {
 
     onChange:function (callback) {
         this.taskDao.on('change', function (event) {
+            if (event.origin === 'local') {
+                return;
+            }
             if (event.newValue) {
                 event.newValue.id = event.id;
             }
@@ -131,14 +134,17 @@ function TaskController($scope) {
 
     rs.onChange(function (oldTask,newTask) {
         if (!newTask) {
-            //delete
             $scope.tasks.remove({id:oldTask.id});
             return;
         }
-        var existingTask = $scope.tasks.find({id:newTask.id});
-        if (existingTask) {
-            Object.merge(existingTask, newTask);
-        } else {
+        try {
+            var existingTask = $scope.tasks.find({id:newTask.id});
+            if (existingTask) {
+                Object.merge(existingTask, newTask);
+            } else {
+                $scope.tasks.insert(newTask,0);
+            }
+        } catch(e) {
             $scope.tasks.insert(newTask,0);
         }
         refresh();
